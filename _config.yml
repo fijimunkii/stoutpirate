@@ -1,0 +1,8 @@
+name: "stoutpirate"
+description: "sailing the dark nets, bringing home the goods"
+
+url: "http://localhost:4000"
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
