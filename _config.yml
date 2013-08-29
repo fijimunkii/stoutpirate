@@ -1,8 +1,15 @@
-name: stoutpirate
-description: sailing the dark nets.. bringing home the goods
-
-url: fijimunkii.github.io
-
-markdown: rdiscount
-permalink: pretty
+permalink: /:categories/:year/:month/:day/:title 
+auto: true
 pygments: true
+markdown: rdiscount
+
+title: stoutpirate
+tagline: sailing the dark nets.. bringing home the goods
+
+author :
+  name : Sir Fijimunkii
+  email : fijimunkii@gmail.com
+  github : fijimunkii
+  twitter : fijimunkii
+
+production_url : http://fijimunkii.github.io
