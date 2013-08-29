@@ -15,13 +15,13 @@
 	<script src="/javascripts/bootstrap-min.js"></script>
 	{% case page.layout %}
 	{% when 'home' %}
-		<title>{{ site.sitename }} | {{ site.tagline }}</title>
+		<title>{{ site.title }} | {{ site.tagline }}</title>
 		<meta name="description" content="{{ page.desctiption }}">
 	{% when 'post' %}
-		<title>{{ page.title }} | {{ site.sitename }} | {{ site.tagline }}</title>
+		<title>{{ page.title }} | {{ site.title }} | {{ site.tagline }}</title>
 		<meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
 	{% else %}
-		<title>{{ page.title }} | {{ site.sitename }} | {{ site.tagline }}</title>
+		<title>{{ page.title }} | {{ site.title }} | {{ site.tagline }}</title>
 		<meta name="description" content="{{ page.desctiption }}">
 	{% endcase %}
 </head>

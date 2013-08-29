@@ -12,4 +12,5 @@ author :
   github : fijimunkii
   twitter : fijimunkii
 
-production_url : http://fijimunkii.github.io
+url : http://fijimunkii.github.io
+sitemap: sitemap.xml
