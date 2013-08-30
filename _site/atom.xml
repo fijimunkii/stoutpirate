@@ -4,7 +4,7 @@
  <title> | sailing the dark nets.. bringing home the goods</title>
  <link href="http://fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="http://fijimunkii.github.io"/>
- <updated>2013-08-29T21:33:55-04:00</updated>
+ <updated>2013-08-29T22:41:13-04:00</updated>
 
  
  <entry>
@@ -16,7 +16,7 @@
 
 First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.&lt;br /&gt;&lt;br /&gt;
 
-These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Everything on it is quite useful.&lt;br /&gt;
+These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Just about everything on it is quite useful.&lt;br /&gt;&lt;br /&gt;
 &lt;ol&gt;
 	&lt;li&gt;YouTube previews in mail&lt;/li&gt;
 	&lt;li&gt;Picasa previews in mail&lt;/li&gt;
@@ -55,33 +55,33 @@ These are the labs that I have turned on, in the order they appear on the labs p
 	&lt;li&gt;Google Calendar gadget&lt;/li&gt;
 	&lt;li&gt;Google Docs gadget&lt;/li&gt;
 	&lt;li&gt;Add any gadget by URL&lt;/li&gt;
-&lt;/ol&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;/ol&gt;
 My favorites are the Superstars and Multiple Inboxes, the interaction of which is beautiful.  The Superstars allow you to apply different types of stars to your emails and Multiple Inboxes give you quick access to information that is likely to be referenced, such as emails you have recently starred.  My favorite additional inbox is what I call the Freshbox, it simply displays my unread emails.  Also of great usage are the Quick Links, which provide easy access to saved searches.  I will explain how I've set up these labs, starting with the Superstars.&lt;br /&gt;&lt;br /&gt;
 
 You can manage which stars are enabled and in which order on the &lt;a title=&quot;superstar gmail settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/general&quot; target=&quot;_blank&quot;&gt;General Gmail Settings page&lt;/a&gt;.  Simply drag and drop them.  I use:&lt;br /&gt;
-
-&lt;img src=&quot;images/gtd-star_lit_blue_i3.png&quot; /&gt; for emails with INFORMATION that I may want to refer to in the future.
-
-&lt;img src=&quot;images/gtd-star_lit_red_bang3.png&quot; /&gt; for emails that I need to act on ASAP
-
-&lt;img src=&quot;images/gtd-star_lit_red3.png&quot; /&gt; for emails with DATES like meetings, appointments, parties
-
-&lt;img src=&quot;images/gtd-star_lit_purple3.png&quot; /&gt;for SPECIAL emails that I want to want to save for a rainy day
-
-&lt;img src=&quot;images/gtd-star_lit_orange_chevron3.png&quot; /&gt;for delegated emails, stuff I've sent out that needs to be returned to me
+&lt;br /&gt;
+&lt;strong&gt;Blue square&lt;/strong&gt; for emails with INFORMATION that I may want to refer to in the future.
+&lt;br /&gt;
+&lt;strong&gt;Red exclamation point&lt;/strong&gt; or BANG for emails that I need to act on ASAP
+&lt;br /&gt;
+&lt;strong&gt;Red star&lt;/strong&gt; for emails with DATES like meetings, appointments, parties
+&lt;br /&gt;
+&lt;strong&gt;Purple star&lt;/strong&gt; for SPECIAL emails that I want to want to save for a rainy day
+&lt;br /&gt;
+and &lt;strong&gt;Orange &gt;&gt;&lt;/strong&gt; for delegated emails, stuff I've sent out that needs to be returned to me
 &lt;br /&gt;&lt;br /&gt;
 These stars allow me to quickly prioritize what flows through my inbox.  Not a replacement for labels whatsoever, these stars work in conjunction.  For instance, I can click on my work label and see which emails are set with a red bang.  Similarly in the work label I can quickly spot emails with important documents by the info tag.
 &lt;br /&gt;&lt;br /&gt;
 Now, the grandaddy lab: Multiple Inboxes.  What this lab does is allow you to create additional inboxes.  These inboxes can be placed on top of, which I prefer, or to the right of or below the regular inbox.  These additional inboxes show the results of a search query that you specify in your &lt;a title=&quot;multiple inboxes management&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/lighttlist&quot; target=&quot;_blank&quot;&gt;Multiple Inboxes settings&lt;/a&gt;.  These search queries could be anything you like.  I have mine set to show the Freshbox, Superstars and Chats.  The parameters I used to set up are as follows:
-
+&lt;br /&gt;&lt;br /&gt;
 Pane 0: Query: &lt;span style=&quot;color: #008080;&quot;&gt;is:unread in:inbox -in:buzz&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Freshbox&lt;/span&gt;
-
+&lt;br /&gt;
 Pane 1: Query:&lt;span style=&quot;color: #008080;&quot;&gt; l:^ss_cr &lt;/span&gt;Title: &lt;span style=&quot;color: #008080;&quot;&gt;ASAP&lt;/span&gt;
-
+&lt;br /&gt;
 Panel 2: Query:&lt;span style=&quot;color: #008080;&quot;&gt; l:^ss_sr&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Dates&lt;/span&gt;
-
+&lt;br /&gt;
 Panel 3: Query: &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_cb&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Reference&lt;/span&gt;
-
+&lt;br /&gt;
 Panel 4: Query: &lt;span style=&quot;color: #008080;&quot;&gt;label:chat &lt;/span&gt;Title:&lt;span style=&quot;color: #008080;&quot;&gt; Chatbox&lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
 Have the maximum page size set to show &lt;span style=&quot;color: #008080;&quot;&gt;10&lt;/span&gt; conversations per page for the new inbox panes and have them set &lt;span style=&quot;color: #008080;&quot;&gt;above&lt;/span&gt; the inbox.
@@ -96,28 +96,27 @@ One last important thing left to set up are the Quick Links.  Once you've enabl
    <updated>2009-12-16T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/facebook/privacy/usability/2009/12/16/facebook-privacy-and-you</id>
    <content type="html">If you haven't heard all the buzz about facebook the past couple weeks, listen up.  Facebook just changed the way they handle privacy.  There are no more regional networks.  Unless you restrict specific things, they will be indexed by Google.  In this post you can learn how to  setup your facebook for max visibility while retaining a necessary amount of privacy.
-
+&lt;br /&gt;&lt;br /&gt;
 The levels of limitation are: Friends, Friends of Friends, Friend lists, or Everyone.
-
+&lt;br /&gt;&lt;br /&gt;
 I've organized my settings by section, which you can access by clicking on the links.
-
-&lt;a title=&quot;Profile Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&lt;/a&gt;
-About me -&amp;gt; Education {Only Friends}
-Photos and videos {Dudes}
-Posts {only friends}
-
+&lt;br /&gt;&lt;br /&gt;
+&lt;a title=&quot;Profile Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&lt;/a&gt;&lt;br /&gt;
+About me -&amp;gt; Education {Only Friends}&lt;br /&gt;
+Photos and videos {Dudes}&lt;br /&gt;
+Posts {only friends}&lt;br /&gt;
+&lt;br /&gt;
 Dudes is a &lt;a title=&quot;Make a new friend list on facebook&quot; href=&quot;http://www.facebook.com/friends/ajax/edit_list.php?new_list=true&quot; target=&quot;_blank&quot;&gt;friend list&lt;/a&gt; excluding certain family members and people from work that I'd rather not see my pictures.
+&lt;br /&gt;&lt;br /&gt;
+&lt;a title=&quot;Contact Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&lt;/a&gt;&lt;br /&gt;
+IM -&amp;gt; Current Address {Only Friends}&lt;br /&gt;
+Website -&amp;gt; Add me as a friend {Everyone}&lt;br /&gt;
+Send me a message {Only Friends}&lt;br /&gt;&lt;br /&gt;
 
-&lt;a title=&quot;Contact Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&lt;/a&gt;
-IM -&amp;gt; Current Address {Only Friends}
-Website -&amp;gt; Add me as a friend {Everyone}
-Send me a message {Only Friends}
-
-&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&lt;/a&gt;
+&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&lt;/a&gt;&lt;br /&gt;
 Status Updates, Online Presence, Website, Education and work, My birthday, My hometown {checked}
-
-I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Search Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&quot; target=&quot;_blank&quot;&gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.
-</content>
+&lt;br /&gt;&lt;br /&gt;
+I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Search Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&quot; target=&quot;_blank&quot;&gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.</content>
  </entry>
  
  <entry>
@@ -125,12 +124,12 @@ I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Se
    <link href="http://fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia"/>
    <updated>2009-08-10T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia</id>
-   <content type="html">There are many benefits to using google voice as an a personal digital operator.   First and foremost, screening calls.  Your personal operator is going to ask everyone with a restricted number to state their name.  If you want, this can happen to anyone that calls who isn't one of your Google Contacts.
+   <content type="html">There are many benefits to using google voice as an a personal digital operator.   First and foremost, screening calls.  Your personal operator is going to ask everyone with a restricted number to state their name.  If you want, this can happen to anyone that calls who isn't one of your Google Contacts.&lt;br /&gt;&lt;br /&gt;
 
 Your personal operator can also serve certain people to specific phones and present custom voicemail greetings.  These voicemails will be transcribed and sent to your phone as a text message and emailed to you.
-
+&lt;br /&gt;&lt;br /&gt;
 The history of your phone calls and voicemails will be archived at &lt;a href=&quot;http://google.com/voice&quot; target=&quot;_blank&quot;&gt;http://google.com/voice&lt;/a&gt;. Having GvoiceMail is handy.  This personal operator is so good at handling calls that you can switch the phone you are using in the middle of a call.  Say you walk home while on a business call: tell the person on the other end to hold, then you press press * and hang up, your home phone rings and you answer it.  Sounds too good to be true.
-
+&lt;br /&gt;&lt;br /&gt;
 Want in?  One doesn't ask for an invite to google voice, he &lt;a style=&quot;color: #114170;&quot; href=&quot;https://services.google.com/fb/forms/googlevoiceinvite/&quot; target=&quot;_blank&quot;&gt;signs up&lt;/a&gt;.   I should also mention that this service is free and Google provides you with a free number.
 </content>
  </entry>
@@ -140,30 +139,28 @@ Want in?  One doesn't ask for an invite to google voice, he &lt;a style=&quot;
    <link href="http://fijimunkii.github.io/google/2009/04/27/google-audio-indexing"/>
    <updated>2009-04-27T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/google/2009/04/27/google-audio-indexing</id>
-   <content type="html">Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- Google GAudi appears to have been retired and the google group along with it has been expunged!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
 
 &lt;!--more--&gt;
 
-&lt;img src=&quot;http://labs.google.com/gaudi/static/diagram.png&quot; alt=&quot;&quot; width=&quot;400&quot; /&gt;
-
-Google wants to unleash this powerful tool to index all of youtube's shenanigans, after they've tested it on politics.  I think it will make a major impact on how we access information.
+Google wants to unleash this powerful tool to index all of youtube's shenanigans, after they've tested it on politics.  I think it will make a major impact on how we access information.&lt;br /&gt;&lt;br /&gt;
 
 What google says about the technology:
-&lt;blockquote&gt;Google Audio Indexing uses speech technology to transform spoken words into text and leverages the Google indexing technology to return the best results to the user.
+&lt;blockquote&gt;Google Audio Indexing uses speech technology to transform spoken words into text and leverages the Google indexing technology to return the best results to the user.&lt;br /&gt;&lt;br /&gt;
 
 The returned videos are ranked based -- among other things -- on the spoken content, the metadata, the freshness.
-
+&lt;br /&gt;&lt;br /&gt;
 We periodically crawl the YouTube political channels for new content. As soon as a new video is uploaded to YouTube, it is processed by our system and made available in our index for people to search.&lt;/blockquote&gt;
 I did some research into what they are actually using to detect the speech patterns.  It is called &lt;a href=&quot;http://svr-ftp.eng.cam.ac.uk/comp.speech/Section6/Recognition/htk.html&quot;&gt;Hidden Markov Modelling&lt;/a&gt;.  Here is a pdf explaining some of the &lt;a href=&quot;http://www.hpl.hp.com/techreports/Compaq-DEC/CRL-97-7.pdf&quot;&gt;mathematics behind it&lt;/a&gt;.
-
+&lt;br /&gt;&lt;br /&gt;
 I would like to share some other documents I came across that I thought were interesting:
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://faculty.ksu.edu.sa/YAlohali/Documents/Forms/AllItems.aspx?RootFolder=http%3a%2f%2ffaculty.ksu.edu.sa%2fYAlohali%2fDocuments%2fAccentIdentification&amp;amp;FolderCTID=0x0120003108F2F933FF1F42A8C7BB969AF3407F&quot;&gt;This is a 7-part report on how to get Saudi Speech Recognition to differentiate and understand the different accents of their language.&lt;/a&gt;
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.phon.ucl.ac.uk/resource/sfs/howto/htk.htm&quot;&gt;How To: Use HTK Hidden Markov modelling toolkit with SFS&lt;/a&gt;
-
-&lt;a href=&quot;http://groups.google.com/group/google-audio-indexing/&quot;&gt;The Google Group for Google Audio Indexing&lt;/a&gt;
-</content>
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;http://groups.google.com/group/google-audio-indexing/&quot;&gt;The Google Group for Google Audio Indexing&lt;/a&gt;</content>
  </entry>
  
  <entry>
@@ -171,48 +168,44 @@ I would like to share some other documents I came across that I thought were int
    <link href="http://fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists"/>
    <updated>2009-04-18T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists</id>
-   <content type="html">After meticulously organizing my iTunes Music Library, I have found playlists to be extremely handy—static playlists as well as something relatively new, smart playlists.  For those that are unfamiliar, smart playlists build their contents based on variables and are live updating.  What this means is that you are going to have amazing playlists.
-
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt; 
+After meticulously organizing my iTunes Music Library, I have found playlists to be extremely handy—static playlists as well as something relatively new, smart playlists.  For those that are unfamiliar, smart playlists build their contents based on variables and are live updating.  What this means is that you are going to have amazing playlists.
+&lt;br /&gt;&lt;br /&gt;
 Let me show you how to import your favorite songs you haven't heard in the last week, month, or how to aggregate your holiday music, tracks with missing tags and your most listened to tracks with the least number of skips.
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;!--more--&gt;
 
 iTunes organizes playlists in the left-hand column, which is a prominent location for accessing collections of your music.
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img class=&quot;size-full wp-image-167 aligncenter&quot; title=&quot;playlist&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/playlist.png&quot; alt=&quot;playlist&quot; width=&quot;206&quot; height=&quot;410&quot; /&gt;&lt;/p&gt;
+&lt;br /&gt;&lt;br /&gt;
 
 The first playlist we should make is a base music playlist to build our other playlists off of, filtering out any non-music.  To create a new smart playlist go to the File menu and select New Smart Playlist.  The Mac shortcut to creating a smart playlist is option+command+N or you can hold option while pressing the new playlist  button.
-
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-8.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-152&quot; title=&quot;smartplaylistmusic&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-8.png&quot; alt=&quot;smartplaylistmusic&quot; width=&quot;400&quot; height=&quot;239&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 This 'music only' playlist will collect everything in iTunes except movies, podcasts, audiobooks and radio streams.  I keep my audiobook playlists in a playlist folder named audiobooks and that's what I'm signaling the playlist to avoid.  Likewise, I keep my radio streams in a playlist named radio.  Adjust yours according to how you organize your music.  We will use this playlist as a variable in subsequent playlists to filter out non-music.
-
+&lt;br /&gt;&lt;br /&gt;
 Let's start aggregating some awesome music!  This playlist collects good tunes that haven't been listened to in the past week.  If you are attentive to rating your music, this playlist will serve you very well.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-15.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-166&quot; title=&quot;smartplaylistgoodnotinthelastmonth&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-15.png&quot; alt=&quot;smartplaylistgoodnotinthelastmonth&quot; width=&quot;400&quot; height=&quot;239&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 It's easy to tailor this to the size of your music library by selecting months, year(s)..
-
+&lt;br /&gt;&lt;br /&gt;
 If you have been adding music to your library for years, this next playlist will organize your most listened-to tracks chronologically.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-5.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-150&quot; title=&quot;smartplaylistbestof2008&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-5.png&quot; alt=&quot;smartplaylistbestof2008&quot; width=&quot;400&quot; height=&quot;199&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 This 'best of 2008' playlist has my most played party tunes and favorite sleeping tracks.  Along with those one hitters.  Just make sure to adjust the playcount variable according to your listening habits.
-
+&lt;br /&gt;&lt;br /&gt;
 Have a lot of holiday music?  Here's a smart playlist for you.
-&lt;a title=&quot;smartplaylistholiday&quot; href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-10.png%3E%3Cimg%20class=&quot;&gt;&lt;/a&gt;
-
+&lt;br /&gt;&lt;br /&gt;
 By filtering this holiday playlist out of other playlists, you can keep Olde St. Nick out of your everyday servings.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-13.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-161&quot; title=&quot;smartplaylistfilterout&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-13.png&quot; alt=&quot;smartplaylistfilterout&quot; width=&quot;400&quot; height=&quot;180&quot; /&gt;&lt;/a&gt;
-
+&lt;br /&gt;&lt;br /&gt;
 Next we have some really useful smart playlists for organizing your music library.  The first is for music you listen to a lot but have not had the chance to rate.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-9.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-153&quot; title=&quot;smartplaylistrateme&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-9.png&quot; alt=&quot;smartplaylistrateme&quot; width=&quot;400&quot; height=&quot;180&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 Ratings are extremely handy for isolating tracks you don't like on albums and you can avoid these tracks in the future by setting a playlist's rating filter from 4 to 5 stars, like the second playlist above.
-
+&lt;br /&gt;&lt;br /&gt;
 The second organization playlist is for missing metadata, for example track and album names.  All those songs you imported without an internet connection without tags that are labeled track01, track02 etc..
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-6.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-147&quot; title=&quot;smartplaylistmissingdata&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-6.png&quot; alt=&quot;smartplaylistmissingdata&quot; width=&quot;400&quot; height=&quot;336&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 From this playlist you can easily locate and fix the metadata-less tracks.
-
+&lt;br /&gt;&lt;br /&gt;
 The following 'no skippies' playlist quickly removes tracks you usually do not want to hear.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-11.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-157&quot; title=&quot;smartplaylistnoskippies&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-11.png&quot; alt=&quot;smartplaylistnoskippies&quot; width=&quot;400&quot; height=&quot;199&quot; /&gt;&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
 
-And lastly, listen to your music!  The following playlist grabs all of your neglected music.
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-12.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-158&quot; title=&quot;smartplaylistneglectedtunes&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-12.png&quot; alt=&quot;smartplaylistneglectedtunes&quot; width=&quot;400&quot; height=&quot;199&quot; /&gt;&lt;/a&gt;
-</content>
+And lastly, listen to your music!  The following playlist grabs all of your neglected music.</content>
  </entry>
  
  <entry>
@@ -221,23 +214,22 @@ And lastly, listen to your music!  The following playlist grabs all of your negl
    <updated>2009-04-16T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/usability/2009/04/16/shopping-for-an-education</id>
    <content type="html">In the past, students enrolled in courses by filling out a form.  I suppose the fax machine was the next step.  But now students are filling up an online shopping cart, on websites, of their classes for next semester.  Naturally, this is a highly stressful time, so the system should have a user centered design.
-
+&lt;br /&gt;&lt;br /&gt;
 I have experienced two of these registration systems.  I found the first system quite pleasant and intuitive; the second, not so much.  Babson College has a superior course catalog/registration system to SUNY Purchase.
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;!--more--&gt;
 
 Accessing and navigating the course catalog is similar at both schools. Drop-down menus versus scrolling through a list is the only difference in how to refine the search. The drop down menus on Babson’s system were also present on the catalog pages themselves, not just the index. Having to go back to the index is an unnecessary step.
-
+&lt;br /&gt;&lt;br /&gt;
 The course catalog should be connected to the registration system, at least that is what I’m used to from Babson’s system. It makes sense. The methapors are all there as they have it set up as a shopping cart system. It is intuitive to ‘add courses to your cart’, ‘view your schedule’, and ‘check out’. With Purchase, on the other hand, writing down course numbers is necessary.
-
+&lt;br /&gt;&lt;br /&gt;
 At Purchase the students have to carry the course information from the catalog to the registration system, the systems are completely separate. This directly results in a giant drop of usability. Another thing the students should not have to do is get an AAC. This is the access code from a student’s advisor that is required for registration. Students should be able to log in and register as long as they do not have any flags blocking registration. The IAC program works, but AAC is flawed. Too many students retell horror stories of not having a code and watching their desired classes fill up while they are helpless to do anything but cry and wait for the advisor to return the hundred messages left that morning while freaking out.
-
+&lt;br /&gt;&lt;br /&gt;
 Babson did not have any advisory pre-registration requirement. It was highly recommended that students meet with their advisors to go over schedules and whatnot, but never forced. Now, I will mention one flaw with Babson's system that caught me off-guard.
-
+&lt;br /&gt;&lt;br /&gt;
 The system couldn’t handle it! By it, I mean the stress of an entire class registering at 7am. The server buckled and the site slowed to a crawl. Funny as it may sound, it was nerve wracking. I avoided this issue in subsequent registrations by filling my shopping cart up before the event, and checking out as soon as the gates were opened.
-
-Have you survived these frightful mornings?  Let's hear some stories!
-</content>
+&lt;br /&gt;&lt;br /&gt;
+Have you survived these frightful mornings?  Let's hear some stories!</content>
  </entry>
  
  <entry>
@@ -246,31 +238,29 @@ Have you survived these frightful mornings?  Let's hear some stories!
    <updated>2009-04-14T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/google/2009/04/14/seemingly-infinite-array-of-knowledge</id>
    <content type="html">Conversations on the Internet have a certain flavor to them that exceeds limitations of the normal world.  The participants do not have to be in the same room, let alone the same country.  It is because of this phenomenon that we have a fusing of cultures with the capability of pooling knowledge together.  This seemingly infinite array of knowledge is indexed and searchable.
-
+&lt;br /&gt;&lt;br /&gt;
 These participants can keep track of one another through social networking enabled websites, which informs one another of interests, relationships, microblogs, and blogs.  Conversations here closely resemble informal social interactions, similar to a party atmosphere.  This is a pleasant contrast to the focused, educated, and moderated conversations that are ever so quickly building the infinite data pool.
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;!--more--&gt;
 
 Education is free on the internet.  Anyone can use Google.  There is no limit to the amount of data that can be sent or stored.  The only limiting factor here is bandwidth.  Internet access is freely available at the worlds libraries and third world countries are beginning to integrate computers into the household.  Soon, wireless broadband will be available for free and every electronic device will be connected to it as well as a &lt;a href=&quot;http://blog.harrisonpowers.com/news/repowering-america/&quot;&gt;smart power&lt;/a&gt; supply with diagnostics like &lt;a href=&quot;http://www.google.org/powermeter/&quot; target=&quot;_blank&quot;&gt;Google PowerMeter&lt;/a&gt;.
-
+&lt;br /&gt;&lt;br /&gt;
 Google has replicated and improved on three of the most important desktop applications, and offered these robust products for free, accessible with your preferences and stored files anywhere.  Gmail is the king of all email clients and Google Calendar is a robust calendar.  Google Docs is replacing Microsoft Office, and Google Reader takes the stand as the hands-down &lt;a href=&quot;http://blog.harrisonpowers.com/screencast/rss-and-google-reader/&quot; target=&quot;_blank&quot;&gt;best RSS feed aggregator, organizer, and viewer&lt;/a&gt;.
-
+&lt;br /&gt;&lt;br /&gt;
 Third-party hardware is embraced by Google as it is simply provides their clientele.  In an effort to maintain this connection with mobile computer users, Google provides a plethora of support for various clients.  The most popular, the iPhone, gets the best tools.  The &lt;a href=&quot;http://www.google.com/mobile/apple/app.html&quot; target=&quot;_blank&quot;&gt;Google Mobile app&lt;/a&gt; allows you to search with your voice, but only after you unlock this special feature in a &lt;a href=&quot;http://www.republicofinternets.com/?p=1469&quot; target=&quot;_blank&quot;&gt;secret menu&lt;/a&gt;.  The capabilities of this app are limited to search.  And rightly so, that is what Google specializes in.
-
+&lt;br /&gt;&lt;br /&gt;
 That's not all Google's done for the iPhone.  Gmail, Google Docs, Calendar and Reader are all optimized for the iPhone's browser.  They load when there is no internet because Google is taking advantage of a new technology in browser &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot; target=&quot;_blank&quot;&gt;caching&lt;/a&gt; available with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot; target=&quot;_blank&quot;&gt;HTML5&lt;/a&gt;.  They even released a Google Sync app to allow &lt;a href=&quot;http://blog.harrisonpowers.com/iphone/iphone-google-sync-is-official/&quot; target=&quot;_blank&quot;&gt;push synchronization of contacts and calendars&lt;/a&gt;.  This allows me to bypass mobileme, which I believe has failed.
-
+&lt;br /&gt;&lt;br /&gt;
 Other mobile devices with ties to Google are the BlackBerry and, of course, G1 and Android OS phones.  Many seem these as competitors to the iPhone, but Google sees them as users.  The masses are all participants in Google's great information experiment.  How effectively can we index information and provide easy access based off of previous human interaction.  So effectively it is scary.
-
+&lt;br /&gt;&lt;br /&gt;
 So scary that it almost seems like Artificial Intelligence, but don't worry, it definitely is not.  Google would not be anything if everyone in the world were not asking it questions all day.  That's the thing.  Google relies on its users.  Google is only the bread, the foundation.  The users are the butter, the deliciousness, Google is obsessed with them.  This infatuation leads to an incredible amount of usability on thick, interconnected system that Google is developing.
+&lt;br /&gt;&lt;br /&gt;
+This usability and the freedom that Google offers is popular and catching on like a wildfire.  Google has become a catalyst for freedom of information.  They are collecting everything and providing easy access.  There is essentially no limit to how many emails you can keep in Gmail.  I can search all my documents and conversations I've emailed the past 5 years, that is 2398 MB (32%) of the current allotment of 7315 MB.  That's just a drop in the bucket.
+&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- For reference, I am up to 26.39 of 36GB (73%)...&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+With &lt;a href=&quot;http://google.com/history/&quot; target=&quot;_blank&quot;&gt;Google - Web History&lt;/a&gt; I can access all 9161 searches I made since I registered with Google.  That is, a complete histogram of all my hobbies, projects, interests, and research since May 2005.  A true blast from the past.  In addition, I can see trends on my Google searching.  Popular hours, days, months, terms, websites, clicks, you get the idea..
+&lt;br /&gt;&lt;br /&gt;
 
-This usability and the freedom that Google offers is popular and catching on like a wildfire.  Google has become a catalyst for freedom of information.  They are collecting everything and providing easy access.  There is essentially no limit to how many emails you can keep in Gmail.  I can search all my documents and conversations I've emailed the past 5 years, that is &lt;span class=&quot;mj&quot;&gt;2398 MB (32%) of the current allotment of 7315 MB.  That's just a drop in the bucket.&lt;/span&gt;
-
-&lt;span class=&quot;mj&quot;&gt;With &lt;a href=&quot;http://google.com/history/&quot; target=&quot;_blank&quot;&gt;Google - Web History&lt;/a&gt; I can access all 9161 searches I made since I registered with Google.  That is, a complete histogram of all my hobbies, projects, interests, and research since May 2005.  A true blast from the past&lt;span&gt;.  In addition, I can see trends on my Google searching.  Popular hours, days, months, terms, websites, clicks, you get the idea.. &lt;/span&gt;&lt;/span&gt;
-
-&lt;img class=&quot;alignnone size-full wp-image-124&quot; title=&quot;googlewebhistorytrends&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-2.png&quot; alt=&quot;googlewebhistorytrends&quot; width=&quot;400&quot; height=&quot;256&quot; /&gt;
-
-It is fascinating, in my opinion, but to others this mining of data is an invasion of privacy.  I'm not going to list their reasoning for this way of thinking, they are obvious.  I am going to simply say to these people that Google is a service, not a requirement.  If you don't like it, don't use it.  They might hit me back with the concept of Google taking over the internet, that being inevitably forced to use Google.  That idea could make a good plot for a studio film.
-</content>
+It is fascinating, in my opinion, but to others this mining of data is an invasion of privacy.  I'm not going to list their reasoning for this way of thinking, they are obvious.  I am going to simply say to these people that Google is a service, not a requirement.  If you don't like it, don't use it.  They might hit me back with the concept of Google taking over the internet, that being inevitably forced to use Google.  That idea could make a good plot for a studio film.</content>
  </entry>
  
  <entry>
@@ -278,24 +268,23 @@ It is fascinating, in my opinion, but to others this mining of data is an invasi
    <link href="http://fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization"/>
    <updated>2009-04-05T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization</id>
-   <content type="html">Regarding the new the facebook layout, what do you not like about it?  Is it too cluttered?  How so?  Do you really need to see everyone's new facebook pic of the day?  I feel that facebook deserves this update.  Many complain about how disorganized the new layout is, that they can't find anything.. well what are you trying to find?  Is there a special group of friends that you want to track everything about?  What are you looking for that you can't find?  Let me explain how facebook has changed and how to use friend lists.
+   <content type="html">Regarding the new the facebook layout, what do you not like about it?  Is it too cluttered?  How so?  Do you really need to see everyone's new facebook pic of the day?  I feel that facebook deserves this update.  Many complain about how disorganized the new layout is, that they can't find anything.. well what are you trying to find?  Is there a special group of friends that you want to track everything about?  What are you looking for that you can't find?  Let me explain how facebook has changed and how to use friend lists.&lt;br /&gt;&lt;br /&gt;
 
 &lt;!--more--&gt;
 
-The new facebook layout does something bold.  It could not have pulled this off without the current size of circles of friends.  The creators are saying that there is enough information being posted to display everything in real time.  That's what the home page is now, a real time feed of everyone's updates.  It's like looking at your Google Reader's 'all items' category, it's just simply a plethora of incoming information.
+The new facebook layout does something bold.  It could not have pulled this off without the current size of circles of friends.  The creators are saying that there is enough information being posted to display everything in real time.  That's what the home page is now, a real time feed of everyone's updates.  It's like looking at your Google Reader's 'all items' category, it's just simply a plethora of incoming information.&lt;br /&gt;&lt;br /&gt;
 
 The right-hand side column attempts to display important information, and does a fairly good job.  It has everything I used to visit the home page for: birthdays, pokes, pictures, events, and notifications for my invites and messages (although this information is now available on every page through the bottom bar).  I have noticed that the right-hand side column appears to be favoring some friends over others, namely family members and people of recent contact, including new friends.
-
-&lt;img class=&quot;size-full wp-image-110 alignright&quot; title=&quot;facebook_friendlist&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-36.png&quot; alt=&quot;facebook_friendlist&quot; width=&quot;155&quot; height=&quot;267&quot; /&gt;I suppose the &lt;a href=&quot;http://en.wikipedia.org/wiki/Dunbar%27s_number&quot; target=&quot;_blank&quot;&gt;dunbar number&lt;/a&gt; applies to facebook; the most friends you should have for maximum usability is 150.  But I have way more than 150 'friends' on facebook, so I have to revert to grouping methods in order to maintain some structure.
+&lt;br /&gt;&lt;br /&gt;
+I suppose the &lt;a href=&quot;http://en.wikipedia.org/wiki/Dunbar%27s_number&quot; target=&quot;_blank&quot;&gt;dunbar number&lt;/a&gt; applies to facebook; the most friends you should have for maximum usability is 150.  But I have way more than 150 'friends' on facebook, so I have to revert to grouping methods in order to maintain some structure.&lt;br /&gt;&lt;br /&gt;
 
 To enhance the usability of facebook, you should be utilizing friend lists.  Friend lists are managed and toggled through their widget on the left-hand side of the home page.
-
-Simply click on the + sign on the bottom to create a new friend list.  Click on your friends and search, or use previously created friend lists to narrow your results.  Once created, a friend list can be renamed, edited, and managed by clicking the pencil icon to the right of its name.
+&lt;br /&gt;&lt;br /&gt;
+Simply click on the + sign on the bottom to create a new friend list.  Click on your friends and search, or use previously created friend lists to narrow your results.  Once created, a friend list can be renamed, edited, and managed by clicking the pencil icon to the right of its name.&lt;br /&gt;&lt;br /&gt;
 
 Click on your new friend lists to show their updates.
-
-I have found my home page to be much more enjoyable with the application of these lists.  When I want to check out what my family is up to I just click their button.  Same with my friends (at home and away), and geographic networks.  Good luck getting organized!
-</content>
+&lt;br /&gt;&lt;br /&gt;
+I have found my home page to be much more enjoyable with the application of these lists.  When I want to check out what my family is up to I just click their button.  Same with my friends (at home and away), and geographic networks.  Good luck getting organized!</content>
  </entry>
  
  <entry>
@@ -303,32 +292,27 @@ I have found my home page to be much more enjoyable with the application of thes
    <link href="http://fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read"/>
    <updated>2009-04-04T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read</id>
-   <content type="html">Most articles I come across are lost in a sea of advertisements and bad formatting.  While advertising surely has its place, I feel that it is unfair to distract the user when they have committed 5 minutes out of their day to read what you have to say.  Perhaps I am a glutton for simplicity, but I prefer being able to finish an article in one go, rather than having my eyes darting all over a page.
+   <content type="html">Most articles I come across are lost in a sea of advertisements and bad formatting.  While advertising surely has its place, I feel that it is unfair to distract the user when they have committed 5 minutes out of their day to read what you have to say.  Perhaps I am a glutton for simplicity, but I prefer being able to finish an article in one go, rather than having my eyes darting all over a page.&lt;br /&gt;&lt;br /&gt;
 
-Luckily for people easily distracted like myself, some javascript genius has figured out how to automatically pull the article content out of a page and display it in a customizable, easy to read overlay, toggled by a bookmarklet.
-
-&lt;a href=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-28.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-102&quot; title=&quot;readable_example&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-28.png&quot; alt=&quot;readable_example&quot; width=&quot;400&quot; height=&quot;313&quot; /&gt;&lt;/a&gt;
+Luckily for people easily distracted like myself, some javascript genius has figured out how to automatically pull the article content out of a page and display it in a customizable, easy to read overlay, toggled by a bookmarklet.&lt;br /&gt;&lt;br /&gt;
 
 &lt;!--more--&gt;
 
-A bookmarklet is a bookmark that instead of loading a new page, runs a small application on the current page.  &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Readable&lt;/strong&gt;&lt;/a&gt;, the bookmarklet in the spotlight, is easy to install.  Either drag it to your bookmarks bar, or right-click and save as a bookmark.  The author's website &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;further explains&lt;/a&gt;.
+A bookmarklet is a bookmark that instead of loading a new page, runs a small application on the current page.  &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Readable&lt;/strong&gt;&lt;/a&gt;, the bookmarklet in the spotlight, is easy to install.  Either drag it to your bookmarks bar, or right-click and save as a bookmark.  The author's website &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;further explains&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
 
 The way it transforms a page is entirely based on your preferences.
+&lt;br /&gt;&lt;br /&gt;
+I prefer reading light text on a dark background, so I chose the 'dark grey' color.  The layout size, or width, that I prefer is 50mm.  The rest I left the defaults.&lt;br /&gt;&lt;br /&gt;
 
-&lt;img class=&quot;size-medium wp-image-101 alignnone&quot; title=&quot;readable_prefs&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/04/picture-27-300x202.png&quot; alt=&quot;readable preferences&quot; width=&quot;300&quot; height=&quot;202&quot; /&gt;
+Now when I'm reading any article, the first thing I'll do is hit my Readable bookmarklet.  What this accomplishes for me is increased readability, efficiency, and usability of the internet.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 
-I prefer reading light text on a dark background, so I chose the 'dark grey' color.  The layout size, or width, that I prefer is 50mm.  The rest I left the defaults.
-
-Now when I'm reading any article, the first thing I'll do is hit my Readable bookmarklet.  What this accomplishes for me is increased readability, efficiency, and usability of the internet.
-
-Further Reading:
+Further Reading:&lt;br /&gt;&lt;br /&gt;
 
 &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;Readable&lt;/a&gt; - The Bookmarklet
-
+&lt;br /&gt;
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Readability&quot; target=&quot;_blank&quot;&gt;Readability&lt;/a&gt; - Wikipedia
-
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Bookmarklet&quot; target=&quot;_blank&quot;&gt;Bookmarklet&lt;/a&gt; - Wikipedia
-</content>
+&lt;br /&gt;
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Bookmarklet&quot; target=&quot;_blank&quot;&gt;Bookmarklet&lt;/a&gt; - Wikipedia</content>
  </entry>
  
  <entry>
@@ -337,31 +321,30 @@ Further Reading:
    <updated>2009-03-23T00:00:00-04:00</updated>
    <id>http://fijimunkii.github.io/news/2009/03/23/repowering-america</id>
    <content type="html">Currently, our power grid is operated by people.  Mechanical switches.  Telephones.  Blackouts are unknown until someone calls it in.  The sources of our power are centrally located, single locations providing power to vast territories.  Having such serious power centrally located is extremely dangerous.
-
+&lt;br /&gt;&lt;br /&gt;
 The recent major blackouts on the East Coast and Silicon Valley in the West Coast of the United States are examples of how this system is reaching its maximum capacity and is failing on us.
-
+&lt;br /&gt;&lt;br /&gt;
 President Obama has called for an overhaul of our grid and a transition to an automated, widely distributed energy delivery system.  In this system the electricity will flow &lt;strong&gt;both ways&lt;/strong&gt;.  Allow me to explain why this is important and how it works.
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;!--more--&gt;Normally our power system operates fine, but there are days with peak demand.  Recall those sweltering summer days when everyone and their dog is cranking up the A/C.  The way electricity in our grid works is that it has to be spent after it is produced.  Stored energy does not work with our grid.  (this will not always be the case!)  On these days with peak demand, extra power plants have to be activated, workers paid overtime, and there is no reliable way to predict when these days will pop up.
-
+&lt;br /&gt;&lt;br /&gt;
 Now imagine that your neighbor has solar panels on his roof and has a hydro-electric operation running off the river bordering your properties.  Surely he will be using at least all of the power from his solar panels, but what about the water based power plant?  Your neighbor is auctioning off the extra power that is generated to current buyers.  The people receiving this power do not need to be physically located close to the power source, the electricity can be great distances at minimal cost.
-
+&lt;br /&gt;&lt;br /&gt;
 On a larger level, there will likely be massive solar plants constructed as soon as the technology becomes sufficiently efficient.  These, along with wind, and hopefully nuclear plants will provide the foundation for our energy.  These will be supplemented by the independent operations on a local level.  If any source needs additional electricity it will be automatically routed.
-
+&lt;br /&gt;&lt;br /&gt;
 So everyone can get electricity from one another.  What's so great about this?  Well, these de-centralized power together make up a new power grid.  This new grid could provide the opportunity for nationwide use of plug-in vehicles by seamlessly integrating renewable energy resources.
-
+&lt;br /&gt;&lt;br /&gt;
 With this smart-grid there will never be overloads or shortages, thanks to borrowed power.  This scalable system is incredibly efficient and will never fail to meet consumer demand.
-
+&lt;br /&gt;&lt;br /&gt;
 What is the smart grid?  Digitizing, organizing, analyzing, and streamlinging the relay of electricity from producers to consumers.  There are many opponents of this, claiming that the new grid will open us up to a new array of terrorists on the digital front; they claim that the newer, more reliable power will be more expensive.
-
+&lt;br /&gt;&lt;br /&gt;
 What are your feelings on the smart grid?  Are you afraid of the massive inter-connectedness that is eminent, or are you ecstatic like myself?
-
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 Further Reading:
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.oe.energy.gov/1165.htm&quot; target=&quot;_blank&quot;&gt;The Smart Grid: An Introduction - US Department of Energy&lt;/a&gt;
-
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Smart_grid&quot; target=&quot;_blank&quot;&gt;Smart grid - Wikipedia&lt;/a&gt;
-</content>
+&lt;br /&gt;
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Smart_grid&quot; target=&quot;_blank&quot;&gt;Smart grid - Wikipedia&lt;/a&gt;</content>
  </entry>
  
  <entry>
@@ -369,24 +352,23 @@ Further Reading:
    <link href="http://fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog"/>
    <updated>2009-03-03T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog</id>
-   <content type="html">Import your blog into facebook!  This can be a great marketing tool.
+   <content type="html">Import your blog into facebook!  This can be a great marketing tool.&lt;br /&gt;&lt;br /&gt;
 
 &lt;!--more--&gt;There are two ways of importing into facebook.  To have facebook update your Mini-Feed with activity from other sites, such as last.fm, pandora, hulu, youtube, etc.. just visit your facebook profile page and click the &quot;import&quot; link at the top of the Mini-Feed section, select your service and enter the appropriate information.  Facebook will now automatically post your updates on these services to your Mini-Feed.
-
+&lt;br /&gt;&lt;br /&gt;
 If you have a blog, the best way to announce your new posts are as notes.  Go into &lt;a href=&quot;http://www.facebook.com/notes.php&quot; target=&quot;_blank&quot;&gt;notes&lt;/a&gt; and you will see import settings in the middle of the right-hand side column.  Or click &lt;a href=&quot;http://www.facebook.com/editnotes.php?import&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.  What you need to enter here is your blog's rss feed.
-
+&lt;br /&gt;&lt;br /&gt;
 What is an RSS feed?  It is what allows facebook access to your updates on all those other websites.  It is an xml file, automatically generated by your blog, that delivers updates to anyone that subscribes to it.
-
-&lt;img class=&quot;alignleft size-full wp-image-86&quot; title=&quot;rss&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/03/rss.png&quot; alt=&quot;rss&quot; width=&quot;16&quot; height=&quot;17&quot; /&gt; Where is my RSS feed?  You can easily find it by going to your website and clicking the radio icon that should appear in your location bar.  This will provide you with the address of your feed.
-
+&lt;br /&gt;&lt;br /&gt;
+Where is my RSS feed?  You can easily find it by going to your website and clicking the radio icon that should appear in your location bar.  This will provide you with the address of your feed.
+&lt;br /&gt;&lt;br /&gt;
 For those just getting into RSS, please see my screencast on RSS and Google Reader for tips on how I use RSS efficiently.
-
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 Further Reading/Viewing:
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.tech-recipes.com/rx/2885/facebook_import_blogs_rss_feeds_without_third_party_applications/&quot; target=&quot;_blank&quot;&gt;Facebook Blog Import Screencast&lt;/a&gt;
-
-&lt;a href=&quot;http://blog.harrisonpowers.com/usability/blog-usability-rss-spyware-comments-and-spam/&quot;&gt;Blog Usability - RSS Comments and Spam&lt;/a&gt;
-</content>
+&lt;br /&gt;
+&lt;a href=&quot;http://blog.harrisonpowers.com/usability/blog-usability-rss-spyware-comments-and-spam/&quot;&gt;Blog Usability - RSS Comments and Spam&lt;/a&gt;</content>
  </entry>
  
  <entry>
@@ -394,24 +376,22 @@ Further Reading/Viewing:
    <link href="http://fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress"/>
    <updated>2009-02-27T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress</id>
-   <content type="html">There are many benefits to having a blog on WordPress.  Most people enjoy the beautiful interface and plethora of plugins.  I like that the software is &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_source_software&quot; target=&quot;_blank&quot;&gt;open-source&lt;/a&gt; and &lt;a href=&quot;http://wordpress.org/&quot; target=&quot;_blank&quot;&gt;free to download&lt;/a&gt;.  This means that you can have a WordPress blog on your personal domain for free.
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- I no longer have strong feelings for wordpress.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+There are many benefits to having a blog on WordPress.  Most people enjoy the beautiful interface and plethora of plugins.  I like that the software is &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_source_software&quot; target=&quot;_blank&quot;&gt;open-source&lt;/a&gt; and &lt;a href=&quot;http://wordpress.org/&quot; target=&quot;_blank&quot;&gt;free to download&lt;/a&gt;.  This means that you can have a WordPress blog on your personal domain for free.&lt;br /&gt;&lt;br /&gt;
 
 Have a Blogger account but want the functionality of WordPress? It's easy to make the switch, let me show you.
-
+&lt;br /&gt;&lt;br /&gt;
 &lt;!--more--&gt;
 
 First, you need to understand that there are two ways to use WordPress: .ORG and .COM  &lt;a href=&quot;http://wordpress.org/&quot;&gt;wordpress.ORG&lt;/a&gt; provides the free download of the WordPress software, while &lt;a href=&quot;http://wordpress.com&quot;&gt;wordpress.COM&lt;/a&gt; provides free hosting for your blog with a variety of paid upgrades.  If you have your own server, you'll want to download the software and &lt;a href=&quot;http://base.google.com/support/bin/answer.py?hl=en&amp;amp;answer=59462&quot; target=&quot;_blank&quot;&gt;ftp&lt;/a&gt; it.
-
+&lt;br /&gt;&lt;br /&gt;
 If you just want a blog and don't know what I'm talking about then head on over to &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.COM&lt;/a&gt;!
-
+&lt;br /&gt;&lt;br /&gt;
 Click the big 'sign up now' button to get started.  Enter in all of your information and you'll be registered and delivered to your admin page.
-
+&lt;br /&gt;&lt;br /&gt;
 From here you can quickly import your information from Blogger.  Just click the Import under Tools on the left-hand side column.
-
-&lt;img class=&quot;aligncenter size-full wp-image-63&quot; title=&quot;import functionality of wordpress&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/02/picture-2.png&quot; alt=&quot;import functionality of wordpress&quot; width=&quot;150&quot; height=&quot;219&quot; /&gt;
-
-You'll see that WordPress can also import from &lt;a href=&quot;http://www.livejournal.com/&quot; target=&quot;_blank&quot;&gt;LiveJournal&lt;/a&gt;, &lt;a href=&quot;http://www.movabletype.org/&quot; target=&quot;_blank&quot;&gt;Movable Type&lt;/a&gt;, and &lt;a href=&quot;http://www.typepad.com/&quot; target=&quot;_blank&quot;&gt;Typepad&lt;/a&gt;.  Just click on the blog you want to import and follow the prompts to give it access to your information.  They make it really easy.
-</content>
+&lt;br /&gt;&lt;br /&gt;
+You'll see that WordPress can also import from &lt;a href=&quot;http://www.livejournal.com/&quot; target=&quot;_blank&quot;&gt;LiveJournal&lt;/a&gt;, &lt;a href=&quot;http://www.movabletype.org/&quot; target=&quot;_blank&quot;&gt;Movable Type&lt;/a&gt;, and &lt;a href=&quot;http://www.typepad.com/&quot; target=&quot;_blank&quot;&gt;Typepad&lt;/a&gt;.  Just click on the blog you want to import and follow the prompts to give it access to your information.  They make it really easy.</content>
  </entry>
  
  <entry>
@@ -419,44 +399,37 @@ You'll see that WordPress can also import from &lt;a href=&quot;http://www.livej
    <link href="http://fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam"/>
    <updated>2009-02-21T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam</id>
-   <content type="html">&lt;img class=&quot;alignright size-full wp-image-35&quot; title=&quot;rss_icon&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/02/rss_icon.png&quot; alt=&quot;rss_icon&quot; width=&quot;100&quot; height=&quot;91&quot; /&gt;According to a &lt;a href=&quot;http://www.catalystgroupdesign.com/cofactors/?p=111&quot; target=&quot;_blank&quot;&gt;study&lt;/a&gt; by Catalyst Group Design, &lt;strong&gt;mainstream consumers typically do not understand RSS, what it stands for or what it does&lt;/strong&gt;.  They recognize the brightly colored xml or rss buttons, while not knowing the intended use.
+   <content type="html">According to a &lt;a href=&quot;http://www.catalystgroupdesign.com/cofactors/?p=111&quot; target=&quot;_blank&quot;&gt;study&lt;/a&gt; by Catalyst Group Design, &lt;strong&gt;mainstream consumers typically do not understand RSS, what it stands for or what it does&lt;/strong&gt;.  They recognize the brightly colored xml or rss buttons, while not knowing the intended use.&lt;br /&gt;&lt;br /&gt;
 
-&lt;!--more--&gt;In addition, when explained the concept users were fearful of having to installing anything, spyware, as well as being wary of having to pay for this service.
+&lt;!--more--&gt;In addition, when explained the concept users were fearful of having to installing anything, spyware, as well as being wary of having to pay for this service.&lt;br /&gt;&lt;br /&gt;
 
 I found this observation interesting:
 &lt;blockquote&gt;The fear of spam and spyware cannot be underestimated, as it seems that mainstream experience with the web is teaching users to be extremely wary of persistent or automated functions that are not enabled through trusted sources.&lt;/blockquote&gt;
 Spyware used to be a major issue, but with modern browsers becoming extremely secure there is not as much to worry about.
-
+&lt;br /&gt;&lt;br /&gt;
 I posted a screencast on &lt;a href=&quot;http://blog.harrisonpowers.com/2009/02/08/rss-and-google-reader/&quot; target=&quot;_self&quot;&gt;how to use RSS and Google Reader&lt;/a&gt;.  According to &lt;a href=&quot;http://www.addthis.com/blog/2007/10/15/social-trends-for-september/&quot; target=&quot;_blank&quot;&gt;statistics&lt;/a&gt; from addthis.com, it is easily the most popular reader.  There are &lt;a href=&quot;http://scobleizer.com/2007/10/15/how-many-people-use-rss-anyway/&quot; target=&quot;_blank&quot;&gt;millions of people&lt;/a&gt; subscribed to blogs through Google Reader.
-
+&lt;br /&gt;&lt;br /&gt;
 As RSS is a major component of the blogging system, it is beneficial for any blog to have instructions on how to use its syndication and how safe it is.  Likewise, as email updates are useful it is always good to inform the user that their email address is safe with you.
-
+&lt;br /&gt;&lt;br /&gt;
 Another way to make RSS on your blog more accessible is to subscribe to &lt;a href=&quot;http://feedburner.com&quot; target=&quot;_blank&quot;&gt;FeedBurner&lt;/a&gt;, a service that makes your rss feed viewable in a browser.  It also provides you with statistics.  Check out the &lt;a href=&quot;http://wordpress.org/extend/plugins/feedburner-plugin/&quot; target=&quot;_blank&quot;&gt;Wordpress FeedBurner plugin&lt;/a&gt;.  Tweet your blog updates automatically through RSS with &lt;a href=&quot;http://twitterfeed.com&quot; target=&quot;_blank&quot;&gt;twitterfeed&lt;/a&gt;.
-
+&lt;br /&gt;&lt;br /&gt;
 The Catalyst study points out that most users understand how to submit a comment, provided that the comment box is open at the bottom of the post.  But there was confusion as to the comment itself, its magnitude and how the blog published it.
-
+&lt;br /&gt;&lt;br /&gt;
 It is important to take into account the &lt;strong&gt;design and moderation of the commenting field&lt;/strong&gt; when creating a blog.
-
+&lt;br /&gt;&lt;br /&gt;
 Usability can be interfered with by spam&lt;strong&gt;.&lt;/strong&gt; Spam mucks up a website and nobody wants to sift through it to get to content. Personally, if I recognize spam I will stop reading a website.  Unfortunately, spammers have been targeting blogs
-
+&lt;br /&gt;&lt;br /&gt;
 A way to avoid their wrath is to initialize a CAPTCHA, or disable comments from unregistered visitors. The latter would hurt usability on a mainstream blog, so let's take a look at the CAPTCHA.
-
-What is a CAPTCHA?  Come on, you all know what it is.  Recognize this?
-
-&lt;img title=&quot;CAPTCHA&quot; src=&quot;http://upload.wikimedia.org/wikipedia/commons/b/b6/Modern-captcha.jpg&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;57&quot; /&gt;
-
-Of course you do. &lt;strong&gt;A CAPTCHA is a system for detecting if the user is human.&lt;/strong&gt; The acronym stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.  Computers can actually get past CAPTCHAs like the one pictured above, so that's why you see the crazy ones with lines and colors that are sometimes illegible.
-
+&lt;br /&gt;&lt;br /&gt;
+What is a CAPTCHA?  Come on, you all know what it is.&lt;br /&gt;&lt;br /&gt;Of course you do. &lt;strong&gt;A CAPTCHA is a system for detecting if the user is human.&lt;/strong&gt; The acronym stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.  Computers can actually get past CAPTCHAs like the one pictured above, so that's why you see the crazy ones with lines and colors that are sometimes illegible.
+&lt;br /&gt;&lt;br /&gt;
 Sure, usability takes a small hit with these, but the user is only prompted with the CAPTCHA after their post is written.  If it was a good post you can be sure the user will try and submit it.  Keep in mind the obvious problem with handicap accessibility.  Here is a report on &lt;a href=&quot;http://cups.cs.cmu.edu/soups/2008/proceedings/p44Yan.pdf&quot; target=&quot;_blank&quot;&gt;usability issues in CAPTCHA design&lt;/a&gt;.
-
-Another type of CAPTCHA that I like, which is handcap accessible, is math related.  &lt;a href=&quot;http://sw-guide.de/wordpress/plugins/math-comment-spam-protection/&quot; target=&quot;_blank&quot;&gt;This wordpress plugin&lt;/a&gt; will generate an encrypted math problem that the user has to solve.
-
-&lt;img class=&quot;alignnone size-full wp-image-34&quot; title=&quot;math CAPTCHA&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2009/02/spam_screenshot11.png&quot; alt=&quot;math CAPTCHA&quot; width=&quot;362&quot; height=&quot;81&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+Another type of CAPTCHA that I like, which is handcap accessible, is math related.  &lt;a href=&quot;http://sw-guide.de/wordpress/plugins/math-comment-spam-protection/&quot; target=&quot;_blank&quot;&gt;This wordpress plugin&lt;/a&gt; will generate an encrypted math problem that the user has to solve.&lt;br /&gt;&lt;br /&gt;
 
 Free (popular) wordpress plugin &lt;a href=&quot;http://akismet.com/&quot; target=&quot;_blank&quot;&gt;Akismet&lt;/a&gt; checks comments and filters those that look like spam.  The plugin is easy to install through your wordpress dashboard, and to activate it you need an &lt;a href=&quot;http://faq.wordpress.com/2006/05/19/akismet-a-wordpresscom-blog-and-the-api-key/&quot; target=&quot;_blank&quot;&gt;API key&lt;/a&gt; that is given to you for signing up on &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.com&lt;/a&gt;.
-
-Probably the most important comment related plugin you can install is &lt;a href=&quot;http://txfx.net/code/wordpress/subscribe-to-comments/&quot; target=&quot;_blank&quot;&gt;Subscribe to Comments&lt;/a&gt;.  This plugin provides the user with a checkbox by the comment field to subscribe to email notification of other comments to the post.
-</content>
+&lt;br /&gt;&lt;br /&gt;
+Probably the most important comment related plugin you can install is &lt;a href=&quot;http://txfx.net/code/wordpress/subscribe-to-comments/&quot; target=&quot;_blank&quot;&gt;Subscribe to Comments&lt;/a&gt;.  This plugin provides the user with a checkbox by the comment field to subscribe to email notification of other comments to the post.</content>
  </entry>
  
  <entry>
@@ -464,13 +437,13 @@ Probably the most important comment related plugin you can install is &lt;a href
    <link href="http://fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling"/>
    <updated>2009-02-19T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling</id>
-   <content type="html">A week or so back, Google announced offline support for Gmail.  With &lt;a href=&quot;http://gears.google.com/&quot;&gt;Google Gears&lt;/a&gt; installed and Offline turned on in your Gmail &lt;a href=&quot;https://mail.google.com/mail/#settings/labs&quot;&gt;labs&lt;/a&gt;, you can actively read and create emails while disconnected from the internet.  In addition, if you are connected to laggy internet, you will notice that your Gmail is fast as ever.
+   <content type="html">A week or so back, Google announced offline support for Gmail.  With &lt;a href=&quot;http://gears.google.com/&quot;&gt;Google Gears&lt;/a&gt; installed and Offline turned on in your Gmail &lt;a href=&quot;https://mail.google.com/mail/#settings/labs&quot;&gt;labs&lt;/a&gt;, you can actively read and create emails while disconnected from the internet.  In addition, if you are connected to laggy internet, you will notice that your Gmail is fast as ever.&lt;br /&gt;&lt;br /&gt;
 
-Now, still beaming about this 'milestone', Google shows off the new mobile interface for Gmail.  Get this, offline support!  And labels!  Using technology introduced with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot;&gt;HTTP5&lt;/a&gt;, the Safari browser is able to &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot;&gt;cache&lt;/a&gt; your Gmail.
+Now, still beaming about this 'milestone', Google shows off the new mobile interface for Gmail.  Get this, offline support!  And labels!  Using technology introduced with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot;&gt;HTTP5&lt;/a&gt;, the Safari browser is able to &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot;&gt;cache&lt;/a&gt; your Gmail.&lt;br /&gt;&lt;br /&gt;
 
-Props to &lt;a href=&quot;http://androidcommunity.com/google-offline-gmail-webapp-video-demo-from-mwc09-20090218/&quot;&gt;AndroidCommunity.com&lt;/a&gt; for this sneak peek.
+Props to &lt;a href=&quot;http://androidcommunity.com/google-offline-gmail-webapp-video-demo-from-mwc09-20090218/&quot;&gt;AndroidCommunity.com&lt;/a&gt; for this sneak peek.&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/VmjxmOtNZCk&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/VmjxmOtNZCk&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
-
+&lt;br /&gt;&lt;br /&gt;
 It's lookin' good people.  That is, google's support of the iPhone.  In a &lt;a href=&quot;http://blog.harrisonpowers.com/2009/02/09/iphone-google-is-official/&quot;&gt;previous post&lt;/a&gt; I mentioned that google added official support for push calendar and contact synchronization. What that means is that when you make a new date or edit a contact, the information is instantly synchronized to and from google's servers. So if you make a new contact using Google's &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;Contact Manager&lt;/a&gt;, it should show up in your phone instantly.  Same with your events on &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;Google Calendar&lt;/a&gt;.
 </content>
  </entry>
@@ -480,25 +453,25 @@ It's lookin' good people.  That is, google's support of the iPhone.  In a &lt;a 
    <link href="http://fijimunkii.github.io/links/2009/02/15/week-in-links-21509"/>
    <updated>2009-02-15T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/links/2009/02/15/week-in-links-21509</id>
-   <content type="html">cancer.  damn cancer.  lucky for us there are scientists.  a routine &lt;a href=&quot;http://www.nature.com/news/2009/090211/full/news.2009.94.html&quot; target=&quot;_blank&quot;&gt;urine test&lt;/a&gt; for sarcosine can detect prostate cancer.  a '&lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7888042.stm&quot; target=&quot;_blank&quot;&gt;danger recepter&lt;/a&gt;' that may kick-start an immune reaction to cancer.  a &lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7861474.stm&quot; target=&quot;_blank&quot;&gt;missing link&lt;/a&gt; in the way cells protect themselves against cancer.  something tells me were going to end up on top of this one.
+   <content type="html">cancer.  damn cancer.  lucky for us there are scientists.  a routine &lt;a href=&quot;http://www.nature.com/news/2009/090211/full/news.2009.94.html&quot; target=&quot;_blank&quot;&gt;urine test&lt;/a&gt; for sarcosine can detect prostate cancer.  a '&lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7888042.stm&quot; target=&quot;_blank&quot;&gt;danger recepter&lt;/a&gt;' that may kick-start an immune reaction to cancer.  a &lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7861474.stm&quot; target=&quot;_blank&quot;&gt;missing link&lt;/a&gt; in the way cells protect themselves against cancer.  something tells me were going to end up on top of this one.&lt;br /&gt;&lt;br /&gt;
 
-one man's dream to &lt;a href=&quot;http://www.nytimes.com/2009/02/13/us/13records.html&quot; target=&quot;_blank&quot;&gt;free the public access&lt;/a&gt; of the court electronic records.  tell governor paterson and the state legislature to &lt;a href=&quot;http://www.studentassembly.org/&quot; target=&quot;_blank&quot;&gt;stop stealing from SUNY students&lt;/a&gt;.  1970s &lt;a href=&quot;http://www.nas.nasa.gov/About/Education/SpaceSettlement/70sArt/art.html&quot; target=&quot;_blank&quot;&gt;space colony&lt;/a&gt; artwork.
+one man's dream to &lt;a href=&quot;http://www.nytimes.com/2009/02/13/us/13records.html&quot; target=&quot;_blank&quot;&gt;free the public access&lt;/a&gt; of the court electronic records.  tell governor paterson and the state legislature to &lt;a href=&quot;http://www.studentassembly.org/&quot; target=&quot;_blank&quot;&gt;stop stealing from SUNY students&lt;/a&gt;.  1970s &lt;a href=&quot;http://www.nas.nasa.gov/About/Education/SpaceSettlement/70sArt/art.html&quot; target=&quot;_blank&quot;&gt;space colony&lt;/a&gt; artwork.&lt;br /&gt;&lt;br /&gt;
 
-if you're a fan of old-school video games like sonic, mario, metroid etc.. check out these &lt;a href=&quot;http://lifehacker.com/5152884/absolutely-amazing-video-game-remake-wallpapers&quot; target=&quot;_blank&quot;&gt;awesome renderings&lt;/a&gt; of what those originals could look like with today's hardware.
+if you're a fan of old-school video games like sonic, mario, metroid etc.. check out these &lt;a href=&quot;http://lifehacker.com/5152884/absolutely-amazing-video-game-remake-wallpapers&quot; target=&quot;_blank&quot;&gt;awesome renderings&lt;/a&gt; of what those originals could look like with today's hardware.&lt;br /&gt;&lt;br /&gt;
 
-mario batali and anthony bourdain talk about &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-bourdain-essential-ingredients.html&quot; target=&quot;_blank&quot;&gt;essential ingredients&lt;/a&gt;, &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-baby-food.html&quot; target=&quot;_blank&quot;&gt;baby food&lt;/a&gt;, and &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-sex.html&quot; target=&quot;_blank&quot;&gt;sex&lt;/a&gt;.
+mario batali and anthony bourdain talk about &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-bourdain-essential-ingredients.html&quot; target=&quot;_blank&quot;&gt;essential ingredients&lt;/a&gt;, &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-baby-food.html&quot; target=&quot;_blank&quot;&gt;baby food&lt;/a&gt;, and &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-sex.html&quot; target=&quot;_blank&quot;&gt;sex&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
 
-edit &lt;a href=&quot;http://googlesystem.blogspot.com/2009/02/edit-google-spreadsheets-on-iphone.html&quot; target=&quot;_blank&quot;&gt;google spreadsheets&lt;/a&gt; on your iPhone and &lt;a href=&quot;http://www.textually.org/textually/archives/2009/02/022683.htm&quot; target=&quot;_blank&quot;&gt;remotely&lt;/a&gt; set off farts.
+edit &lt;a href=&quot;http://googlesystem.blogspot.com/2009/02/edit-google-spreadsheets-on-iphone.html&quot; target=&quot;_blank&quot;&gt;google spreadsheets&lt;/a&gt; on your iPhone and &lt;a href=&quot;http://www.textually.org/textually/archives/2009/02/022683.htm&quot; target=&quot;_blank&quot;&gt;remotely&lt;/a&gt; set off farts.&lt;br /&gt;&lt;br /&gt;
 
-&lt;a href=&quot;http://twitter.com/JohnCleese&quot; target=&quot;_blank&quot;&gt;john cleese&lt;/a&gt; is on twitter and making &lt;a href=&quot;http://www.johncleesepodcast.co.uk/cleeseblog/&quot; target=&quot;_blank&quot;&gt;new funnies&lt;/a&gt;.
+&lt;a href=&quot;http://twitter.com/JohnCleese&quot; target=&quot;_blank&quot;&gt;john cleese&lt;/a&gt; is on twitter and making &lt;a href=&quot;http://www.johncleesepodcast.co.uk/cleeseblog/&quot; target=&quot;_blank&quot;&gt;new funnies&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
 
 verizon says &lt;a href=&quot;http://www.dslreports.com/shownews/Verizon-100Gbps-Routes-in-2010-100796&quot; target=&quot;_blank&quot;&gt;100GBS by 2010&lt;/a&gt;.
+&lt;br /&gt;&lt;br /&gt;
+google accused of &lt;a href=&quot;http://techdirt.com/articles/20090206/1237213675.shtml&quot; target=&quot;_blank&quot;&gt;invisibly&lt;/a&gt; &lt;a href=&quot;http://www.laweekly.com/2009-02-05/music/google-39-s-new-killer-app-why-are-music-bloggers-39-posts-disappearing-and-who-is-deleting-them/&quot; target=&quot;_blank&quot;&gt;deleting&lt;/a&gt; &lt;a href=&quot;http://tins.rklau.com/2009/02/blogger-and-dmca.html&quot; target=&quot;_blank&quot;&gt;music blog&lt;/a&gt; posts.  google &lt;a href=&quot;http://code.google.com/apis/ajax/&quot; target=&quot;_blank&quot;&gt;ajax APIs&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
 
-google accused of &lt;a href=&quot;http://techdirt.com/articles/20090206/1237213675.shtml&quot; target=&quot;_blank&quot;&gt;invisibly&lt;/a&gt; &lt;a href=&quot;http://www.laweekly.com/2009-02-05/music/google-39-s-new-killer-app-why-are-music-bloggers-39-posts-disappearing-and-who-is-deleting-them/&quot; target=&quot;_blank&quot;&gt;deleting&lt;/a&gt; &lt;a href=&quot;http://tins.rklau.com/2009/02/blogger-and-dmca.html&quot; target=&quot;_blank&quot;&gt;music blog&lt;/a&gt; posts.  google &lt;a href=&quot;http://code.google.com/apis/ajax/&quot; target=&quot;_blank&quot;&gt;ajax APIs&lt;/a&gt;.
+&lt;a href=&quot;http://lifehacker.com/5148946/add%20art-replaces-advertisements-with-artwork&quot; target=&quot;_blank&quot;&gt;firefox extension&lt;/a&gt; add-art replaces advertisements with art.&lt;br /&gt;&lt;br /&gt;
 
-&lt;a href=&quot;http://lifehacker.com/5148946/add%20art-replaces-advertisements-with-artwork&quot; target=&quot;_blank&quot;&gt;firefox extension&lt;/a&gt; add-art replaces advertisements with art.
-
-and here's a great iPhone screencast showing off &lt;a href=&quot;http://reddit.com&quot; target=&quot;_blank&quot;&gt;reddit&lt;/a&gt;'s &lt;a href=&quot;http://www.readwriteweb.com/archives/the_official_reddit_iphone_app.php&quot; target=&quot;_blank&quot;&gt;new app&lt;/a&gt;
+and here's a great iPhone screencast showing off &lt;a href=&quot;http://reddit.com&quot; target=&quot;_blank&quot;&gt;reddit&lt;/a&gt;'s &lt;a href=&quot;http://www.readwriteweb.com/archives/the_official_reddit_iphone_app.php&quot; target=&quot;_blank&quot;&gt;new app&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
 </content>
  </entry>
@@ -508,33 +481,36 @@ and here's a great iPhone screencast showing off &lt;a href=&quot;http://reddit.
    <link href="http://fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop"/>
    <updated>2009-02-11T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop</id>
-   <content type="html">&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;I'm going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;/span&gt;&lt;span id=&quot;msgtxt1190305385&quot; class=&quot;msgtxt en&quot;&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael_Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/the_real_shaq&quot;&gt;@THE_REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;, etc.. build from there.&lt;/span&gt;
+   <content type="html">I'm going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael_Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/the_real_shaq&quot;&gt;@THE_REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;, etc.. build from there.
 
 If you don't know how to use twitter, &lt;a href=&quot;http://www.google.com/search?q=how+do+i+use+twitter&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;aq=t&amp;amp;rls=org.mozilla:en-US:official&amp;amp;client=firefox-a&quot;&gt;google&lt;/a&gt; 'how do i use twitter' to have your wildest dreams come alive.
 
-After a few weeks I had close to 200 followers, now at week 4 I have 800.  I'd like to say my following is growing exponentially, or at some growing rate, but we'll see in weeks.  I&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;'m not going to keep count of who follows me and when, that's what &lt;/span&gt;&lt;span style=&quot;;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://twittercounter.com/&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;twittercounter&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; is for.  twittercounter keeps track of your follow history and graphs them on a nice interactive chart.&lt;/span&gt;
+After a few weeks I had close to 200 followers, now at week 4 I have 800.  I'd like to say my following is growing exponentially, or at some growing rate, but we'll see in weeks.  I'm not going to keep count of who follows me and when, that's what &lt;a href=&quot;http://twittercounter.com/&quot;&gt;twittercounter&lt;/a&gt; is for.  twittercounter keeps track of your follow history and graphs them on a nice interactive chart.
 
-&lt;span style=&quot;font-family: trebuchet ms;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739367719031538&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOP3XiY0vI/AAAAAAAABlQ/QybQhGmHtXI/s400/twittercounter01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739367719031538&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOP3XiY0vI/AAAAAAAABlQ/QybQhGmHtXI/s400/twittercounter01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
 
-&lt;!--more--&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;They also provide statistics&lt;/span&gt; &lt;span style=&quot;font-family: trebuchet ms;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739217478858306&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 191px; height: 293px;&quot; src=&quot;http://1.bp.blogspot.com/_Orh7du7LmiU/SZOPun2VtkI/AAAAAAAABlI/ZuyWNFmjVm0/s400/twittercounter02.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;And a badge
-&lt;/span&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301761068828375554&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 88px; height: 26px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOjmieCugI/AAAAAAAABlo/joIzPj-SBpo/s400/twittercounter03.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;
-&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;Next up is &lt;/span&gt;&lt;span style=&quot;;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://mrtweet.net/&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Mr. Tweet&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;.  All you need to do is follow &lt;/span&gt;&lt;span style=&quot;font-weight: bold;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://twitter.com/MrTweet&quot;&gt;@MrTweet&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; and he will contact you once he's collected enough information about your extended network.  Mr. Tweet will serve you recommended people to follow, based on interests and popularity.  Mr. Tweet also keeps stats on you to show other people using the service.  Every other week I get this direct message:&lt;/span&gt;
+They also provide statistics...&lt;br /&gt;&lt;br /&gt;
+&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739217478858306&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 191px; height: 293px;&quot; src=&quot;http://1.bp.blogspot.com/_Orh7du7LmiU/SZOPun2VtkI/AAAAAAAABlI/ZuyWNFmjVm0/s400/twittercounter02.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+And a badge&lt;br /&gt;&lt;br /&gt;
+&lt;img id=&quot;BLOGGER_PHOTO_ID_5301761068828375554&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 88px; height: 26px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOjmieCugI/AAAAAAAABlo/joIzPj-SBpo/s400/twittercounter03.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+Next up is &lt;a href=&quot;http://mrtweet.net/&quot;&gt;Mr. Tweet&lt;/a&gt;.  All you need to do is follow &lt;a href=&quot;http://twitter.com/MrTweet&quot;&gt;@MrTweet&lt;/a&gt; and he will contact you once he's collected enough information about your extended network.  Mr. Tweet will serve you recommended people to follow, based on interests and popularity.  Mr. Tweet also keeps stats on you to show other people using the service.  Every other week I get this direct message:
 &lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Hi! Your suggestions and profile stats were just refreshed (done biweekly) Have fun! http://mrtweet.net/home/harrisonpowers&lt;/blockquote&gt;
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;To quickly check who you are following that isn't following you back, and vice versa, check out &lt;/span&gt;&lt;span style=&quot;;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://friendorfollow.com/&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;friendorfollow&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;.  Just enter your twitter name and get a nice picture collage of everyone you're (dis)connected to.&lt;/span&gt;
+To quickly check who you are following that isn't following you back, and vice versa, check out &lt;a href=&quot;http://friendorfollow.com/&quot;&gt;friendorfollow&lt;/a&gt;.  Just enter your twitter name and get a nice picture collage of everyone you're (dis)connected to.
+&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Services like friendorfollow have been banned by twitter. Homebrew methods are the best bet at the moment. Good luck.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;For statistics on your tweeting with regards to how influential you are, we pull out the &lt;/span&gt;&lt;span style=&quot;;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://www.webanalyticsdemystified.com/twitter/index.asp?u=harrisonpowers#results&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Twitter Influence Calculator&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;.  This service lets you know how often you are being referenced and retweeted, as well as indicating your signal-to-noise ratio.&lt;/span&gt;
+For statistics on your tweeting with regards to how influential you are, we pull out the &lt;a href=&quot;http://www.webanalyticsdemystified.com/twitter/index.asp?u=harrisonpowers#results&quot;&gt;&lt;Twitter Influence Calculator&lt;/span&gt;&lt;/a&gt;.  This service lets you know how often you are being referenced and retweeted, as well as indicating your signal-to-noise ratio.&lt;br /&gt;&lt;br /&gt;
 
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;Now for the last of the web apps, but probably the most important. &lt;/span&gt;&lt;span style=&quot;font-weight: bold;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://socialtoo.com/&quot;&gt;&lt;span&gt;socialtoo&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; is a great asset to your twitter account.  socialtoo sends you an email every morning with a list of everyone that followed you and everyone that stopped following you.  You can also set up socialtoo to automatically reciprocate follows, and it can send an automatic Direct Message to your new followers.  This feature I feel is annoying, and thankfully you can turn it off &lt;/span&gt;&lt;span style=&quot;font-style: italic;font-family:trebuchet ms;&quot;&gt;receiving&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; them in your socialtoo settings.&lt;/span&gt;
+Now for the last of the web apps, but probably the most important. &lt;a href=&quot;http://socialtoo.com/&quot;&gt;socialtoo&lt;/a&gt; is a great asset to your twitter account.  socialtoo sends you an email every morning with a list of everyone that followed you and everyone that stopped following you.  You can also set up socialtoo to automatically reciprocate follows, and it can send an automatic Direct Message to your new followers.  This feature I feel is annoying, and thankfully you can turn it off receiving them in your socialtoo settings.&lt;br /&gt;&lt;br /&gt;
 
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;Now I would like to move on to the desktop apps for twitter.  The first being the most popular and robust.  I would also like to point out that a major revision of it is being released tomorrow, &lt;/span&gt;&lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/about_marshall.php&quot;&gt;Marshall Kirkpatrick&lt;/a&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; from Read/WriteWeb lays out the &lt;/span&gt;&lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/archives/new_tweetdeck_out_tomorrow.php&quot;&gt;new features&lt;/a&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt; of &lt;/span&gt;&lt;span style=&quot;font-weight: bold;font-family:trebuchet ms;font-size:130%;&quot;&gt;&lt;a href=&quot;http://www.tweetdeck.com/beta&quot;&gt;TweetDeck&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;:&lt;/span&gt;
+Now I would like to move on to the desktop apps for twitter.  The first being the most popular and robust.  I would also like to point out that a major revision of it is being released tomorrow, &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/about_marshall.php&quot;&gt;Marshall Kirkpatrick&lt;/a&gt; from Read/WriteWeb lays out the &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/archives/new_tweetdeck_out_tomorrow.php&quot;&gt;new features&lt;/a&gt; of &lt;a href=&quot;http://www.tweetdeck.com/beta&quot;&gt;TweetDeck&lt;/a&gt;:
 &lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Language translation, Stocktwits, Hashtag Support, User Search, One Column View [...] easier group management to email forwarding of tweets to some API access improvements.&lt;/blockquote&gt;
-&lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;The app is popular because of it's interface, which is split into customizable columns.
-&lt;/span&gt; &lt;span style=&quot;font-family: trebuchet ms;&quot;&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301753676800741186&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 273px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOc4RBUT0I/AAAAAAAABlY/Hmm0cyn4Cog/s400/tweetdeck01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;span style=&quot;font-family:trebuchet ms;&quot;&gt;I use (All Tweets)|(Replies)|(Group:Friends)|(Search: opensource)|etc.. you can tailor it to your needs.&lt;/span&gt;
+The app is popular because of it's interface, which is split into customizable columns.
+&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301753676800741186&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 273px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOc4RBUT0I/AAAAAAAABlY/Hmm0cyn4Cog/s400/tweetdeck01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;I use (All Tweets)|(Replies)|(Group:Friends)|(Search: opensource)|etc.. you can tailor it to your needs.&lt;br /&gt;&lt;br /&gt;
 
-Another great twitter client is &lt;span style=&quot;font-size:130%;&quot;&gt;&lt;a style=&quot;font-weight: bold;&quot; href=&quot;http://destroytoday.com/?p=Project&amp;amp;id=DestroyTwitter&quot;&gt;DestroyTwitter&lt;/a&gt;&lt;/span&gt;, my current favorite, which has a tabbed interface.  And great colors.  It also rarely goes over my Twitter &lt;a href=&quot;http://tweetdeck.posterous.com/what-does-rate-limit-exceeded&quot;&gt;API limit&lt;/a&gt; unlike TweetDeck.
+Another great twitter client is &lt;a style=&quot;font-weight: bold;&quot; href=&quot;http://destroytoday.com/?p=Project&amp;amp;id=DestroyTwitter&quot;&gt;DestroyTwitter&lt;/a&gt;, my current favorite, which has a tabbed interface.  And great colors.  It also rarely goes over my Twitter &lt;a href=&quot;http://tweetdeck.posterous.com/what-does-rate-limit-exceeded&quot;&gt;API limit&lt;/a&gt; unlike TweetDeck.&lt;br /&gt;&lt;br /&gt;
 
-&lt;img id=&quot;BLOGGER_PHOTO_ID_5301757290791990482&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 265px; height: 152px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOgKoL-dNI/AAAAAAAABlg/c4zc_RRiaLI/s400/Picture+10.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;Both apps are built on the Adobe &lt;a href=&quot;http://www.adobe.com/products/air/&quot;&gt;AIR&lt;/a&gt; development platform.  The apps work very well, but they crash occasionally.  It's not a serious problem though, as all the information is stored remotely.
+&lt;img id=&quot;BLOGGER_PHOTO_ID_5301757290791990482&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 265px; height: 152px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOgKoL-dNI/AAAAAAAABlg/c4zc_RRiaLI/s400/Picture+10.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;Both apps are built on the Adobe &lt;a href=&quot;http://www.adobe.com/products/air/&quot;&gt;AIR&lt;/a&gt; development platform.  The apps work very well, but they crash occasionally.  It's not a serious problem though, as all the information is stored remotely.&lt;br /&gt;&lt;br /&gt;
 
 If you've made it this far, you're interested in twitter.  And you might have noticed a lack of screencast in this post, for which I apologize.  Please take these tips with you:
 &lt;ul&gt;
@@ -544,7 +520,8 @@ If you've made it this far, you're interested in twitter.  And you might have no
 	&lt;li&gt;Retweet your &lt;a href=&quot;http://twitter.com/harrisonpowers/status/1190088307&quot;&gt;favorite tweets&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow me&lt;/a&gt;.  I'll be sure to follow you.
-</content>
+
+&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 -- My twitter handle is now fijimunkii. Couldn't deal with all the following and followers nonsense. Keeping it simple these days..&lt;/i&gt;&lt;/strong&gt;</content>
  </entry>
  
  <entry>
@@ -552,9 +529,10 @@ Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow 
    <link href="http://fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official"/>
    <updated>2009-02-09T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official</id>
-   <content type="html">Google made it official, push synchronization support for the iPhone.  You can now synchronize your &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;contacts&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;calendars&lt;/a&gt; between the iPhone and Google.  This was possible before using a &lt;a href=&quot;http://www.nuevasync.com/&quot;&gt;third-party&lt;/a&gt; microsoft exchange server, but now it's &lt;a href=&quot;http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html&quot;&gt;official&lt;/a&gt;.
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Google has recently disabled push support for gmail in the iOS mail.app&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Google made it official, push synchronization support for the iPhone.  You can now synchronize your &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;contacts&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;calendars&lt;/a&gt; between the iPhone and Google.  This was possible before using a &lt;a href=&quot;http://www.nuevasync.com/&quot;&gt;third-party&lt;/a&gt; microsoft exchange server, but now it's &lt;a href=&quot;http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html&quot;&gt;official&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
 
-Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&gt;, Product Manager @ Google
+Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&gt;, Product Manager @ Google&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
 </content>
  </entry>
@@ -564,7 +542,8 @@ Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&
    <link href="http://fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader</id>
-   <content type="html">&lt;object width=&quot;400&quot; height=&quot;300&quot; data=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; /&gt;&lt;/object&gt;
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- A screencast I put together showing how to use the now retired Google Reader&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;object width=&quot;400&quot; height=&quot;300&quot; data=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; /&gt;&lt;/object&gt;&lt;br /&gt;
 &lt;a href=&quot;http://vimeo.com/3124812&quot;&gt;watch in HD&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/harrisonpowers&quot;&gt;harrisonpowers&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;vimeo&lt;/a&gt;.
 </content>
  </entry>
@@ -574,16 +553,18 @@ Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&
    <link href="http://fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac</id>
-   <content type="html">Most popular web browsers for macs cannot go full-screen.  This is a feature I used regularly before my recent switch to mac (which, by the way, has been fantastic!)
+   <content type="html">&lt;strong&gt;&lt;i&gt;Update: 8-29-2013&lt;/i&gt; -- This post is ancient and no longer relevant. Full screen app capability has been integrated in OSX&lt;/strong&gt;
+&lt;br /&gt;&lt;br /&gt;
+Most popular web browsers for macs cannot go full-screen.  This is a feature I used regularly before my recent switch to mac (which, by the way, has been fantastic!)
 
 Now I am happy to say that once again Google Reader is full-screened and I am loving life :]
 
-All thanks to &lt;a href=&quot;http://www.barbariangroup.com/software/plainview_app_1_0&quot;&gt;Plainview&lt;/a&gt;.  The menubar autohides and the app supports shortcuts that feel intuitive to me: &lt;em&gt;command+L&lt;/em&gt; brings up the location bar, &lt;em&gt;command+T&lt;/em&gt; toggles your full-screened windows.
+All thanks to &lt;a href=&quot;http://www.barbariangroup.com/software/plainview_app_1_0&quot;&gt;Plainview&lt;/a&gt;.  The menubar autohides and the app supports shortcuts that feel intuitive to me: &lt;em&gt;command+L&lt;/em&gt; brings up the location bar, &lt;em&gt;command+T&lt;/em&gt; toggles your full-screened windows.&lt;br /&gt;&lt;br /&gt;
 
 Props to &lt;a href=&quot;http://www.creativeapplications.net/2009/02/08/plainview-mac/&quot;&gt;Creative Applications&lt;/a&gt; for this screencast.
-&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; width=&quot;400&quot; height=&quot;225&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; width=&quot;400&quot; height=&quot;225&quot; src=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
-&lt;a href=&quot;http://vimeo.com/3132493&quot;&gt;Plainview [Mac]&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/creativeapps&quot;&gt;CreativeApplications.Net&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.
-</content>
+&lt;br /&gt;&lt;br /&gt;
+&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; width=&quot;400&quot; height=&quot;225&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; width=&quot;400&quot; height=&quot;225&quot; src=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;br /&gt;
+&lt;a href=&quot;http://vimeo.com/3132493&quot;&gt;Plainview [Mac]&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/creativeapps&quot;&gt;CreativeApplications.Net&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.</content>
  </entry>
  
  <entry>

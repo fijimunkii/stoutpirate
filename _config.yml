@@ -1,10 +1,9 @@
-permalink: /:title 
 auto: true
 pygments: true
 markdown: rdiscount
 
 title: stoutpirate
-tagline: sailing the dark nets.. bringing home the goods
+tagline: sail the dark nets.. bring home the goods
 
 author :
   name : Sir Fijimunkii
@@ -12,5 +11,5 @@ author :
   github : fijimunkii
   twitter : fijimunkii
 
-url : http://fijimunkii.github.io
+url : fijimunkii.github.io
 sitemap: sitemap.xml
