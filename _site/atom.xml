@@ -4,7 +4,7 @@
  <title> | sailing the dark nets.. bringing home the goods</title>
  <link href="http://fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="http://fijimunkii.github.io"/>
- <updated>2013-08-28T22:00:17-04:00</updated>
+ <updated>2013-08-29T21:33:55-04:00</updated>
 
  
  <entry>
@@ -12,11 +12,11 @@
    <link href="http://fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox"/>
    <updated>2010-03-07T00:00:00-05:00</updated>
    <id>http://fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox</id>
-   <content type="html">If you're like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.
+   <content type="html">If you're like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.&lt;br /&gt;&lt;br /&gt;
 
-First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.
+First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.&lt;br /&gt;&lt;br /&gt;
 
-These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Everything on it is quite useful.
+These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Everything on it is quite useful.&lt;br /&gt;
 &lt;ol&gt;
 	&lt;li&gt;YouTube previews in mail&lt;/li&gt;
 	&lt;li&gt;Picasa previews in mail&lt;/li&gt;
@@ -55,23 +55,23 @@ These are the labs that I have turned on, in the order they appear on the labs p
 	&lt;li&gt;Google Calendar gadget&lt;/li&gt;
 	&lt;li&gt;Google Docs gadget&lt;/li&gt;
 	&lt;li&gt;Add any gadget by URL&lt;/li&gt;
-&lt;/ol&gt;
-My favorites are the Superstars and Multiple Inboxes, the interaction of which is beautiful.  The Superstars allow you to apply different types of stars to your emails and Multiple Inboxes give you quick access to information that is likely to be referenced, such as emails you have recently starred.  My favorite additional inbox is what I call the Freshbox, it simply displays my unread emails.  Also of great usage are the Quick Links, which provide easy access to saved searches.  I will explain how I've set up these labs, starting with the Superstars.
+&lt;/ol&gt;&lt;br /&gt;&lt;br /&gt;
+My favorites are the Superstars and Multiple Inboxes, the interaction of which is beautiful.  The Superstars allow you to apply different types of stars to your emails and Multiple Inboxes give you quick access to information that is likely to be referenced, such as emails you have recently starred.  My favorite additional inbox is what I call the Freshbox, it simply displays my unread emails.  Also of great usage are the Quick Links, which provide easy access to saved searches.  I will explain how I've set up these labs, starting with the Superstars.&lt;br /&gt;&lt;br /&gt;
 
-You can manage which stars are enabled and in which order on the &lt;a title=&quot;superstar gmail settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/general&quot; target=&quot;_blank&quot;&gt;General Gmail Settings page&lt;/a&gt;.  Simply drag and drop them.  I use:
+You can manage which stars are enabled and in which order on the &lt;a title=&quot;superstar gmail settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/general&quot; target=&quot;_blank&quot;&gt;General Gmail Settings page&lt;/a&gt;.  Simply drag and drop them.  I use:&lt;br /&gt;
 
-&lt;img title=&quot;gstar-reference&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2010/02/gstar-reference.png&quot; alt=&quot;my gmail superstar for reference emails&quot; width=&quot;28&quot; height=&quot;26&quot; /&gt; for emails with INFORMATION that I may want to refer to in the future.
+&lt;img src=&quot;images/gtd-star_lit_blue_i3.png&quot; /&gt; for emails with INFORMATION that I may want to refer to in the future.
 
-&lt;img title=&quot;gstar-asap&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2010/02/gstar-asap.png&quot; alt=&quot;gstar-asap&quot; width=&quot;26&quot; height=&quot;26&quot; /&gt; for emails that I need to act on ASAP
+&lt;img src=&quot;images/gtd-star_lit_red_bang3.png&quot; /&gt; for emails that I need to act on ASAP
 
-&lt;img title=&quot;gstar-date&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2010/02/gstar-date.png&quot; alt=&quot;gstar-date&quot; width=&quot;25&quot; height=&quot;26&quot; /&gt; for emails with DATES like meetings, appointments, parties
+&lt;img src=&quot;images/gtd-star_lit_red3.png&quot; /&gt; for emails with DATES like meetings, appointments, parties
 
-&lt;img title=&quot;gstar-future&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2010/02/gstar-future.png&quot; alt=&quot;gstar-future&quot; width=&quot;28&quot; height=&quot;26&quot; /&gt;for SPECIAL emails that I want to want to save for a rainy day
+&lt;img src=&quot;images/gtd-star_lit_purple3.png&quot; /&gt;for SPECIAL emails that I want to want to save for a rainy day
 
-&lt;img title=&quot;gstar-delegated&quot; src=&quot;http://blog.harrisonpowers.com/wp-content/uploads/2010/02/gstar-delegated.png&quot; alt=&quot;gstar-delegated&quot; width=&quot;27&quot; height=&quot;26&quot; /&gt;for delegated emails, stuff I've sent out that needs to be returned to me
-
+&lt;img src=&quot;images/gtd-star_lit_orange_chevron3.png&quot; /&gt;for delegated emails, stuff I've sent out that needs to be returned to me
+&lt;br /&gt;&lt;br /&gt;
 These stars allow me to quickly prioritize what flows through my inbox.  Not a replacement for labels whatsoever, these stars work in conjunction.  For instance, I can click on my work label and see which emails are set with a red bang.  Similarly in the work label I can quickly spot emails with important documents by the info tag.
-
+&lt;br /&gt;&lt;br /&gt;
 Now, the grandaddy lab: Multiple Inboxes.  What this lab does is allow you to create additional inboxes.  These inboxes can be placed on top of, which I prefer, or to the right of or below the regular inbox.  These additional inboxes show the results of a search query that you specify in your &lt;a title=&quot;multiple inboxes management&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/lighttlist&quot; target=&quot;_blank&quot;&gt;Multiple Inboxes settings&lt;/a&gt;.  These search queries could be anything you like.  I have mine set to show the Freshbox, Superstars and Chats.  The parameters I used to set up are as follows:
 
 Pane 0: Query: &lt;span style=&quot;color: #008080;&quot;&gt;is:unread in:inbox -in:buzz&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Freshbox&lt;/span&gt;
@@ -83,9 +83,9 @@ Panel 2: Query:&lt;span style=&quot;color: #008080;&quot;&gt; l:^ss_sr&lt;/span&
 Panel 3: Query: &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_cb&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Reference&lt;/span&gt;
 
 Panel 4: Query: &lt;span style=&quot;color: #008080;&quot;&gt;label:chat &lt;/span&gt;Title:&lt;span style=&quot;color: #008080;&quot;&gt; Chatbox&lt;/span&gt;
-
+&lt;br /&gt;&lt;br /&gt;
 Have the maximum page size set to show &lt;span style=&quot;color: #008080;&quot;&gt;10&lt;/span&gt; conversations per page for the new inbox panes and have them set &lt;span style=&quot;color: #008080;&quot;&gt;above&lt;/span&gt; the inbox.
-
+&lt;br /&gt;&lt;br /&gt;
 One last important thing left to set up are the Quick Links.  Once you've enabled this lab a widget will appear on the left-side of your Gmail.  After performing any search in Gmail, clicking 'Add Quick Link' will save the current search in a handy link with a name of your choosing.  So, do a search for &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_sp&lt;/span&gt; and create a quick link for your special, rainy-day emails.  Likewise make a search for &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_co&lt;/span&gt; and create a quick link for the emails you're waiting on.  Here's a quick link to all the files you've emailed &lt;span style=&quot;color: #008080;&quot;&gt;from:me;has:attachment&lt;/span&gt;.  For a complete list of the search terms for superstars, see this lifehacker article on &lt;a href=&quot;http://lifehacker.com/5321180/turn-gmail-into-your-ultimate-gtd-inbox&quot; target=&quot;_blank&quot;&gt;Gmail GTD&lt;/a&gt; that initially inspired me.
 </content>
  </entry>
