@@ -1,0 +1,23 @@
+---
+layout: post
+title: CLI - Variations on ls
+categories:
+- cli
+tags: []
+status: publish
+type: post
+published: true
+---
+We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls.<br /><br />
+`ls -1` sort by name<br />
+`ls -1r` sort by name in reverse order<br />
+`ls -1r --group-directories-first` display folders before filez<br />
+`ls -t` sort by modified date<br />
+`ls -tr` oldest first<br />
+`ls -S` sort by filesize<br />
+`ls -Sr` smallest first<br />
+`ls -X` sort by extension<br />
+`ls -l` long listing (file attributes)<br />
+`ls -l | sort -k 3` pipes the listing through sort (by column 3 - owner name)<br />
+`ls -l | sort -k 3, 3 -k 9` sort by owner and filename<br />
+`ls -lisa | awk '{print $5, $7, $11}' | sort` pipes the detailed listing through awk, which prunes the output, and then piped through sort
