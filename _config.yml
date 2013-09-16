@@ -1,7 +1,7 @@
 permalink: pretty
 auto: true
 pygments: true
-markdown: rdiscount
+markdown: redcarpet
 
 title: stoutpirate
 tagline: sail the dark nets.. bring home the goods
