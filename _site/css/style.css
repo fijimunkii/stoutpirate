@@ -199,6 +199,7 @@ body.post .content p code,
 body.post .content li code {
   background-color: rgba(75, 77, 69, 0.8);
   padding: 0 5px;
+  color: fff;
 }
 body.post .content img {
   background: #f0f0f0;
