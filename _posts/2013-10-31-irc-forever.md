@@ -14,8 +14,9 @@ published: true
 ####Why would you want to use it?
 
 + it is free!
++ supports file transfer
 + has clients for every platform
-+ it is super efficient
++ is super efficient
 + many networks, public and private
 
 It is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The *official* ruby language IRC channel exists on irc.freenode.net

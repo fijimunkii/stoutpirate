@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="sitemap.xml">
+	<link href="fijimunkii.github.ioatom.xml" rel="alternate" title="stoutpirate | blog de fijimunkii" type="application/atom+xml">
+	<link rel="shortcut icon" href="http://fijimunkii.github.io/favicon.ico" />
+	<link rel="stylesheet" media="all" href="/css/master.css">
+	<link rel="stylesheet" media="all" href="/css/mediaqueries.css">
+	<script src="/javascripts/modernizr.js"></script>
+	<script src="/javascripts/less-grid.js"></script>
+	<script src="/javascripts/bootstrap-min.js"></script>
+	
+		<title>IRC FTW! | stoutpirate | sail the dark nets.. bring home the goods</title>
+		<meta name="description" content="What is IRC? A chat protocol. Why would you want to use it? it is free! supports file transfer has clients for every platform is...">
+	
+</head>
+<body class="post">
+	<div id="page">
+		<header id="head">
+<div class="head_inner">
+  <ul>
+    <li class="logo"><a href="/">stoutpirate</a></li>
+    <li class="tagline">sail the dark nets.. bring home the goods</li>
+  </ul>
+</div>
+</header><!-- id="head" -->
+		<div id="main" role="main">
+			<div class="main_inner">
+				<header class="hd_article">
+					<h1>IRC FTW!</h1>
+						<div class="meta">
+							<date title="2013-10-31T00:00:00-04:00">
+								<span class="published">Published: </span>
+								<span class="day">31</span>
+								<span class="month"><abbr>Oct</abbr></span>
+								<span class="year">2013</span>
+							</date>
+						</div>
+				</header>
+				<article class="the_article">
+				<div class="article_inner">
+					<div class="content"><h1 id="toc_0">What is IRC? A chat protocol.</h1>
+
+<h4 id="toc_1">Why would you want to use it?</h4>
+
+<ul>
+<li>it is free!</li>
+<li>supports file transfer</li>
+<li>has clients for every platform</li>
+<li>is super efficient</li>
+<li>many networks, public and private</li>
+</ul>
+
+<p>It is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The <em>official</em> ruby language IRC channel exists on irc.freenode.net</p>
+
+<p>I&#39;ve spent years fiddling around with IRC, have settled on a wonderful commandline client, and am happy to share my configuration with the world.</p>
+
+<p><strong>On a mac with homebrew installed, this guide should be easy to follow.</strong> If you&#39;re using linux, the instructions should make sense and you can still use my config.</p>
+
+<h1 id="toc_2">Let&#39;s get started</h1>
+
+<p>If you don&#39;t have homebrew installed, <a href="http://brew.sh/">follow the official instructions</a></p>
+
+<p>Open up your terminal and type in <code>brew install irssi</code>
+Congratulations! You now have the best irc client!!</p>
+
+<p>You can totally use it, as is, but I recommend tweaking the settings a bit.</p>
+
+<p>Load irssi for the first time by typing in <code>irssi</code>. This will create the default configuration files that we will be editing.</p>
+
+<h4 id="toc_3">Themes make things pretty!</h4>
+
+<ol>
+<li><a href="http://irssi.org/themes">find a theme you like</a></li>
+<li>copy the .theme link</li>
+<li>in terminal run <code>wget -P ~/.irssi copied_link</code> to install theme</li>
+<li>load up irssi and run <code>/set theme theme_name</code></li>
+<li><code>/save</code></li>
+</ol>
+
+<h4 id="toc_4">Scripts make life easier!</h4>
+
+<p><em>Lets set up a highlight window</em>, this will log every time someone mentions your name:</p>
+
+<ol>
+<li>in terminal run <code>wget -P ~/.irssi/scripts/autorun/ http://static.quadpoint.org/irssi/hilightwin.pl</code></li>
+<li>load up irssi</li>
+<li>we&#39;re going to set up a split window to view the hilights</li>
+<li><code>/window new split</code></li>
+<li><code>/window name hilight</code> this name is important so the script knows where to send the info</li>
+<li><code>/window size 4</code></li>
+<li><code>/hilight -word yournick</code></li>
+<li><code>/help hilight</code> for advanced features.</li>
+<li><code>/layout save</code> to save this configuration</li>
+</ol>
+
+<p><em>Advanced Windowlist!</em> install the same way as hilight:</p>
+
+<ol>
+<li><code>wget -P ~/.irssi/scripts/autorun/ http://anti.teamidiot.de/static/nei/*/Code/Irssi/adv_windowlist.pl</code></li>
+<li>load up irssi</li>
+<li>to see all available settings for type <code>/set awl</code></li>
+</ol>
+
+<p><em>Usercount</em> displays the number of users in the channel</p>
+
+<ol>
+<li>I think you know the drill by now</li>
+<li><a href="http://scripts.irssi.org/scripts/usercount.pl">http://scripts.irssi.org/scripts/usercount.pl</a></li>
+</ol>
+
+<h1 id="toc_5">Configuration is unlimited</h1>
+
+<p><em>I&#39;ll make it easy for the world by sharing my config file.</em></p>
+
+<p>Exit out of irssi by typing it <code>/quit</code></p>
+
+<p>Lets open the config file <code>open ~/.irssi/config</code></p>
+
+<p>Copy what you like. Be careful with formatting...</p>
+
+<ol>
+<li>find YOURNAME and replace with your own nickname</li>
+<li>find THEMENAME and replace with your installed theme</li>
+</ol>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">servers</span> <span class="o">=</span> <span class="o">(</span>
+  <span class="o">{</span>
+    <span class="nv">address</span> <span class="o">=</span> <span class="s2">&quot;irc.freenode.net&quot;</span>;
+    <span class="nv">chatnet</span> <span class="o">=</span> <span class="s2">&quot;freenode&quot;</span>;
+    <span class="nv">port</span> <span class="o">=</span> <span class="s2">&quot;7000&quot;</span>;
+    <span class="nv">use_ssl</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>;
+    <span class="nv">ssl_verify</span> <span class="o">=</span> <span class="s2">&quot;no&quot;</span>;
+    <span class="nv">autoconnect</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>;
+  <span class="o">}</span>
+<span class="o">)</span>;
+
+<span class="nv">chatnets</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="nv">freenode</span> <span class="o">=</span> <span class="o">{</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;IRC&quot;</span>; <span class="o">}</span>;
+<span class="o">}</span>;
+
+<span class="nv">channels</span> <span class="o">=</span> <span class="o">(</span>
+  <span class="o">{</span> <span class="nv">name</span> <span class="o">=</span> <span class="s2">&quot;#ruby&quot;</span>; <span class="nv">chatnet</span> <span class="o">=</span> <span class="s2">&quot;freenode&quot;</span>; <span class="nv">autojoin</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>; <span class="o">}</span>,
+  <span class="o">{</span> <span class="nv">name</span> <span class="o">=</span> <span class="s2">&quot;#ruby-lang&quot;</span>; <span class="nv">chatnet</span> <span class="o">=</span> <span class="s2">&quot;freenode&quot;</span>; <span class="nv">autojoin</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>; <span class="o">}</span>,
+  <span class="o">{</span> <span class="nv">name</span> <span class="o">=</span> <span class="s2">&quot;#kickhash&quot;</span>; <span class="nv">chatnet</span> <span class="o">=</span> <span class="s2">&quot;freenode&quot;</span>; <span class="nv">autojoin</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>; <span class="o">}</span>
+<span class="o">)</span>;
+
+<span class="nv">aliases</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="nv">J</span> <span class="o">=</span> <span class="s2">&quot;join&quot;</span>;
+  <span class="nv">WJOIN</span> <span class="o">=</span> <span class="s2">&quot;join -window&quot;</span>;
+  <span class="nv">WQUERY</span> <span class="o">=</span> <span class="s2">&quot;query -window&quot;</span>;
+  <span class="nv">LEAVE</span> <span class="o">=</span> <span class="s2">&quot;part&quot;</span>;
+  <span class="nv">BYE</span> <span class="o">=</span> <span class="s2">&quot;quit&quot;</span>;
+  <span class="nv">EXIT</span> <span class="o">=</span> <span class="s2">&quot;quit&quot;</span>;
+  <span class="nv">SIGNOFF</span> <span class="o">=</span> <span class="s2">&quot;quit&quot;</span>;
+  <span class="nv">DESCRIBE</span> <span class="o">=</span> <span class="s2">&quot;action&quot;</span>;
+  <span class="nv">DATE</span> <span class="o">=</span> <span class="s2">&quot;time&quot;</span>;
+  <span class="nv">HOST</span> <span class="o">=</span> <span class="s2">&quot;userhost&quot;</span>;
+  <span class="nv">LAST</span> <span class="o">=</span> <span class="s2">&quot;lastlog&quot;</span>;
+  <span class="nv">SAY</span> <span class="o">=</span> <span class="s2">&quot;msg *&quot;</span>;
+  <span class="nv">WI</span> <span class="o">=</span> <span class="s2">&quot;whois&quot;</span>;
+  <span class="nv">WII</span> <span class="o">=</span> <span class="s2">&quot;whois $0 $0&quot;</span>;
+  <span class="nv">WW</span> <span class="o">=</span> <span class="s2">&quot;whowas&quot;</span>;
+  <span class="nv">W</span> <span class="o">=</span> <span class="s2">&quot;who&quot;</span>;
+  <span class="nv">N</span> <span class="o">=</span> <span class="s2">&quot;names&quot;</span>;
+  <span class="nv">M</span> <span class="o">=</span> <span class="s2">&quot;msg&quot;</span>;
+  <span class="nv">T</span> <span class="o">=</span> <span class="s2">&quot;topic&quot;</span>;
+  <span class="nv">C</span> <span class="o">=</span> <span class="s2">&quot;clear&quot;</span>;
+  <span class="nv">CL</span> <span class="o">=</span> <span class="s2">&quot;clear&quot;</span>;
+  <span class="nv">K</span> <span class="o">=</span> <span class="s2">&quot;kick&quot;</span>;
+  <span class="nv">KB</span> <span class="o">=</span> <span class="s2">&quot;kickban&quot;</span>;
+  <span class="nv">KN</span> <span class="o">=</span> <span class="s2">&quot;knockout&quot;</span>;
+  <span class="nv">BANS</span> <span class="o">=</span> <span class="s2">&quot;ban&quot;</span>;
+  <span class="nv">B</span> <span class="o">=</span> <span class="s2">&quot;ban&quot;</span>;
+  <span class="nv">MUB</span> <span class="o">=</span> <span class="s2">&quot;unban *&quot;</span>;
+  <span class="nv">UB</span> <span class="o">=</span> <span class="s2">&quot;unban&quot;</span>;
+  <span class="nv">IG</span> <span class="o">=</span> <span class="s2">&quot;ignore&quot;</span>;
+  <span class="nv">UNIG</span> <span class="o">=</span> <span class="s2">&quot;unignore&quot;</span>;
+  <span class="nv">SB</span> <span class="o">=</span> <span class="s2">&quot;scrollback&quot;</span>;
+  <span class="nv">UMODE</span> <span class="o">=</span> <span class="s2">&quot;mode $N&quot;</span>;
+  <span class="nv">WC</span> <span class="o">=</span> <span class="s2">&quot;window close&quot;</span>;
+  <span class="nv">WN</span> <span class="o">=</span> <span class="s2">&quot;window new hide&quot;</span>;
+  <span class="nv">SV</span> <span class="o">=</span> <span class="s2">&quot;say Irssi $J ($V) - http://irssi.org/&quot;</span>;
+  <span class="nv">GOTO</span> <span class="o">=</span> <span class="s2">&quot;sb goto&quot;</span>;
+  <span class="nv">CHAT</span> <span class="o">=</span> <span class="s2">&quot;dcc chat&quot;</span>;
+  <span class="nv">RUN</span> <span class="o">=</span> <span class="s2">&quot;SCRIPT LOAD&quot;</span>;
+  <span class="nv">CALC</span> <span class="o">=</span> <span class="s2">&quot;exec - if command -v bc &gt;/dev/null 2&gt;&amp;1\\; then printf &#39;%s=&#39; &#39;$*&#39;\\; echo &#39;$*&#39; | bc -l\\; else echo bc was not found\\; fi&quot;</span>;
+  <span class="nv">SBAR</span> <span class="o">=</span> <span class="s2">&quot;STATUSBAR&quot;</span>;
+  <span class="nv">INVITELIST</span> <span class="o">=</span> <span class="s2">&quot;mode $C +I&quot;</span>;
+  <span class="nv">Q</span> <span class="o">=</span> <span class="s2">&quot;QUERY&quot;</span>;
+  <span class="s2">&quot;MANUAL-WINDOWS&quot;</span> <span class="o">=</span> <span class="s2">&quot;set use_status_window off;set autocreate_windows off;set autocreate_query_level none;set autoclose_windows off;set reuse_unused_windows on;save&quot;</span>;
+  <span class="nv">EXEMPTLIST</span> <span class="o">=</span> <span class="s2">&quot;mode $C +e&quot;</span>;
+  <span class="nv">ATAG</span> <span class="o">=</span> <span class="s2">&quot;WINDOW SERVER&quot;</span>;
+  <span class="nv">UNSET</span> <span class="o">=</span> <span class="s2">&quot;set -clear&quot;</span>;
+  <span class="nv">RESET</span> <span class="o">=</span> <span class="s2">&quot;set -default&quot;</span>;
+<span class="o">}</span>;
+
+<span class="nv">statusbar</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="c"># formats:</span>
+  <span class="c"># when using {templates}, the template is shown only if it&#39;s argument isn&#39;t</span>
+  <span class="c"># empty unless no argument is given. for example {sb} is printed always,</span>
+  <span class="c"># but {sb $T} is printed only if $T isn&#39;t empty.</span>
+
+  <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="c"># start/end text in statusbars</span>
+    <span class="nv">barstart</span> <span class="o">=</span> <span class="s2">&quot;{sbstart}&quot;</span>;
+    <span class="nv">barend</span> <span class="o">=</span> <span class="s2">&quot;{sbend}&quot;</span>;
+
+    <span class="nv">topicbarstart</span> <span class="o">=</span> <span class="s2">&quot;{topicsbstart}&quot;</span>;
+    <span class="nv">topicbarend</span> <span class="o">=</span> <span class="s2">&quot;{topicsbend}&quot;</span>;
+
+    <span class="c"># treated &quot;normally&quot;, you could change the time/user name to whatever</span>
+    <span class="nb">time</span> <span class="o">=</span> <span class="s2">&quot;{sb $Z}&quot;</span>;
+    <span class="nv">user</span> <span class="o">=</span> <span class="s2">&quot;{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}&quot;</span>;
+
+    <span class="c"># treated specially .. window is printed with non-empty windows,</span>
+    <span class="c"># window_empty is printed with empty windows</span>
+    <span class="nv">window</span> <span class="o">=</span> <span class="s2">&quot;{sb $winref:$tag/$itemname{sbmode $M}}&quot;</span>;
+    <span class="nv">window_empty</span> <span class="o">=</span> <span class="s2">&quot;{sb $winref{sbservertag $tag}}&quot;</span>;
+    <span class="nv">prompt</span> <span class="o">=</span> <span class="s2">&quot;{prompt $[.15]itemname}&quot;</span>;
+    <span class="nv">prompt_empty</span> <span class="o">=</span> <span class="s2">&quot;{prompt $winname}&quot;</span>;
+    <span class="nv">topic</span> <span class="o">=</span> <span class="s2">&quot; $topic&quot;</span>;
+    <span class="nv">topic_empty</span> <span class="o">=</span> <span class="s2">&quot; where the cool kids hang out &quot;</span>;
+
+    <span class="c"># all of these treated specially, they&#39;re only displayed when needed</span>
+    <span class="nv">lag</span> <span class="o">=</span> <span class="s2">&quot;{sb Lag: $0-}&quot;</span>;
+    <span class="nv">act</span> <span class="o">=</span> <span class="s2">&quot;{sb Act: $0-}&quot;</span>;
+    <span class="nv">more</span> <span class="o">=</span> <span class="s2">&quot;-- more --&quot;</span>;
+  <span class="o">}</span>;
+
+  <span class="c"># there&#39;s two type of statusbars. root statusbars are either at the top</span>
+  <span class="c"># of the screen or at the bottom of the screen. window statusbars are at</span>
+  <span class="c"># the top/bottom of each split window in screen.</span>
+  <span class="nv">default</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="c"># the &quot;default statusbar&quot; to be displayed at the bottom of the window.</span>
+    <span class="c"># contains all the normal items.</span>
+    <span class="nv">window</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nv">disabled</span> <span class="o">=</span> <span class="s2">&quot;no&quot;</span>;
+
+      <span class="c"># window, root</span>
+      <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;window&quot;</span>;
+      <span class="c"># top, bottom</span>
+      <span class="nv">placement</span> <span class="o">=</span> <span class="s2">&quot;bottom&quot;</span>;
+      <span class="c"># number</span>
+      <span class="nv">position</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>;
+      <span class="c"># active, inactive, always</span>
+      <span class="nv">visible</span> <span class="o">=</span> <span class="s2">&quot;active&quot;</span>;
+
+      <span class="c"># list of items in statusbar in the display order</span>
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">barstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nb">time</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">user</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">window</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">window_empty</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">lag</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>; <span class="o">}</span>;
+        <span class="nv">more</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+        <span class="nv">barend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+        <span class="nv">usercount</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+
+    <span class="c"># statusbar to use in inactive split windows</span>
+    <span class="nv">window_inact</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;window&quot;</span>;
+      <span class="nv">placement</span> <span class="o">=</span> <span class="s2">&quot;bottom&quot;</span>;
+      <span class="nv">position</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>;
+      <span class="nv">visible</span> <span class="o">=</span> <span class="s2">&quot;inactive&quot;</span>;
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">barstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nv">window</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">window_empty</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">more</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+        <span class="nv">barend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+      <span class="nv">disabled</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>;
+    <span class="o">}</span>;
+
+    <span class="c"># we treat input line as yet another statusbar :) It&#39;s possible to</span>
+    <span class="c"># add other items before or after the input line item.</span>
+    <span class="nv">prompt</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span>;
+      <span class="nv">placement</span> <span class="o">=</span> <span class="s2">&quot;bottom&quot;</span>;
+      <span class="c"># we want to be at the bottom always</span>
+      <span class="nv">position</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>;
+      <span class="nv">visible</span> <span class="o">=</span> <span class="s2">&quot;always&quot;</span>;
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">prompt</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>; <span class="o">}</span>;
+        <span class="nv">prompt_empty</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;-1&quot;</span>; <span class="o">}</span>;
+        <span class="c"># treated specially, this is the real input line.</span>
+        <span class="nv">input</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+
+    <span class="c"># topicbar</span>
+    <span class="nv">topic</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span>;
+      <span class="nv">placement</span> <span class="o">=</span> <span class="s2">&quot;top&quot;</span>;
+      <span class="nv">position</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>;
+      <span class="nv">visible</span> <span class="o">=</span> <span class="s2">&quot;always&quot;</span>;
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">topicbarstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nv">topic</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">topic_empty</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">topicbarend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+    <span class="nv">awl_0</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">barstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nv">awl_0</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">barend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+    <span class="nv">awl_1</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">barstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nv">awl_1</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">barend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+    <span class="nv">awl_2</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="nv">items</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="nv">barstart</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="o">}</span>;
+        <span class="nv">awl_2</span> <span class="o">=</span> <span class="o">{</span> <span class="o">}</span>;
+        <span class="nv">barend</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">priority</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>; <span class="nv">alignment</span> <span class="o">=</span> <span class="s2">&quot;right&quot;</span>; <span class="o">}</span>;
+      <span class="o">}</span>;
+    <span class="o">}</span>;
+  <span class="o">}</span>;
+<span class="o">}</span>;
+<span class="nv">settings</span> <span class="o">=</span> <span class="o">{</span>
+  <span class="nv">core</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="nv">real_name</span> <span class="o">=</span> <span class="s2">&quot;YOURNAME&quot;</span>;
+    <span class="nv">user_name</span> <span class="o">=</span> <span class="s2">&quot;YOURNAME&quot;</span>;
+    <span class="nv">nick</span> <span class="o">=</span> <span class="s2">&quot;YOURNAME&quot;</span>;
+  <span class="o">}</span>;
+  <span class="s2">&quot;fe-text&quot;</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">actlist_sort</span> <span class="o">=</span> <span class="s2">&quot;refnum&quot;</span>; <span class="o">}</span>;
+  <span class="s2">&quot;fe-common/core&quot;</span> <span class="o">=</span> <span class="o">{</span> <span class="nv">theme</span> <span class="o">=</span> <span class="s2">&quot;THEMENAME&quot;</span>; <span class="o">}</span>;
+  <span class="s2">&quot;perl/core/scripts&quot;</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="nv">awl_block</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>;
+    <span class="nv">awl_display_key</span> <span class="o">=</span> <span class="s2">&quot;$Q%K|$H$C$S&quot;</span>;
+    <span class="nv">awl_display_key_active</span> <span class="o">=</span> <span class="s2">&quot;$Q%K|$H%U$C%n$S&quot;</span>;
+    <span class="nv">awl_display_nokey</span> <span class="o">=</span> <span class="s2">&quot;[$N]$H$C$S&quot;</span>;
+    <span class="nv">awl_height_adjust</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span>;
+  <span class="o">}</span>;
+<span class="o">}</span>;
+<span class="nv">ignores</span> <span class="o">=</span> <span class="o">(</span>
+  <span class="o">{</span>
+    <span class="nv">level</span> <span class="o">=</span> <span class="s2">&quot;JOINS PARTS QUITS NICKS&quot;</span>;
+    <span class="nv">channels</span> <span class="o">=</span> <span class="o">(</span>
+      <span class="s2">&quot;#ruby&quot;</span>,
+      <span class="s2">&quot;#ruby-lang&quot;</span>,
+      <span class="s2">&quot;#kickhash&quot;</span>
+    <span class="o">)</span>;
+  <span class="o">}</span>
+<span class="o">)</span>;
+</code></pre></div></div>
+				</div>
+				</article>
+			</div>
+		</div><!-- id="main" -->
+		<nav class="pagenation">
+		<ul>
+		
+			<li class="before left"><a rel="prev" href="/cli-variations-on-ls" class="btn" title="View CLI - Variations on ls">before</a></li>
+		
+		
+		</ul>
+		</nav>
+		<footer id="foot">
+<div class="foot_inner">
+	<div class="hasGrid">
+		<div class="left alpha grid-6"><br /><br /><p>
+you have stumbled across blog de fijimunkii. yarr. enjoy yer stay<br />
+</p></div>
+		<div class="right omega grid-6"><br /><ul>
+	<li>fork my <a href="http://github.com/fijimunkii" rel="me">git</a></li>
+	<li>twat my <a href="http://twitter.com/#!/fijimunkii" rel="me">twitter</a></li>
+</ul>
+</div>
+	</div>
+</div>
+</footer><!-- id="foot" -->
+	</div><!-- id="page" -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+</body>
+</html>

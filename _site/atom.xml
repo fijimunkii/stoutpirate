@@ -4,22 +4,23 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-31T15:13:57-04:00</updated>
+ <updated>2013-10-31T15:38:32-04:00</updated>
 
  
  <entry>
    <title>IRC FTW!</title>
-   <link href="fijimunkii.github.io/cli/2013/10/31/irc-forever/"/>
+   <link href="fijimunkii.github.io/irc-forever"/>
    <updated>2013-10-31T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/cli/2013/10/31/irc-forever</id>
-   <content type="html">&lt;h1&gt;What is IRC? A chat protocol.&lt;/h1&gt;
+   <id>fijimunkii.github.io/irc-forever</id>
+   <content type="html">&lt;h1 id=&quot;toc_0&quot;&gt;What is IRC? A chat protocol.&lt;/h1&gt;
 
-&lt;h4&gt;Why would you want to use it?&lt;/h4&gt;
+&lt;h4 id=&quot;toc_1&quot;&gt;Why would you want to use it?&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;it is free!&lt;/li&gt;
+&lt;li&gt;supports file transfer&lt;/li&gt;
 &lt;li&gt;has clients for every platform&lt;/li&gt;
-&lt;li&gt;it is super efficient&lt;/li&gt;
+&lt;li&gt;is super efficient&lt;/li&gt;
 &lt;li&gt;many networks, public and private&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -29,7 +30,7 @@
 
 &lt;p&gt;&lt;strong&gt;On a mac with homebrew installed, this guide should be easy to follow.&lt;/strong&gt; If you&amp;#39;re using linux, the instructions should make sense and you can still use my config.&lt;/p&gt;
 
-&lt;h1&gt;Let&amp;#39;s get started&lt;/h1&gt;
+&lt;h1 id=&quot;toc_2&quot;&gt;Let&amp;#39;s get started&lt;/h1&gt;
 
 &lt;p&gt;If you don&amp;#39;t have homebrew installed, &lt;a href=&quot;http://brew.sh/&quot;&gt;follow the official instructions&lt;/a&gt;&lt;/p&gt;
 
@@ -40,7 +41,7 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
 
 &lt;p&gt;Load irssi for the first time by typing in &lt;code&gt;irssi&lt;/code&gt;. This will create the default configuration files that we will be editing.&lt;/p&gt;
 
-&lt;h4&gt;Themes make things pretty!&lt;/h4&gt;
+&lt;h4 id=&quot;toc_3&quot;&gt;Themes make things pretty!&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://irssi.org/themes&quot;&gt;find a theme you like&lt;/a&gt;&lt;/li&gt;
@@ -50,7 +51,7 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;/save&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4&gt;Scripts make life easier!&lt;/h4&gt;
+&lt;h4 id=&quot;toc_4&quot;&gt;Scripts make life easier!&lt;/h4&gt;
 
 &lt;p&gt;&lt;em&gt;Lets set up a highlight window&lt;/em&gt;, this will log every time someone mentions your name:&lt;/p&gt;
 
@@ -78,10 +79,10 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;I think you know the drill by now&lt;/li&gt;
-&lt;li&gt;http://scripts.irssi.org/scripts/usercount.pl&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://scripts.irssi.org/scripts/usercount.pl&quot;&gt;http://scripts.irssi.org/scripts/usercount.pl&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1&gt;Configuration is unlimited&lt;/h1&gt;
+&lt;h1 id=&quot;toc_5&quot;&gt;Configuration is unlimited&lt;/h1&gt;
 
 &lt;p&gt;&lt;em&gt;I&amp;#39;ll make it easy for the world by sharing my config file.&lt;/em&gt;&lt;/p&gt;
 
@@ -330,9 +331,9 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
  
  <entry>
    <title>CLI - Variations on ls</title>
-   <link href="fijimunkii.github.io/cli/2013/09/12/cli-variations-on-ls/"/>
+   <link href="fijimunkii.github.io/cli-variations-on-ls"/>
    <updated>2013-09-12T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/cli/2013/09/12/cli-variations-on-ls</id>
+   <id>fijimunkii.github.io/cli-variations-on-ls</id>
    <content type="html">&lt;p&gt;We use ls to list the directory. Here are some operators you use to extend the functionality of ls.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ls -1 &lt;span class=&quot;c&quot;&gt;# sort by name&lt;/span&gt;
@@ -353,9 +354,9 @@ ls -lisa | awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $5, $7, $11}&amp
  
  <entry>
    <title>CSS Pseudo Classes and Elements</title>
-   <link href="fijimunkii.github.io/css/2013/09/11/css-pseudo-classes-elements/"/>
+   <link href="fijimunkii.github.io/css-pseudo-classes-elements"/>
    <updated>2013-09-11T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/css/2013/09/11/css-pseudo-classes-elements</id>
+   <id>fijimunkii.github.io/css-pseudo-classes-elements</id>
    <content type="html">&lt;p&gt;I&amp;#39;m not about to explain how to use these, or what they are. This is simply a handy dandy list of CSS pseudo classes and elements that you can use.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;
 &lt;span class=&quot;nd&quot;&gt;:focus&lt;/span&gt;
@@ -402,9 +403,9 @@ ls -lisa | awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $5, $7, $11}&amp
  
  <entry>
    <title>gmail labs - the freshbox</title>
-   <link href="fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox/"/>
+   <link href="fijimunkii.github.io/gmail-labs-the-freshbox"/>
    <updated>2010-03-07T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox</id>
+   <id>fijimunkii.github.io/gmail-labs-the-freshbox</id>
    <content type="html">&lt;p&gt;If you&amp;#39;re like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.&lt;/p&gt;
 
 &lt;p&gt;First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.&lt;/p&gt;
@@ -482,44 +483,44 @@ One last important thing left to set up are the Quick Links.  Once you&amp;#39;
  
  <entry>
    <title>facebook privacy and you</title>
-   <link href="fijimunkii.github.io/facebook/privacy/usability/2009/12/16/facebook-privacy-and-you/"/>
+   <link href="fijimunkii.github.io/facebook-privacy-and-you"/>
    <updated>2009-12-16T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/facebook/privacy/usability/2009/12/16/facebook-privacy-and-you</id>
+   <id>fijimunkii.github.io/facebook-privacy-and-you</id>
    <content type="html">&lt;p&gt;If you haven&amp;#39;t heard all the buzz about facebook the past couple weeks, listen up.  Facebook just changed the way they handle privacy.  There are no more regional networks.  Unless you restrict specific things, they will be indexed by Google.  In this post you can learn how to  setup your facebook for max visibility while retaining a necessary amount of privacy.
 &lt;br /&gt;&lt;br /&gt;
 The levels of limitation are: Friends, Friends of Friends, Friend lists, or Everyone.
 &lt;br /&gt;&lt;br /&gt;
 I&amp;#39;ve organized my settings by section, which you can access by clicking on the links.
 &lt;br /&gt;&lt;br /&gt;
-&lt;a title=&quot;Profile Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&lt;/a&gt;&lt;br /&gt;
+&lt;a title=&quot;Profile Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&quot; target=&quot;_blank&quot;&gt;&lt;a href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=profile&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=profile&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;
 About me -&amp;gt; Education {Only Friends}&lt;br /&gt;
 Photos and videos {Dudes}&lt;br /&gt;
 Posts {only friends}&lt;br /&gt;
 &lt;br /&gt;
 Dudes is a &lt;a title=&quot;Make a new friend list on facebook&quot; href=&quot;http://www.facebook.com/friends/ajax/edit_list.php?new_list=true&quot; target=&quot;_blank&quot;&gt;friend list&lt;/a&gt; excluding certain family members and people from work that I&amp;#39;d rather not see my pictures.
 &lt;br /&gt;&lt;br /&gt;
-&lt;a title=&quot;Contact Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&lt;/a&gt;&lt;br /&gt;
+&lt;a title=&quot;Contact Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&quot; target=&quot;_blank&quot;&gt;&lt;a href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=contact&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=contact&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;
 IM -&amp;gt; Current Address {Only Friends}&lt;br /&gt;
 Website -&amp;gt; Add me as a friend {Everyone}&lt;br /&gt;
 Send me a message {Only Friends}&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends&lt;em&gt;share&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;&lt;a href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=applications&amp;amp;amp;field=friends_share&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;amp;section=applications&amp;amp;amp;field=friends_share&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;
 Status Updates, Online Presence, Website, Education and work, My birthday, My hometown {checked}
 &lt;br /&gt;&lt;br /&gt;
-I allow anyone to search for me.  But, if you want you can &amp;lt;a title=&amp;quot;Search Privacy on facebook&amp;quot; href=&amp;quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&amp;quot; target=&amp;quot;&lt;/em&gt;blank&amp;quot;&amp;gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.&lt;/p&gt;
+I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Search Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&quot; target=&quot;_blank&quot;&gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>what makes google voice special?</title>
-   <link href="fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia/"/>
+   <link href="fijimunkii.github.io/what-makes-google-voice-specia"/>
    <updated>2009-08-10T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia</id>
+   <id>fijimunkii.github.io/what-makes-google-voice-specia</id>
    <content type="html">&lt;p&gt;There are many benefits to using google voice as an a personal digital operator.   First and foremost, screening calls.  Your personal operator is going to ask everyone with a restricted number to state their name.  If you want, this can happen to anyone that calls who isn&amp;#39;t one of your Google Contacts.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Your personal operator can also serve certain people to specific phones and present custom voicemail greetings.  These voicemails will be transcribed and sent to your phone as a text message and emailed to you.
 &lt;br /&gt;&lt;br /&gt;
-The history of your phone calls and voicemails will be archived at &lt;a href=&quot;http://google.com/voice&quot; target=&quot;_blank&quot;&gt;http://google.com/voice&lt;/a&gt;. Having GvoiceMail is handy.  This personal operator is so good at handling calls that you can switch the phone you are using in the middle of a call.  Say you walk home while on a business call: tell the person on the other end to hold, then you press press * and hang up, your home phone rings and you answer it.  Sounds too good to be true.
+The history of your phone calls and voicemails will be archived at &lt;a href=&quot;http://google.com/voice&quot; target=&quot;_blank&quot;&gt;&lt;a href=&quot;http://google.com/voice&quot;&gt;http://google.com/voice&lt;/a&gt;&lt;/a&gt;. Having GvoiceMail is handy.  This personal operator is so good at handling calls that you can switch the phone you are using in the middle of a call.  Say you walk home while on a business call: tell the person on the other end to hold, then you press press * and hang up, your home phone rings and you answer it.  Sounds too good to be true.
 &lt;br /&gt;&lt;br /&gt;
 Want in?  One doesn&amp;#39;t ask for an invite to google voice, he &lt;a style=&quot;color: #114170;&quot; href=&quot;https://services.google.com/fb/forms/googlevoiceinvite/&quot; target=&quot;_blank&quot;&gt;signs up&lt;/a&gt;.   I should also mention that this service is free and Google provides you with a free number.&lt;/p&gt;
 </content>
@@ -527,11 +528,11 @@ Want in?  One doesn&amp;#39;t ask for an invite to google voice, he &lt;a styl
  
  <entry>
    <title>google audio indexing</title>
-   <link href="fijimunkii.github.io/google/2009/04/27/google-audio-indexing/"/>
+   <link href="fijimunkii.github.io/google-audio-indexing"/>
    <updated>2009-04-27T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/google/2009/04/27/google-audio-indexing</id>
+   <id>fijimunkii.github.io/google-audio-indexing</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- Google GAudi appears to have been retired and the google group along with it has been expunged!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
-Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;&lt;a href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -557,9 +558,9 @@ I would like to share some other documents I came across that I thought were int
  
  <entry>
    <title>the holy grail of iTunes smart playlists</title>
-   <link href="fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists/"/>
+   <link href="fijimunkii.github.io/the-holy-grail-of-itunes-smartplaylists"/>
    <updated>2009-04-18T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists</id>
+   <id>fijimunkii.github.io/the-holy-grail-of-itunes-smartplaylists</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 After meticulously organizing my iTunes Music Library, I have found playlists to be extremely handy—static playlists as well as something relatively new, smart playlists.  For those that are unfamiliar, smart playlists build their contents based on variables and are live updating.  What this means is that you are going to have amazing playlists.
 &lt;br /&gt;&lt;br /&gt;
@@ -603,9 +604,9 @@ The following &amp;#39;no skippies&amp;#39; playlist quickly removes tracks you 
  
  <entry>
    <title>shopping for an education</title>
-   <link href="fijimunkii.github.io/usability/2009/04/16/shopping-for-an-education/"/>
+   <link href="fijimunkii.github.io/shopping-for-an-education"/>
    <updated>2009-04-16T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/usability/2009/04/16/shopping-for-an-education</id>
+   <id>fijimunkii.github.io/shopping-for-an-education</id>
    <content type="html">&lt;p&gt;In the past, students enrolled in courses by filling out a form.  I suppose the fax machine was the next step.  But now students are filling up an online shopping cart, on websites, of their classes for next semester.  Naturally, this is a highly stressful time, so the system should have a user centered design.
 &lt;br /&gt;&lt;br /&gt;
 I have experienced two of these registration systems.  I found the first system quite pleasant and intuitive; the second, not so much.  Babson College has a superior course catalog/registration system to SUNY Purchase.
@@ -628,9 +629,9 @@ Have you survived these frightful mornings?  Let&amp;#39;s hear some stories!&l
  
  <entry>
    <title>seemingly infinite array of knowledge</title>
-   <link href="fijimunkii.github.io/google/2009/04/14/seemingly-infinite-array-of-knowledge/"/>
+   <link href="fijimunkii.github.io/seemingly-infinite-array-of-knowledge"/>
    <updated>2009-04-14T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/google/2009/04/14/seemingly-infinite-array-of-knowledge</id>
+   <id>fijimunkii.github.io/seemingly-infinite-array-of-knowledge</id>
    <content type="html">&lt;p&gt;Conversations on the Internet have a certain flavor to them that exceeds limitations of the normal world.  The participants do not have to be in the same room, let alone the same country.  It is because of this phenomenon that we have a fusing of cultures with the capability of pooling knowledge together.  This seemingly infinite array of knowledge is indexed and searchable.
 &lt;br /&gt;&lt;br /&gt;
 These participants can keep track of one another through social networking enabled websites, which informs one another of interests, relationships, microblogs, and blogs.  Conversations here closely resemble informal social interactions, similar to a party atmosphere.  This is a pleasant contrast to the focused, educated, and moderated conversations that are ever so quickly building the infinite data pool.
@@ -660,9 +661,9 @@ With &lt;a href=&quot;http://google.com/history/&quot; target=&quot;_blank&quot;
  
  <entry>
    <title>how to use friend lists with the new facebook update to enhance usability and organization</title>
-   <link href="fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization/"/>
+   <link href="fijimunkii.github.io/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization"/>
    <updated>2009-04-05T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization</id>
+   <id>fijimunkii.github.io/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization</id>
    <content type="html">&lt;p&gt;Regarding the new the facebook layout, what do you not like about it?  Is it too cluttered?  How so?  Do you really need to see everyone&amp;#39;s new facebook pic of the day?  I feel that facebook deserves this update.  Many complain about how disorganized the new layout is, that they can&amp;#39;t find anything.. well what are you trying to find?  Is there a special group of friends that you want to track everything about?  What are you looking for that you can&amp;#39;t find?  Let me explain how facebook has changed and how to use friend lists.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -685,9 +686,9 @@ I have found my home page to be much more enjoyable with the application of thes
  
  <entry>
    <title>bookmarklet makes internet easier to read!</title>
-   <link href="fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read/"/>
+   <link href="fijimunkii.github.io/bookmarklet-makes-internet-easier-to-read"/>
    <updated>2009-04-04T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read</id>
+   <id>fijimunkii.github.io/bookmarklet-makes-internet-easier-to-read</id>
    <content type="html">&lt;p&gt;Most articles I come across are lost in a sea of advertisements and bad formatting.  While advertising surely has its place, I feel that it is unfair to distract the user when they have committed 5 minutes out of their day to read what you have to say.  Perhaps I am a glutton for simplicity, but I prefer being able to finish an article in one go, rather than having my eyes darting all over a page.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Luckily for people easily distracted like myself, some javascript genius has figured out how to automatically pull the article content out of a page and display it in a customizable, easy to read overlay, toggled by a bookmarklet.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -714,9 +715,9 @@ I prefer reading light text on a dark background, so I chose the &amp;#39;dark g
  
  <entry>
    <title>repowering america</title>
-   <link href="fijimunkii.github.io/news/2009/03/23/repowering-america/"/>
+   <link href="fijimunkii.github.io/repowering-america"/>
    <updated>2009-03-23T00:00:00-04:00</updated>
-   <id>fijimunkii.github.io/news/2009/03/23/repowering-america</id>
+   <id>fijimunkii.github.io/repowering-america</id>
    <content type="html">&lt;p&gt;Currently, our power grid is operated by people.  Mechanical switches.  Telephones.  Blackouts are unknown until someone calls it in.  The sources of our power are centrally located, single locations providing power to vast territories.  Having such serious power centrally located is extremely dangerous.
 &lt;br /&gt;&lt;br /&gt;
 The recent major blackouts on the East Coast and Silicon Valley in the West Coast of the United States are examples of how this system is reaching its maximum capacity and is failing on us.
@@ -747,9 +748,9 @@ Further Reading:
  
  <entry>
    <title>feed facebook your blog</title>
-   <link href="fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog/"/>
+   <link href="fijimunkii.github.io/feed-facebook-your-blog"/>
    <updated>2009-03-03T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog</id>
+   <id>fijimunkii.github.io/feed-facebook-your-blog</id>
    <content type="html">&lt;p&gt;Import your blog into facebook!  This can be a great marketing tool.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;!--more--&amp;gt;There are two ways of importing into facebook.  To have facebook update your Mini-Feed with activity from other sites, such as last.fm, pandora, hulu, youtube, etc.. just visit your facebook profile page and click the &amp;quot;import&amp;quot; link at the top of the Mini-Feed section, select your service and enter the appropriate information.  Facebook will now automatically post your updates on these services to your Mini-Feed.
@@ -772,9 +773,9 @@ Further Reading/Viewing:
  
  <entry>
    <title>moving to wordpress</title>
-   <link href="fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress/"/>
+   <link href="fijimunkii.github.io/moving-to-wordpress"/>
    <updated>2009-02-27T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress</id>
+   <id>fijimunkii.github.io/moving-to-wordpress</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- I no longer have strong feelings for wordpress.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 There are many benefits to having a blog on WordPress.  Most people enjoy the beautiful interface and plethora of plugins.  I like that the software is &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_source_software&quot; target=&quot;_blank&quot;&gt;open-source&lt;/a&gt; and &lt;a href=&quot;http://wordpress.org/&quot; target=&quot;_blank&quot;&gt;free to download&lt;/a&gt;.  This means that you can have a WordPress blog on your personal domain for free.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -796,9 +797,9 @@ You&amp;#39;ll see that WordPress can also import from &lt;a href=&quot;http://w
  
  <entry>
    <title>blog usability - rss, spyware, comments and spam</title>
-   <link href="fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam/"/>
+   <link href="fijimunkii.github.io/blog-usability-rss-spyware-comments-and-spam"/>
    <updated>2009-02-21T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam</id>
+   <id>fijimunkii.github.io/blog-usability-rss-spyware-comments-and-spam</id>
    <content type="html">&lt;p&gt;According to a &lt;a href=&quot;http://www.catalystgroupdesign.com/cofactors/?p=111&quot; target=&quot;_blank&quot;&gt;study&lt;/a&gt; by Catalyst Group Design, &lt;strong&gt;mainstream consumers typically do not understand RSS, what it stands for or what it does&lt;/strong&gt;.  They recognize the brightly colored xml or rss buttons, while not knowing the intended use.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;!--more--&amp;gt;In addition, when explained the concept users were fearful of having to installing anything, spyware, as well as being wary of having to pay for this service.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -835,9 +836,9 @@ Probably the most important comment related plugin you can install is &lt;a href
  
  <entry>
    <title>mobile gmail - offline labeling</title>
-   <link href="fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling/"/>
+   <link href="fijimunkii.github.io/mobile-gmail-offline-labeling"/>
    <updated>2009-02-19T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling</id>
+   <id>fijimunkii.github.io/mobile-gmail-offline-labeling</id>
    <content type="html">&lt;p&gt;A week or so back, Google announced offline support for Gmail.  With &lt;a href=&quot;http://gears.google.com/&quot;&gt;Google Gears&lt;/a&gt; installed and Offline turned on in your Gmail &lt;a href=&quot;https://mail.google.com/mail/#settings/labs&quot;&gt;labs&lt;/a&gt;, you can actively read and create emails while disconnected from the internet.  In addition, if you are connected to laggy internet, you will notice that your Gmail is fast as ever.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, still beaming about this &amp;#39;milestone&amp;#39;, Google shows off the new mobile interface for Gmail.  Get this, offline support!  And labels!  Using technology introduced with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot;&gt;HTTP5&lt;/a&gt;, the Safari browser is able to &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot;&gt;cache&lt;/a&gt; your Gmail.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -851,9 +852,9 @@ It&amp;#39;s lookin&amp;#39; good people.  That is, google&amp;#39;s support of 
  
  <entry>
    <title>week in links</title>
-   <link href="fijimunkii.github.io/links/2009/02/15/week-in-links-21509/"/>
+   <link href="fijimunkii.github.io/week-in-links-21509"/>
    <updated>2009-02-15T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/links/2009/02/15/week-in-links-21509</id>
+   <id>fijimunkii.github.io/week-in-links-21509</id>
    <content type="html">&lt;p&gt;cancer.  damn cancer.  lucky for us there are scientists.  a routine &lt;a href=&quot;http://www.nature.com/news/2009/090211/full/news.2009.94.html&quot; target=&quot;_blank&quot;&gt;urine test&lt;/a&gt; for sarcosine can detect prostate cancer.  a &amp;#39;&lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7888042.stm&quot; target=&quot;_blank&quot;&gt;danger recepter&lt;/a&gt;&amp;#39; that may kick-start an immune reaction to cancer.  a &lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7861474.stm&quot; target=&quot;_blank&quot;&gt;missing link&lt;/a&gt; in the way cells protect themselves against cancer.  something tells me were going to end up on top of this one.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;one man&amp;#39;s dream to &lt;a href=&quot;http://www.nytimes.com/2009/02/13/us/13records.html&quot; target=&quot;_blank&quot;&gt;free the public access&lt;/a&gt; of the court electronic records.  tell governor paterson and the state legislature to &lt;a href=&quot;http://www.studentassembly.org/&quot; target=&quot;_blank&quot;&gt;stop stealing from SUNY students&lt;/a&gt;.  1970s &lt;a href=&quot;http://www.nas.nasa.gov/About/Education/SpaceSettlement/70sArt/art.html&quot; target=&quot;_blank&quot;&gt;space colony&lt;/a&gt; artwork.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -879,10 +880,10 @@ google accused of &lt;a href=&quot;http://techdirt.com/articles/20090206/1237213
  
  <entry>
    <title>cream of the twitter tool crop</title>
-   <link href="fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop/"/>
+   <link href="fijimunkii.github.io/cream-of-the-twitter-tool-crop"/>
    <updated>2009-02-11T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop</id>
-   <content type="html">&lt;p&gt;I&amp;#39;m going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael&lt;em&gt;Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &amp;lt;a href=&amp;quot;http://twitter.com/the&lt;/em&gt;real&lt;em&gt;shaq&amp;quot;&amp;gt;@THE&lt;/em&gt;REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;, etc.. build from there.&lt;/p&gt;
+   <id>fijimunkii.github.io/cream-of-the-twitter-tool-crop</id>
+   <content type="html">&lt;p&gt;I&amp;#39;m going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael_Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/the_real_shaq&quot;&gt;@THE_REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;, etc.. build from there.&lt;/p&gt;
 
 &lt;p&gt;If you don&amp;#39;t know how to use twitter, &lt;a href=&quot;http://www.google.com/search?q=how+do+i+use+twitter&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;aq=t&amp;amp;rls=org.mozilla:en-US:official&amp;amp;client=firefox-a&quot;&gt;google&lt;/a&gt; &amp;#39;how do i use twitter&amp;#39; to have your wildest dreams come alive.&lt;/p&gt;
 
@@ -896,7 +897,7 @@ And a badge&lt;br /&gt;&lt;br /&gt;
 &lt;img id=&quot;BLOGGER_PHOTO_ID_5301761068828375554&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 88px; height: 26px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOjmieCugI/AAAAAAAABlo/joIzPj-SBpo/s400/twittercounter03.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;
 Next up is &lt;a href=&quot;http://mrtweet.net/&quot;&gt;Mr. Tweet&lt;/a&gt;.  All you need to do is follow &lt;a href=&quot;http://twitter.com/MrTweet&quot;&gt;@MrTweet&lt;/a&gt; and he will contact you once he&amp;#39;s collected enough information about your extended network.  Mr. Tweet will serve you recommended people to follow, based on interests and popularity.  Mr. Tweet also keeps stats on you to show other people using the service.  Every other week I get this direct message:
-&lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Hi! Your suggestions and profile stats were just refreshed (done biweekly) Have fun! http://mrtweet.net/home/harrisonpowers&lt;/blockquote&gt;
+&lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Hi! Your suggestions and profile stats were just refreshed (done biweekly) Have fun! &lt;a href=&quot;http://mrtweet.net/home/harrisonpowers&quot;&gt;http://mrtweet.net/home/harrisonpowers&lt;/a&gt;&lt;/blockquote&gt;
 To quickly check who you are following that isn&amp;#39;t following you back, and vice versa, check out &lt;a href=&quot;http://friendorfollow.com/&quot;&gt;friendorfollow&lt;/a&gt;.  Just enter your twitter name and get a nice picture collage of everyone you&amp;#39;re (dis)connected to.
 &lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Services like friendorfollow have been banned by twitter. Homebrew methods are the best bet at the moment. Good luck.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -928,9 +929,9 @@ Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow 
  
  <entry>
    <title>iPhone google sync is official</title>
-   <link href="fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official/"/>
+   <link href="fijimunkii.github.io/iphone-google-sync-is-official"/>
    <updated>2009-02-09T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official</id>
+   <id>fijimunkii.github.io/iphone-google-sync-is-official</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Google has recently disabled push support for gmail in the iOS mail.app&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 Google made it official, push synchronization support for the iPhone.  You can now synchronize your &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;contacts&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;calendars&lt;/a&gt; between the iPhone and Google.  This was possible before using a &lt;a href=&quot;http://www.nuevasync.com/&quot;&gt;third-party&lt;/a&gt; microsoft exchange server, but now it&amp;#39;s &lt;a href=&quot;http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html&quot;&gt;official&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -941,9 +942,9 @@ Google made it official, push synchronization support for the iPhone.  You can n
  
  <entry>
    <title>rss and google reader</title>
-   <link href="fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader/"/>
+   <link href="fijimunkii.github.io/rss-and-google-reader"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader</id>
+   <id>fijimunkii.github.io/rss-and-google-reader</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- A screencast I put together showing how to use the now retired Google Reader&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;300&quot; data=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; /&gt;&lt;/object&gt;&lt;br /&gt;
 &lt;a href=&quot;http://vimeo.com/3124812&quot;&gt;watch in HD&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/harrisonpowers&quot;&gt;harrisonpowers&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;vimeo&lt;/a&gt;.&lt;/p&gt;
@@ -952,9 +953,9 @@ Google made it official, push synchronization support for the iPhone.  You can n
  
  <entry>
    <title>going full-screen on a mac</title>
-   <link href="fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac/"/>
+   <link href="fijimunkii.github.io/going-full-screen-on-a-mac"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac</id>
+   <id>fijimunkii.github.io/going-full-screen-on-a-mac</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update: 8-29-2013&lt;/i&gt; -- This post is ancient and no longer relevant. Full screen app capability has been integrated in OSX&lt;/strong&gt;
 &lt;br /&gt;&lt;br /&gt;
 Most popular web browsers for macs cannot go full-screen.  This is a feature I used regularly before my recent switch to mac (which, by the way, has been fantastic!)&lt;/p&gt;
@@ -972,9 +973,9 @@ Most popular web browsers for macs cannot go full-screen.  This is a feature I u
  
  <entry>
    <title>introduction</title>
-   <link href="fijimunkii.github.io/about/2009/02/04/introduction/"/>
+   <link href="fijimunkii.github.io/introduction"/>
    <updated>2009-02-04T00:00:00-05:00</updated>
-   <id>fijimunkii.github.io/about/2009/02/04/introduction</id>
+   <id>fijimunkii.github.io/introduction</id>
    <content type="html">&lt;p&gt;Ahoy there!  The internet is a vast sea of treachery and deceit, but with the correct guidance one can find bountiful treasures.  I have sailed to the far corners of the dark web and have survived to tell some tales.  Add me to your feed reader and I shall reward you with jewels of knowledge.  What&amp;#39;s that?  You don&amp;#39;t know what a feed reader is?  Well onto our first lesson then..&lt;/p&gt;
 </content>
  </entry>
