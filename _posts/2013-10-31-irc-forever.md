@@ -34,7 +34,7 @@ Congratulations! You now have the best irc client!!
 
 You can totally use it, as is, but I recommend tweaking the settings a bit.
 
-Load irssi for the first time by typing in ```irssi```. This will create the default configuration files that we will be editing.
+Load irssi for the first time by typing in ```irssi```. This will create the default configuration files that we will be editing. ```/quit``` to exit.
 
 ####Themes make things pretty!
 
