@@ -15,11 +15,8 @@
 	<script src="/javascripts/less-grid.js"></script>
 	<script src="/javascripts/bootstrap-min.js"></script>
 	
-		<title>rss and google reader | stoutpirate | sail the dark nets.. bring home the goods</title>
-		<meta name="description" content="Update 8-29-2013 -- A screencast I put together showing how to use the now retired Google Reader
-
-watch in HD // harrisonpowers // vimeo.
-">
+		<title>CLI - Variations on ls | stoutpirate | sail the dark nets.. bring home the goods</title>
+		<meta name="description" content="We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls. ``` ls -1 sort by name...">
 	
 </head>
 <body class="post">
@@ -35,21 +32,33 @@ watch in HD // harrisonpowers // vimeo.
 		<div id="main" role="main">
 			<div class="main_inner">
 				<header class="hd_article">
-					<h1>rss and google reader</h1>
+					<h1>CLI - Variations on ls</h1>
 						<div class="meta">
-							<date title="2009-02-08T00:00:00-05:00">
+							<date title="2013-09-12T00:00:00-04:00">
 								<span class="published">Published: </span>
-								<span class="day">08</span>
-								<span class="month"><abbr>Feb</abbr></span>
-								<span class="year">2009</span>
+								<span class="day">12</span>
+								<span class="month"><abbr>Sep</abbr></span>
+								<span class="year">2013</span>
 							</date>
 						</div>
 				</header>
 				<article class="the_article">
 				<div class="article_inner">
-					<div class="content"><strong><i>Update 8-29-2013</i> -- A screencast I put together showing how to use the now retired Google Reader</strong><br /><br />
-<object width="400" height="300" data="http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /></object><br />
-<a href="http://vimeo.com/3124812">watch in HD</a> // <a href="http://vimeo.com/harrisonpowers">harrisonpowers</a> // <a href="http://vimeo.com">vimeo</a>.
+					<div class="content">We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls.
+
+```
+ls -1 sort by name
+ls -1r sort by name in reverse order
+ls -1r --group-directories-first display folders before filez
+ls -t sort by modified date
+ls -tr oldest first
+ls -S sort by filesize
+ls -Sr smallest first
+ls -X sort by extension
+ls -l long listing (file attributes)
+ls -l | sort -k 3 pipes the listing through sort (by column 3 - owner name)
+ls -l | sort -k 3, 3 -k 9 sort by owner and filename
+ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through awk, which prunes the output, and then piped through sort
 </div>
 				</div>
 				</article>
@@ -58,10 +67,8 @@ watch in HD // harrisonpowers // vimeo.
 		<nav class="pagenation">
 		<ul>
 		
-			<li class="before left"><a rel="prev" href="/osx/2009/02/08/going-full-screen-on-a-mac/" class="btn" title="View going full-screen on a mac">before</a></li>
+			<li class="before left"><a rel="prev" href="/css/2013/09/11/css-pseudo-classes-elements/" class="btn" title="View CSS Pseudo Classes and Elements">before</a></li>
 		
-		
-			<li class="next right"><a rel="next" href="/google/iphone/2009/02/09/iphone-google-sync-is-official/" class="btn" title="View iPhone google sync is official">after</a></li>
 		
 		</ul>
 		</nav>
