@@ -199,7 +199,7 @@ body.post .content p code,
 body.post .content li code {
   background-color: #000;
   padding: 0 5px;
-  color: green;
+  color: #24ff14;
 }
 body.post .content img {
   background: #f0f0f0;
