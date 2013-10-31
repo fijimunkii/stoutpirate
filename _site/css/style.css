@@ -221,11 +221,7 @@ body.post .content img.huge {
 body.post .content .highlight {
   margin-bottom: 1.5em;
 }
-body.post .content .highlight:before {
-  content: "Source code:";
-  display: block;
-  margin: 0 0 7px 7px;
-}
+
 body.post .content .highlight pre {
   border: 1px solid #ddd;
   margin-left: 0;
