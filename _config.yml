@@ -1,16 +1,18 @@
 permalink: pretty
 auto: true
 pygments: true
-markdown: redcarpet
+markdown: redcarpet2
+redcarpet:
+  extensions: [no_intra_emphasis, fenced_code_blocks, autolink, strikethrough, superscript, with_toc_data]
 
 title: stoutpirate
 tagline: sail the dark nets.. bring home the goods
 
-author :
-  name : Sir Fijimunkii
-  email : fijimunkii@gmail.com
-  github : fijimunkii
-  twitter : fijimunkii
+author:
+  name: Sir Fijimunkii
+  email: fijimunkii@gmail.com
+  github: fijimunkii
+  twitter: fijimunkii
 
-url : fijimunkii.github.io
+url: fijimunkii.github.io
 sitemap: sitemap.xml

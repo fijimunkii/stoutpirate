@@ -16,7 +16,7 @@
 	<script src="/javascripts/bootstrap-min.js"></script>
 	
 		<title>CLI - Variations on ls | stoutpirate | sail the dark nets.. bring home the goods</title>
-		<meta name="description" content="We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls. ``` ls -1 sort by name...">
+		<meta name="description" content="We use ls to list the directory. Here are some operators you use to extend the functionality of ls. ls -1 # sort by name...">
 	
 </head>
 <body class="post">
@@ -44,22 +44,21 @@
 				</header>
 				<article class="the_article">
 				<div class="article_inner">
-					<div class="content">We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls.
+					<div class="content"><p>We use ls to list the directory. Here are some operators you use to extend the functionality of ls.</p>
 
-```
-ls -1 sort by name
-ls -1r sort by name in reverse order
-ls -1r --group-directories-first display folders before filez
-ls -t sort by modified date
-ls -tr oldest first
-ls -S sort by filesize
-ls -Sr smallest first
-ls -X sort by extension
-ls -l long listing (file attributes)
-ls -l | sort -k 3 pipes the listing through sort (by column 3 - owner name)
-ls -l | sort -k 3, 3 -k 9 sort by owner and filename
-ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through awk, which prunes the output, and then piped through sort
-```
+<div class="highlight"><pre><code class="bash">ls -1 <span class="c"># sort by name</span>
+ls -1r <span class="c"># sort by name in reverse order</span>
+ls -1r --group-directories-first <span class="c"># display folders before filez</span>
+ls -t <span class="c"># sort by modified date</span>
+ls -tr <span class="c"># oldest first</span>
+ls -S <span class="c"># sort by filesize</span>
+ls -Sr <span class="c"># smallest first</span>
+ls -X <span class="c"># sort by extension</span>
+ls -l <span class="c"># long listing (file attributes)</span>
+ls -l | sort -k 3 <span class="c"># pipes the listing through sort (by column 3 - owner name)</span>
+ls -l | sort -k 3, 3 -k 9 <span class="c"># sort by owner and filename</span>
+ls -lisa | awk <span class="s1">&#39;{print $5, $7, $11}&#39;</span> | sort <span class="c"># pipes the detailed listing through awk, which prunes the output, and then piped through sort</span>
+</code></pre></div>
 </div>
 				</div>
 				</article>
@@ -70,6 +69,8 @@ ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through a
 		
 			<li class="before left"><a rel="prev" href="/css/2013/09/11/css-pseudo-classes-elements/" class="btn" title="View CSS Pseudo Classes and Elements">before</a></li>
 		
+		
+			<li class="next right"><a rel="next" href="/cli/2013/10/31/irc-forever/" class="btn" title="View IRC FTW!">after</a></li>
 		
 		</ul>
 		</nav>

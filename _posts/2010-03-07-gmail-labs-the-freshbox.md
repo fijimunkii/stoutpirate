@@ -15,11 +15,12 @@ meta:
     06:37:37";s:20:"last_import_date_gmt";s:19:"2010-03-27 02:28:54";s:4:"hits";s:1:"1";s:6:"misses";s:3:"247";}
   btc_comment_counts: a:0:{}
 ---
-If you're like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.<br /><br />
+If you're like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.
 
-First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, <a title="gmail labs settings" href="https://mail.google.com/mail/?shva=1#settings/labs" target="_blank">click here</a> and read along with my guide.<br /><br />
+First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, <a title="gmail labs settings" href="https://mail.google.com/mail/?shva=1#settings/labs" target="_blank">click here</a> and read along with my guide.
 
-These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Just about everything on it is quite useful.<br /><br />
+These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Just about everything on it is quite useful.
+
 <ol>
 	<li>YouTube previews in mail</li>
 	<li>Picasa previews in mail</li>
@@ -76,17 +77,15 @@ and <strong>Orange >></strong> for delegated emails, stuff I've sent out that ne
 These stars allow me to quickly prioritize what flows through my inbox.  Not a replacement for labels whatsoever, these stars work in conjunction.  For instance, I can click on my work label and see which emails are set with a red bang.  Similarly in the work label I can quickly spot emails with important documents by the info tag.
 <br /><br />
 Now, the grandaddy lab: Multiple Inboxes.  What this lab does is allow you to create additional inboxes.  These inboxes can be placed on top of, which I prefer, or to the right of or below the regular inbox.  These additional inboxes show the results of a search query that you specify in your <a title="multiple inboxes management" href="https://mail.google.com/mail/?shva=1#settings/lighttlist" target="_blank">Multiple Inboxes settings</a>.  These search queries could be anything you like.  I have mine set to show the Freshbox, Superstars and Chats.  The parameters I used to set up are as follows:
-<br /><br />
-Pane 0: Query: <span style="color: #008080;">is:unread in:inbox -in:buzz</span> Title: <span style="color: #008080;">Freshbox</span>
-<br />
-Pane 1: Query:<span style="color: #008080;"> l:^ss_cr </span>Title: <span style="color: #008080;">ASAP</span>
-<br />
-Panel 2: Query:<span style="color: #008080;"> l:^ss_sr</span> Title: <span style="color: #008080;">Dates</span>
-<br />
-Panel 3: Query: <span style="color: #008080;">l:^ss_cb</span> Title: <span style="color: #008080;">Reference</span>
-<br />
-Panel 4: Query: <span style="color: #008080;">label:chat </span>Title:<span style="color: #008080;"> Chatbox</span>
-<br /><br />
+
+```
+Pane 0: Query: is:unread in:inbox -in:buzz Title: Freshbox
+Pane 1: Query: l:^ss_cr Title: ASAP
+Panel 2: Query: l:^ss_sr Title: Dates
+Panel 3: Query: l:^ss_cb Title: Reference
+Panel 4: Query: label:chat Title: Chatbox
+```
+
 Have the maximum page size set to show <span style="color: #008080;">10</span> conversations per page for the new inbox panes and have them set <span style="color: #008080;">above</span> the inbox.
 <br /><br />
-One last important thing left to set up are the Quick Links.  Once you've enabled this lab a widget will appear on the left-side of your Gmail.  After performing any search in Gmail, clicking 'Add Quick Link' will save the current search in a handy link with a name of your choosing.  So, do a search for <span style="color: #008080;">l:^ss_sp</span> and create a quick link for your special, rainy-day emails.  Likewise make a search for <span style="color: #008080;">l:^ss_co</span> and create a quick link for the emails you're waiting on.  Here's a quick link to all the files you've emailed <span style="color: #008080;">from:me;has:attachment</span>.  For a complete list of the search terms for superstars, see this lifehacker article on <a href="http://lifehacker.com/5321180/turn-gmail-into-your-ultimate-gtd-inbox" target="_blank">Gmail GTD</a> that initially inspired me.
+One last important thing left to set up are the Quick Links.  Once you've enabled this lab a widget will appear on the left-side of your Gmail.  After performing any search in Gmail, clicking 'Add Quick Link' will save the current search in a handy link with a name of your choosing.  So, do a search for ```l:^ss_sp``` and create a quick link for your special, rainy-day emails.  Likewise make a search for ```l:^ss_co``` and create a quick link for the emails you're waiting on.  Here's a quick link to all the files you've emailed ```from:me;has:attachment```.  For a complete list of the search terms for superstars, see this lifehacker article on <a href="http://lifehacker.com/5321180/turn-gmail-into-your-ultimate-gtd-inbox" target="_blank">Gmail GTD</a> that initially inspired me.

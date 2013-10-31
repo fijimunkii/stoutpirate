@@ -16,7 +16,7 @@ meta:
   _edit_lock: '1241215998'
   _edit_last: '1'
 ---
-<strong><i>Update 8-29-2013</i> -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!</strong><br /><br /> 
+<strong><i>Update 8-29-2013</i> -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!</strong><br /><br />
 After meticulously organizing my iTunes Music Library, I have found playlists to be extremely handy—static playlists as well as something relatively new, smart playlists.  For those that are unfamiliar, smart playlists build their contents based on variables and are live updating.  What this means is that you are going to have amazing playlists.
 <br /><br />
 Let me show you how to import your favorite songs you haven't heard in the last week, month, or how to aggregate your holiday music, tracks with missing tags and your most listened to tracks with the least number of skips.

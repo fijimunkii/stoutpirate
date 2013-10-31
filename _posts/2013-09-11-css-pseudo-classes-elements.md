@@ -8,9 +8,9 @@ status: publish
 type: post
 published: true
 ---
-I'm not about to explain how to use these, or what they are. This is simply a handy dandy list of CSS pseudo classes and elements that you can use.  
+I'm not about to explain how to use these, or what they are. This is simply a handy dandy list of CSS pseudo classes and elements that you can use.
 
-```
+```css
 :hover
 :focus
 :target

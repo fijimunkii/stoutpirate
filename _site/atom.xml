@@ -4,30 +4,350 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-30T20:06:21-04:00</updated>
+ <updated>2013-10-31T15:13:57-04:00</updated>
 
+ 
+ <entry>
+   <title>IRC FTW!</title>
+   <link href="fijimunkii.github.io/cli/2013/10/31/irc-forever/"/>
+   <updated>2013-10-31T00:00:00-04:00</updated>
+   <id>fijimunkii.github.io/cli/2013/10/31/irc-forever</id>
+   <content type="html">&lt;h1&gt;What is IRC? A chat protocol.&lt;/h1&gt;
+
+&lt;h4&gt;Why would you want to use it?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it is free!&lt;/li&gt;
+&lt;li&gt;has clients for every platform&lt;/li&gt;
+&lt;li&gt;it is super efficient&lt;/li&gt;
+&lt;li&gt;many networks, public and private&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The &lt;em&gt;official&lt;/em&gt; ruby language IRC channel exists on irc.freenode.net&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve spent years fiddling around with IRC, have settled on a wonderful commandline client, and am happy to share my configuration with the world.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;On a mac with homebrew installed, this guide should be easy to follow.&lt;/strong&gt; If you&amp;#39;re using linux, the instructions should make sense and you can still use my config.&lt;/p&gt;
+
+&lt;h1&gt;Let&amp;#39;s get started&lt;/h1&gt;
+
+&lt;p&gt;If you don&amp;#39;t have homebrew installed, &lt;a href=&quot;http://brew.sh/&quot;&gt;follow the official instructions&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Open up your terminal and type in &lt;code&gt;brew install irssi&lt;/code&gt;
+Congratulations! You now have the best irc client!!&lt;/p&gt;
+
+&lt;p&gt;You can totally use it, as is, but I recommend tweaking the settings a bit.&lt;/p&gt;
+
+&lt;p&gt;Load irssi for the first time by typing in &lt;code&gt;irssi&lt;/code&gt;. This will create the default configuration files that we will be editing.&lt;/p&gt;
+
+&lt;h4&gt;Themes make things pretty!&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://irssi.org/themes&quot;&gt;find a theme you like&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;copy the .theme link&lt;/li&gt;
+&lt;li&gt;in terminal run &lt;code&gt;wget -P ~/.irssi copied_link&lt;/code&gt; to install theme&lt;/li&gt;
+&lt;li&gt;load up irssi and run &lt;code&gt;/set theme theme_name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/save&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;Scripts make life easier!&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Lets set up a highlight window&lt;/em&gt;, this will log every time someone mentions your name:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;in terminal run &lt;code&gt;wget -P ~/.irssi/scripts/autorun/ http://static.quadpoint.org/irssi/hilightwin.pl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;load up irssi&lt;/li&gt;
+&lt;li&gt;we&amp;#39;re going to set up a split window to view the hilights&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/window new split&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/window name hilight&lt;/code&gt; this name is important so the script knows where to send the info&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/window size 4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/hilight -word yournick&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/help hilight&lt;/code&gt; for advanced features.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/layout save&lt;/code&gt; to save this configuration&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Advanced Windowlist!&lt;/em&gt; install the same way as hilight:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;wget -P ~/.irssi/scripts/autorun/ http://anti.teamidiot.de/static/nei/*/Code/Irssi/adv_windowlist.pl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;load up irssi&lt;/li&gt;
+&lt;li&gt;to see all available settings for type &lt;code&gt;/set awl&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Usercount&lt;/em&gt; displays the number of users in the channel&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I think you know the drill by now&lt;/li&gt;
+&lt;li&gt;http://scripts.irssi.org/scripts/usercount.pl&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;Configuration is unlimited&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;I&amp;#39;ll make it easy for the world by sharing my config file.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Exit out of irssi by typing it &lt;code&gt;/quit&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lets open the config file &lt;code&gt;open ~/.irssi/config&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy what you like. Be careful with formatting...&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;find YOURNAME and replace with your own nickname&lt;/li&gt;
+&lt;li&gt;find THEMENAME and replace with your installed theme&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;servers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;irc.freenode.net&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;chatnet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;freenode&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;7000&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;use_ssl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;ssl_verify&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;no&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;autoconnect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+
+&lt;span class=&quot;nv&quot;&gt;chatnets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;freenode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;IRC&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+&lt;span class=&quot;nv&quot;&gt;channels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ruby&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;chatnet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;freenode&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;autojoin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ruby-lang&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;chatnet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;freenode&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;autojoin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;,
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;#kickhash&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;chatnet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;freenode&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;autojoin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+
+&lt;span class=&quot;nv&quot;&gt;aliases&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;J&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;join&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WJOIN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;join -window&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WQUERY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;query -window&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;LEAVE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;part&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;BYE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quit&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;EXIT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quit&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;SIGNOFF&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;quit&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;DESCRIBE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;action&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;DATE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;time&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;HOST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;userhost&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;LAST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;lastlog&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;SAY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;msg *&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;whois&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WII&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;whois $0 $0&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WW&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;whowas&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;W&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;who&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;names&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;M&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;msg&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;topic&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;clear&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;CL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;clear&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;K&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;kick&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;KB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;kickban&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;KN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;knockout&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;BANS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ban&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ban&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;MUB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;unban *&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;UB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;unban&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;IG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;ignore&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;UNIG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;unignore&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;SB&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;scrollback&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;UMODE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;mode $N&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WC&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;window close&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;WN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;window new hide&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;SV&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;say Irssi $J ($V) - http://irssi.org/&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;GOTO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;sb goto&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;CHAT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;dcc chat&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;RUN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;SCRIPT LOAD&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;CALC&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;exec - if command -v bc &amp;gt;/dev/null 2&amp;gt;&amp;amp;1\\; then printf &amp;#39;%s=&amp;#39; &amp;#39;$*&amp;#39;\\; echo &amp;#39;$*&amp;#39; | bc -l\\; else echo bc was not found\\; fi&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;SBAR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;STATUSBAR&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;INVITELIST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;mode $C +I&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;Q&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;QUERY&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;MANUAL-WINDOWS&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;set use_status_window off;set autocreate_windows off;set autocreate_query_level none;set autoclose_windows off;set reuse_unused_windows on;save&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;EXEMPTLIST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;mode $C +e&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;ATAG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;WINDOW SERVER&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;UNSET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;set -clear&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;nv&quot;&gt;RESET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;set -default&amp;quot;&lt;/span&gt;;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+&lt;span class=&quot;nv&quot;&gt;statusbar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# formats:&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# when using {templates}, the template is shown only if it&amp;#39;s argument isn&amp;#39;t&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# empty unless no argument is given. for example {sb} is printed always,&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# but {sb $T} is printed only if $T isn&amp;#39;t empty.&lt;/span&gt;
+
+  &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# start/end text in statusbars&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sbstart}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sbend}&amp;quot;&lt;/span&gt;;
+
+    &lt;span class=&quot;nv&quot;&gt;topicbarstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{topicsbstart}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;topicbarend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{topicsbend}&amp;quot;&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# treated &amp;quot;normally&amp;quot;, you could change the time/user name to whatever&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb $Z}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}&amp;quot;&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# treated specially .. window is printed with non-empty windows,&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# window_empty is printed with empty windows&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb $winref:$tag/$itemname{sbmode $M}}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;window_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb $winref{sbservertag $tag}}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{prompt $[.15]itemname}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;prompt_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{prompt $winname}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; $topic&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;topic_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; where the cool kids hang out &amp;quot;&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# all of these treated specially, they&amp;#39;re only displayed when needed&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;lag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb Lag: $0-}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;act&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;{sb Act: $0-}&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-- more --&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+  &lt;span class=&quot;c&quot;&gt;# there&amp;#39;s two type of statusbars. root statusbars are either at the top&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# of the screen or at the bottom of the screen. window statusbars are at&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# the top/bottom of each split window in screen.&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# the &amp;quot;default statusbar&amp;quot; to be displayed at the bottom of the window.&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# contains all the normal items.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;no&amp;quot;&lt;/span&gt;;
+
+      &lt;span class=&quot;c&quot;&gt;# window, root&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;window&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;c&quot;&gt;# top, bottom&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;placement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bottom&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;c&quot;&gt;# number&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;c&quot;&gt;# active, inactive, always&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;active&amp;quot;&lt;/span&gt;;
+
+      &lt;span class=&quot;c&quot;&gt;# list of items in statusbar in the display order&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;window_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;lag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;usercount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# statusbar to use in inactive split windows&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;window_inact&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;window&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;placement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bottom&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;inactive&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;window_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;disabled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# we treat input line as yet another statusbar :) It&amp;#39;s possible to&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# add other items before or after the input line item.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;root&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;placement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bottom&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;c&quot;&gt;# we want to be at the bottom always&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;always&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;prompt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;prompt_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;-1&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;c&quot;&gt;# treated specially, this is the real input line.&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;10&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+
+    &lt;span class=&quot;c&quot;&gt;# topicbar&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;root&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;placement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;top&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;always&amp;quot;&lt;/span&gt;;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;topicbarstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;topic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;topic_empty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;topicbarend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;awl_0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;awl_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;barstart&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;awl_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+        &lt;span class=&quot;nv&quot;&gt;barend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;; &lt;span class=&quot;nv&quot;&gt;alignment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;settings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;core&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;real_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;YOURNAME&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;user_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;YOURNAME&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;nick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;YOURNAME&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;fe-text&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;actlist_sort&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;refnum&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;fe-common/core&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;theme&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;THEMENAME&amp;quot;&lt;/span&gt;; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+  &lt;span class=&quot;s2&quot;&gt;&amp;quot;perl/core/scripts&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;awl_block&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_display_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$Q%K|$H$C$S&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_display_key_active&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$Q%K|$H%U$C%n$S&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_display_nokey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[$N]$H$C$S&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;awl_height_adjust&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;2&amp;quot;&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;ignores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;level&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;JOINS PARTS QUITS NICKS&amp;quot;&lt;/span&gt;;
+    &lt;span class=&quot;nv&quot;&gt;channels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ruby&amp;quot;&lt;/span&gt;,
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;#ruby-lang&amp;quot;&lt;/span&gt;,
+      &lt;span class=&quot;s2&quot;&gt;&amp;quot;#kickhash&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>CLI - Variations on ls</title>
    <link href="fijimunkii.github.io/cli/2013/09/12/cli-variations-on-ls/"/>
    <updated>2013-09-12T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/cli/2013/09/12/cli-variations-on-ls</id>
-   <content type="html">We use `ls` to list the directory. Here are some operators you use to extend the functionality of ls.
+   <content type="html">&lt;p&gt;We use ls to list the directory. Here are some operators you use to extend the functionality of ls.&lt;/p&gt;
 
-```
-ls -1 sort by name
-ls -1r sort by name in reverse order
-ls -1r --group-directories-first display folders before filez
-ls -t sort by modified date
-ls -tr oldest first
-ls -S sort by filesize
-ls -Sr smallest first
-ls -X sort by extension
-ls -l long listing (file attributes)
-ls -l | sort -k 3 pipes the listing through sort (by column 3 - owner name)
-ls -l | sort -k 3, 3 -k 9 sort by owner and filename
-ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through awk, which prunes the output, and then piped through sort
-```
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;ls -1 &lt;span class=&quot;c&quot;&gt;# sort by name&lt;/span&gt;
+ls -1r &lt;span class=&quot;c&quot;&gt;# sort by name in reverse order&lt;/span&gt;
+ls -1r --group-directories-first &lt;span class=&quot;c&quot;&gt;# display folders before filez&lt;/span&gt;
+ls -t &lt;span class=&quot;c&quot;&gt;# sort by modified date&lt;/span&gt;
+ls -tr &lt;span class=&quot;c&quot;&gt;# oldest first&lt;/span&gt;
+ls -S &lt;span class=&quot;c&quot;&gt;# sort by filesize&lt;/span&gt;
+ls -Sr &lt;span class=&quot;c&quot;&gt;# smallest first&lt;/span&gt;
+ls -X &lt;span class=&quot;c&quot;&gt;# sort by extension&lt;/span&gt;
+ls -l &lt;span class=&quot;c&quot;&gt;# long listing (file attributes)&lt;/span&gt;
+ls -l | sort -k 3 &lt;span class=&quot;c&quot;&gt;# pipes the listing through sort (by column 3 - owner name)&lt;/span&gt;
+ls -l | sort -k 3, 3 -k 9 &lt;span class=&quot;c&quot;&gt;# sort by owner and filename&lt;/span&gt;
+ls -lisa | awk &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $5, $7, $11}&amp;#39;&lt;/span&gt; | sort &lt;span class=&quot;c&quot;&gt;# pipes the detailed listing through awk, which prunes the output, and then piped through sort&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </content>
  </entry>
  
@@ -36,50 +356,48 @@ ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through a
    <link href="fijimunkii.github.io/css/2013/09/11/css-pseudo-classes-elements/"/>
    <updated>2013-09-11T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/css/2013/09/11/css-pseudo-classes-elements</id>
-   <content type="html">I'm not about to explain how to use these, or what they are. This is simply a handy dandy list of CSS pseudo classes and elements that you can use.  
+   <content type="html">&lt;p&gt;I&amp;#39;m not about to explain how to use these, or what they are. This is simply a handy dandy list of CSS pseudo classes and elements that you can use.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:focus&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:target&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:active&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:visited&lt;/span&gt;
 
-```
-:hover
-:focus
-:target
-:active
-:visited
+&lt;span class=&quot;nd&quot;&gt;:enabled&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:disabled&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:checked&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:indeterminate&lt;/span&gt;
 
-:enabled
-:disabled
-:checked
-:indeterminate
+&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:first-child&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:last-child&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:only-child&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;even&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;odd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;2n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Even */&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;2n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Odd */&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;3n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Every 3rd element */&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;4n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Every 4th element starting with the 1st */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:nth-of-type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Like :nth-child, but used where elements at the same level are of different types */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:first-of-type&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:last-of-type&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:nth-last-of-type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* like nth-of-type, but counts up from the bottom */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:nth-last-child&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* like nth-child, but counts up from the bottom */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:only-of-type&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* selects only if the element is the only one of its kind within the parent */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:not&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* selects all except the parameter */&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:empty&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* selects elements which contain no text and no child elements */&lt;/span&gt;
 
-:root
-:first-child
-:last-child
-:only-child
-:nth-child(n)
-	:nth-child(even)
-	:nth-child(odd)
-	:nth-child(2n) /* Even */
-	:nth-child(2n+1) /* Odd */
-	:nth-child(3n) /* Every 3rd element */
-	:nth-child(4n+1) /* Every 4th element starting with the 1st */
-:nth-of-type(n) /* Like :nth-child, but used where elements at the same level are of different types */
-:first-of-type
-:last-of-type
-:nth-last-of-type(n) /* like nth-of-type, but counts up from the bottom */
-:nth-last-child(n) /* like nth-child, but counts up from the bottom */
-:only-of-type /* selects only if the element is the only one of its kind within the parent */
-:not(s) /* selects all except the parameter */
-:empty /* selects elements which contain no text and no child elements */
+&lt;span class=&quot;nd&quot;&gt;:first-letter&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:first-line&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:lang&lt;/span&gt;
 
-:first-letter
-:first-line
-:lang
+&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:selection&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:-moz-selection&lt;/span&gt;
 
-::selection
-::-moz-selection
-
-:before
-:after
-```</content>
+&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -87,53 +405,55 @@ ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through a
    <link href="fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox/"/>
    <updated>2010-03-07T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/google/2010/03/07/gmail-labs-the-freshbox</id>
-   <content type="html">If you're like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;If you&amp;#39;re like me, you live inside of Gmail and deal with a neverending stream of information.  Having your Gmail properly set up with labs can greatly improve the efficiency of dealing with, categorizing, and prioritizing the emails in your inbox.  I have figured out a system that works for me, and I would like to share it with you.&lt;/p&gt;
 
-First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;First of all, this guide requires that you have a few labs enabled.  To manage your Gmail labs, &lt;a title=&quot;gmail labs settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/labs&quot; target=&quot;_blank&quot;&gt;click here&lt;/a&gt; and read along with my guide.&lt;/p&gt;
 
-These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don't be alarmed at the size of this list.  Just about everything on it is quite useful.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;These are the labs that I have turned on, in the order they appear on the labs page.  I recommend you turn on all the labs I have list, those bolded will be detailed below. Please don&amp;#39;t be alarmed at the size of this list.  Just about everything on it is quite useful.&lt;/p&gt;
+
 &lt;ol&gt;
-	&lt;li&gt;YouTube previews in mail&lt;/li&gt;
-	&lt;li&gt;Picasa previews in mail&lt;/li&gt;
-	&lt;li&gt;Flickr previews in mail&lt;/li&gt;
-	&lt;li&gt;Yelp previews in mail&lt;/li&gt;
-	&lt;li&gt;Google Voice player in mail&lt;/li&gt;
-	&lt;li&gt;Google Docs previews in mail&lt;/li&gt;
-	&lt;li&gt;Message translation&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Quick Links&lt;/strong&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Superstars&lt;/strong&gt;&lt;/li&gt;
-	&lt;li&gt;Pictures in chat&lt;/li&gt;
-	&lt;li&gt;Fixed width font&lt;/li&gt;
-	&lt;li&gt;Custom keyboard shortcuts&lt;/li&gt;
-	&lt;li&gt;Advanced IMAP Controls&lt;/li&gt;
-	&lt;li&gt;Default 'Reply to all'&lt;/li&gt;
-	&lt;li&gt;Quote selected text&lt;/li&gt;
-	&lt;li&gt;Navbar drag and drop&lt;/li&gt;
-	&lt;li&gt;Forgotten Attachment Detector&lt;/li&gt;
-	&lt;li&gt;Mark as Read Button&lt;/li&gt;
-	&lt;li&gt;Go to label&lt;/li&gt;
-	&lt;li&gt;Inbox preview&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Multiple Inboxes&lt;/strong&gt;&lt;/li&gt;
-	&lt;li&gt;Google Search&lt;/li&gt;
-	&lt;li&gt;Create a Document&lt;/li&gt;
-	&lt;li&gt;Filter import/export&lt;/li&gt;
-	&lt;li&gt;Text Messaging (SMS) in Chat&lt;/li&gt;
-	&lt;li&gt;Authentication icon for verified senders&lt;/li&gt;
-	&lt;li&gt;Send &amp;amp; Archive&lt;/li&gt;
-	&lt;li&gt;Undo Send&lt;/li&gt;
-	&lt;li&gt;Title Tweaks&lt;/li&gt;
-	&lt;li&gt;Don't forget Bob&lt;/li&gt;
-	&lt;li&gt;Got the wrong Bob?&lt;/li&gt;
-	&lt;li&gt;Green Robot!&lt;/li&gt;
-	&lt;li&gt;Hide read labels.&lt;/li&gt;
-	&lt;li&gt;Mark Unread From Here&lt;/li&gt;
-	&lt;li&gt;Google Calendar gadget&lt;/li&gt;
-	&lt;li&gt;Google Docs gadget&lt;/li&gt;
-	&lt;li&gt;Add any gadget by URL&lt;/li&gt;
+    &lt;li&gt;YouTube previews in mail&lt;/li&gt;
+    &lt;li&gt;Picasa previews in mail&lt;/li&gt;
+    &lt;li&gt;Flickr previews in mail&lt;/li&gt;
+    &lt;li&gt;Yelp previews in mail&lt;/li&gt;
+    &lt;li&gt;Google Voice player in mail&lt;/li&gt;
+    &lt;li&gt;Google Docs previews in mail&lt;/li&gt;
+    &lt;li&gt;Message translation&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Quick Links&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Superstars&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;Pictures in chat&lt;/li&gt;
+    &lt;li&gt;Fixed width font&lt;/li&gt;
+    &lt;li&gt;Custom keyboard shortcuts&lt;/li&gt;
+    &lt;li&gt;Advanced IMAP Controls&lt;/li&gt;
+    &lt;li&gt;Default 'Reply to all'&lt;/li&gt;
+    &lt;li&gt;Quote selected text&lt;/li&gt;
+    &lt;li&gt;Navbar drag and drop&lt;/li&gt;
+    &lt;li&gt;Forgotten Attachment Detector&lt;/li&gt;
+    &lt;li&gt;Mark as Read Button&lt;/li&gt;
+    &lt;li&gt;Go to label&lt;/li&gt;
+    &lt;li&gt;Inbox preview&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Multiple Inboxes&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;Google Search&lt;/li&gt;
+    &lt;li&gt;Create a Document&lt;/li&gt;
+    &lt;li&gt;Filter import/export&lt;/li&gt;
+    &lt;li&gt;Text Messaging (SMS) in Chat&lt;/li&gt;
+    &lt;li&gt;Authentication icon for verified senders&lt;/li&gt;
+    &lt;li&gt;Send &amp;amp; Archive&lt;/li&gt;
+    &lt;li&gt;Undo Send&lt;/li&gt;
+    &lt;li&gt;Title Tweaks&lt;/li&gt;
+    &lt;li&gt;Don't forget Bob&lt;/li&gt;
+    &lt;li&gt;Got the wrong Bob?&lt;/li&gt;
+    &lt;li&gt;Green Robot!&lt;/li&gt;
+    &lt;li&gt;Hide read labels.&lt;/li&gt;
+    &lt;li&gt;Mark Unread From Here&lt;/li&gt;
+    &lt;li&gt;Google Calendar gadget&lt;/li&gt;
+    &lt;li&gt;Google Docs gadget&lt;/li&gt;
+    &lt;li&gt;Add any gadget by URL&lt;/li&gt;
 &lt;/ol&gt;
-My favorites are the Superstars and Multiple Inboxes, the interaction of which is beautiful.  The Superstars allow you to apply different types of stars to your emails and Multiple Inboxes give you quick access to information that is likely to be referenced, such as emails you have recently starred.  My favorite additional inbox is what I call the Freshbox, it simply displays my unread emails.  Also of great usage are the Quick Links, which provide easy access to saved searches.  I will explain how I've set up these labs, starting with the Superstars.&lt;br /&gt;&lt;br /&gt;
 
-You can manage which stars are enabled and in which order on the &lt;a title=&quot;superstar gmail settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/general&quot; target=&quot;_blank&quot;&gt;General Gmail Settings page&lt;/a&gt;.  Simply drag and drop them.  I use:&lt;br /&gt;
+&lt;p&gt;My favorites are the Superstars and Multiple Inboxes, the interaction of which is beautiful.  The Superstars allow you to apply different types of stars to your emails and Multiple Inboxes give you quick access to information that is likely to be referenced, such as emails you have recently starred.  My favorite additional inbox is what I call the Freshbox, it simply displays my unread emails.  Also of great usage are the Quick Links, which provide easy access to saved searches.  I will explain how I&amp;#39;ve set up these labs, starting with the Superstars.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can manage which stars are enabled and in which order on the &lt;a title=&quot;superstar gmail settings&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/general&quot; target=&quot;_blank&quot;&gt;General Gmail Settings page&lt;/a&gt;.  Simply drag and drop them.  I use:&lt;br /&gt;
 &lt;br /&gt;
 &lt;strong&gt;Blue square&lt;/strong&gt; for emails with INFORMATION that I may want to refer to in the future.
 &lt;br /&gt;
@@ -143,25 +463,20 @@ You can manage which stars are enabled and in which order on the &lt;a title=&qu
 &lt;br /&gt;
 &lt;strong&gt;Purple star&lt;/strong&gt; for SPECIAL emails that I want to want to save for a rainy day
 &lt;br /&gt;
-and &lt;strong&gt;Orange &gt;&gt;&lt;/strong&gt; for delegated emails, stuff I've sent out that needs to be returned to me
+and &lt;strong&gt;Orange &amp;gt;&amp;gt;&lt;/strong&gt; for delegated emails, stuff I&amp;#39;ve sent out that needs to be returned to me
 &lt;br /&gt;&lt;br /&gt;
 These stars allow me to quickly prioritize what flows through my inbox.  Not a replacement for labels whatsoever, these stars work in conjunction.  For instance, I can click on my work label and see which emails are set with a red bang.  Similarly in the work label I can quickly spot emails with important documents by the info tag.
 &lt;br /&gt;&lt;br /&gt;
-Now, the grandaddy lab: Multiple Inboxes.  What this lab does is allow you to create additional inboxes.  These inboxes can be placed on top of, which I prefer, or to the right of or below the regular inbox.  These additional inboxes show the results of a search query that you specify in your &lt;a title=&quot;multiple inboxes management&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/lighttlist&quot; target=&quot;_blank&quot;&gt;Multiple Inboxes settings&lt;/a&gt;.  These search queries could be anything you like.  I have mine set to show the Freshbox, Superstars and Chats.  The parameters I used to set up are as follows:
+Now, the grandaddy lab: Multiple Inboxes.  What this lab does is allow you to create additional inboxes.  These inboxes can be placed on top of, which I prefer, or to the right of or below the regular inbox.  These additional inboxes show the results of a search query that you specify in your &lt;a title=&quot;multiple inboxes management&quot; href=&quot;https://mail.google.com/mail/?shva=1#settings/lighttlist&quot; target=&quot;_blank&quot;&gt;Multiple Inboxes settings&lt;/a&gt;.  These search queries could be anything you like.  I have mine set to show the Freshbox, Superstars and Chats.  The parameters I used to set up are as follows:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;Pane 0: Query: is:unread in:inbox -in:buzz Title: Freshbox
+Pane 1: Query: l:^ss_cr Title: ASAP
+Panel 2: Query: l:^ss_sr Title: Dates
+Panel 3: Query: l:^ss_cb Title: Reference
+Panel 4: Query: label:chat Title: Chatbox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Have the maximum page size set to show &lt;span style=&quot;color: #008080;&quot;&gt;10&lt;/span&gt; conversations per page for the new inbox panes and have them set &lt;span style=&quot;color: #008080;&quot;&gt;above&lt;/span&gt; the inbox.
 &lt;br /&gt;&lt;br /&gt;
-Pane 0: Query: &lt;span style=&quot;color: #008080;&quot;&gt;is:unread in:inbox -in:buzz&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Freshbox&lt;/span&gt;
-&lt;br /&gt;
-Pane 1: Query:&lt;span style=&quot;color: #008080;&quot;&gt; l:^ss_cr &lt;/span&gt;Title: &lt;span style=&quot;color: #008080;&quot;&gt;ASAP&lt;/span&gt;
-&lt;br /&gt;
-Panel 2: Query:&lt;span style=&quot;color: #008080;&quot;&gt; l:^ss_sr&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Dates&lt;/span&gt;
-&lt;br /&gt;
-Panel 3: Query: &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_cb&lt;/span&gt; Title: &lt;span style=&quot;color: #008080;&quot;&gt;Reference&lt;/span&gt;
-&lt;br /&gt;
-Panel 4: Query: &lt;span style=&quot;color: #008080;&quot;&gt;label:chat &lt;/span&gt;Title:&lt;span style=&quot;color: #008080;&quot;&gt; Chatbox&lt;/span&gt;
-&lt;br /&gt;&lt;br /&gt;
-Have the maximum page size set to show &lt;span style=&quot;color: #008080;&quot;&gt;10&lt;/span&gt; conversations per page for the new inbox panes and have them set &lt;span style=&quot;color: #008080;&quot;&gt;above&lt;/span&gt; the inbox.
-&lt;br /&gt;&lt;br /&gt;
-One last important thing left to set up are the Quick Links.  Once you've enabled this lab a widget will appear on the left-side of your Gmail.  After performing any search in Gmail, clicking 'Add Quick Link' will save the current search in a handy link with a name of your choosing.  So, do a search for &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_sp&lt;/span&gt; and create a quick link for your special, rainy-day emails.  Likewise make a search for &lt;span style=&quot;color: #008080;&quot;&gt;l:^ss_co&lt;/span&gt; and create a quick link for the emails you're waiting on.  Here's a quick link to all the files you've emailed &lt;span style=&quot;color: #008080;&quot;&gt;from:me;has:attachment&lt;/span&gt;.  For a complete list of the search terms for superstars, see this lifehacker article on &lt;a href=&quot;http://lifehacker.com/5321180/turn-gmail-into-your-ultimate-gtd-inbox&quot; target=&quot;_blank&quot;&gt;Gmail GTD&lt;/a&gt; that initially inspired me.
+One last important thing left to set up are the Quick Links.  Once you&amp;#39;ve enabled this lab a widget will appear on the left-side of your Gmail.  After performing any search in Gmail, clicking &amp;#39;Add Quick Link&amp;#39; will save the current search in a handy link with a name of your choosing.  So, do a search for &lt;code&gt;l:^ss_sp&lt;/code&gt; and create a quick link for your special, rainy-day emails.  Likewise make a search for &lt;code&gt;l:^ss_co&lt;/code&gt; and create a quick link for the emails you&amp;#39;re waiting on.  Here&amp;#39;s a quick link to all the files you&amp;#39;ve emailed &lt;code&gt;from:me;has:attachment&lt;/code&gt;.  For a complete list of the search terms for superstars, see this lifehacker article on &lt;a href=&quot;http://lifehacker.com/5321180/turn-gmail-into-your-ultimate-gtd-inbox&quot; target=&quot;_blank&quot;&gt;Gmail GTD&lt;/a&gt; that initially inspired me.&lt;/p&gt;
 </content>
  </entry>
  
@@ -170,28 +485,29 @@ One last important thing left to set up are the Quick Links.  Once you've enabl
    <link href="fijimunkii.github.io/facebook/privacy/usability/2009/12/16/facebook-privacy-and-you/"/>
    <updated>2009-12-16T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/facebook/privacy/usability/2009/12/16/facebook-privacy-and-you</id>
-   <content type="html">If you haven't heard all the buzz about facebook the past couple weeks, listen up.  Facebook just changed the way they handle privacy.  There are no more regional networks.  Unless you restrict specific things, they will be indexed by Google.  In this post you can learn how to  setup your facebook for max visibility while retaining a necessary amount of privacy.
+   <content type="html">&lt;p&gt;If you haven&amp;#39;t heard all the buzz about facebook the past couple weeks, listen up.  Facebook just changed the way they handle privacy.  There are no more regional networks.  Unless you restrict specific things, they will be indexed by Google.  In this post you can learn how to  setup your facebook for max visibility while retaining a necessary amount of privacy.
 &lt;br /&gt;&lt;br /&gt;
 The levels of limitation are: Friends, Friends of Friends, Friend lists, or Everyone.
 &lt;br /&gt;&lt;br /&gt;
-I've organized my settings by section, which you can access by clicking on the links.
+I&amp;#39;ve organized my settings by section, which you can access by clicking on the links.
 &lt;br /&gt;&lt;br /&gt;
 &lt;a title=&quot;Profile Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=profile&lt;/a&gt;&lt;br /&gt;
 About me -&amp;gt; Education {Only Friends}&lt;br /&gt;
 Photos and videos {Dudes}&lt;br /&gt;
 Posts {only friends}&lt;br /&gt;
 &lt;br /&gt;
-Dudes is a &lt;a title=&quot;Make a new friend list on facebook&quot; href=&quot;http://www.facebook.com/friends/ajax/edit_list.php?new_list=true&quot; target=&quot;_blank&quot;&gt;friend list&lt;/a&gt; excluding certain family members and people from work that I'd rather not see my pictures.
+Dudes is a &lt;a title=&quot;Make a new friend list on facebook&quot; href=&quot;http://www.facebook.com/friends/ajax/edit_list.php?new_list=true&quot; target=&quot;_blank&quot;&gt;friend list&lt;/a&gt; excluding certain family members and people from work that I&amp;#39;d rather not see my pictures.
 &lt;br /&gt;&lt;br /&gt;
 &lt;a title=&quot;Contact Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=contact&lt;/a&gt;&lt;br /&gt;
 IM -&amp;gt; Current Address {Only Friends}&lt;br /&gt;
 Website -&amp;gt; Add me as a friend {Everyone}&lt;br /&gt;
-Send me a message {Only Friends}&lt;br /&gt;&lt;br /&gt;
+Send me a message {Only Friends}&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a title=&quot;what your friends can share about you on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends_share&quot; target=&quot;_blank&quot;&gt;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=applications&amp;amp;field=friends&lt;em&gt;share&lt;/a&gt;&lt;br /&gt;
 Status Updates, Online Presence, Website, Education and work, My birthday, My hometown {checked}
 &lt;br /&gt;&lt;br /&gt;
-I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Search Privacy on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&quot; target=&quot;_blank&quot;&gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.</content>
+I allow anyone to search for me.  But, if you want you can &amp;lt;a title=&amp;quot;Search Privacy on facebook&amp;quot; href=&amp;quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=search&amp;quot; target=&amp;quot;&lt;/em&gt;blank&amp;quot;&amp;gt;turn this off&lt;/a&gt; and be hidden.  Lastly, to block people &lt;a title=&quot;Block people on facebook&quot; href=&quot;http://www.facebook.com/settings/?tab=privacy&amp;amp;section=block&quot; target=&quot;_blank&quot;&gt;go here&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -199,13 +515,13 @@ I allow anyone to search for me.  But, if you want you can &lt;a title=&quot;Se
    <link href="fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia/"/>
    <updated>2009-08-10T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/google/2009/08/10/what-makes-google-voice-specia</id>
-   <content type="html">There are many benefits to using google voice as an a personal digital operator.   First and foremost, screening calls.  Your personal operator is going to ask everyone with a restricted number to state their name.  If you want, this can happen to anyone that calls who isn't one of your Google Contacts.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;There are many benefits to using google voice as an a personal digital operator.   First and foremost, screening calls.  Your personal operator is going to ask everyone with a restricted number to state their name.  If you want, this can happen to anyone that calls who isn&amp;#39;t one of your Google Contacts.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Your personal operator can also serve certain people to specific phones and present custom voicemail greetings.  These voicemails will be transcribed and sent to your phone as a text message and emailed to you.
+&lt;p&gt;Your personal operator can also serve certain people to specific phones and present custom voicemail greetings.  These voicemails will be transcribed and sent to your phone as a text message and emailed to you.
 &lt;br /&gt;&lt;br /&gt;
 The history of your phone calls and voicemails will be archived at &lt;a href=&quot;http://google.com/voice&quot; target=&quot;_blank&quot;&gt;http://google.com/voice&lt;/a&gt;. Having GvoiceMail is handy.  This personal operator is so good at handling calls that you can switch the phone you are using in the middle of a call.  Say you walk home while on a business call: tell the person on the other end to hold, then you press press * and hang up, your home phone rings and you answer it.  Sounds too good to be true.
 &lt;br /&gt;&lt;br /&gt;
-Want in?  One doesn't ask for an invite to google voice, he &lt;a style=&quot;color: #114170;&quot; href=&quot;https://services.google.com/fb/forms/googlevoiceinvite/&quot; target=&quot;_blank&quot;&gt;signs up&lt;/a&gt;.   I should also mention that this service is free and Google provides you with a free number.
+Want in?  One doesn&amp;#39;t ask for an invite to google voice, he &lt;a style=&quot;color: #114170;&quot; href=&quot;https://services.google.com/fb/forms/googlevoiceinvite/&quot; target=&quot;_blank&quot;&gt;signs up&lt;/a&gt;.   I should also mention that this service is free and Google provides you with a free number.&lt;/p&gt;
 </content>
  </entry>
  
@@ -214,17 +530,17 @@ Want in?  One doesn't ask for an invite to google voice, he &lt;a style=&quot;
    <link href="fijimunkii.github.io/google/2009/04/27/google-audio-indexing/"/>
    <updated>2009-04-27T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/google/2009/04/27/google-audio-indexing</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- Google GAudi appears to have been retired and the google group along with it has been expunged!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
-Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- Google GAudi appears to have been retired and the google group along with it has been expunged!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Google is using speech recognition to index political videos on youtube.  With a search, one can easily find what a politician has to say about a particular subject. &lt;a title=&quot;http://labs.google.com/gaudi/&quot; href=&quot;http://labs.google.com/gaudi/&quot;&gt;http://labs.google.com/gaudi/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-Google wants to unleash this powerful tool to index all of youtube's shenanigans, after they've tested it on politics.  I think it will make a major impact on how we access information.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Google wants to unleash this powerful tool to index all of youtube&amp;#39;s shenanigans, after they&amp;#39;ve tested it on politics.  I think it will make a major impact on how we access information.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-What google says about the technology:
-&lt;blockquote&gt;Google Audio Indexing uses speech technology to transform spoken words into text and leverages the Google indexing technology to return the best results to the user.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;What google says about the technology:
+&lt;blockquote&gt;Google Audio Indexing uses speech technology to transform spoken words into text and leverages the Google indexing technology to return the best results to the user.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-The returned videos are ranked based -- among other things -- on the spoken content, the metadata, the freshness.
+&lt;p&gt;The returned videos are ranked based -- among other things -- on the spoken content, the metadata, the freshness.
 &lt;br /&gt;&lt;br /&gt;
 We periodically crawl the YouTube political channels for new content. As soon as a new video is uploaded to YouTube, it is processed by our system and made available in our index for people to search.&lt;/blockquote&gt;
 I did some research into what they are actually using to detect the speech patterns.  It is called &lt;a href=&quot;http://svr-ftp.eng.cam.ac.uk/comp.speech/Section6/Recognition/htk.html&quot;&gt;Hidden Markov Modelling&lt;/a&gt;.  Here is a pdf explaining some of the &lt;a href=&quot;http://www.hpl.hp.com/techreports/Compaq-DEC/CRL-97-7.pdf&quot;&gt;mathematics behind it&lt;/a&gt;.
@@ -235,7 +551,8 @@ I would like to share some other documents I came across that I thought were int
 &lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.phon.ucl.ac.uk/resource/sfs/howto/htk.htm&quot;&gt;How To: Use HTK Hidden Markov modelling toolkit with SFS&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;
-&lt;a href=&quot;http://groups.google.com/group/google-audio-indexing/&quot;&gt;The Google Group for Google Audio Indexing&lt;/a&gt;</content>
+&lt;a href=&quot;http://groups.google.com/group/google-audio-indexing/&quot;&gt;The Google Group for Google Audio Indexing&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -243,44 +560,45 @@ I would like to share some other documents I came across that I thought were int
    <link href="fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists/"/>
    <updated>2009-04-18T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/usability/2009/04/18/the-holy-grail-of-itunes-smartplaylists</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt; 
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- When creating this post 4 years ago, it did not occur to me that I might someday be left with a text-only backup of my blog. Unfortunately, this is the case and therefore I have lost the most vital information of this post... perhaps some day I will set-up my iTunes the way I used to have it and share some smart-playlists again. Until then, use your imagination!&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 After meticulously organizing my iTunes Music Library, I have found playlists to be extremely handy—static playlists as well as something relatively new, smart playlists.  For those that are unfamiliar, smart playlists build their contents based on variables and are live updating.  What this means is that you are going to have amazing playlists.
 &lt;br /&gt;&lt;br /&gt;
-Let me show you how to import your favorite songs you haven't heard in the last week, month, or how to aggregate your holiday music, tracks with missing tags and your most listened to tracks with the least number of skips.
+Let me show you how to import your favorite songs you haven&amp;#39;t heard in the last week, month, or how to aggregate your holiday music, tracks with missing tags and your most listened to tracks with the least number of skips.
 &lt;br /&gt;&lt;br /&gt;
-&lt;!--more--&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
 
-iTunes organizes playlists in the left-hand column, which is a prominent location for accessing collections of your music.
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;iTunes organizes playlists in the left-hand column, which is a prominent location for accessing collections of your music.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-The first playlist we should make is a base music playlist to build our other playlists off of, filtering out any non-music.  To create a new smart playlist go to the File menu and select New Smart Playlist.  The Mac shortcut to creating a smart playlist is option+command+N or you can hold option while pressing the new playlist  button.
+&lt;p&gt;The first playlist we should make is a base music playlist to build our other playlists off of, filtering out any non-music.  To create a new smart playlist go to the File menu and select New Smart Playlist.  The Mac shortcut to creating a smart playlist is option+command+N or you can hold option while pressing the new playlist  button.
 &lt;br /&gt;&lt;br /&gt;
-This 'music only' playlist will collect everything in iTunes except movies, podcasts, audiobooks and radio streams.  I keep my audiobook playlists in a playlist folder named audiobooks and that's what I'm signaling the playlist to avoid.  Likewise, I keep my radio streams in a playlist named radio.  Adjust yours according to how you organize your music.  We will use this playlist as a variable in subsequent playlists to filter out non-music.
+This &amp;#39;music only&amp;#39; playlist will collect everything in iTunes except movies, podcasts, audiobooks and radio streams.  I keep my audiobook playlists in a playlist folder named audiobooks and that&amp;#39;s what I&amp;#39;m signaling the playlist to avoid.  Likewise, I keep my radio streams in a playlist named radio.  Adjust yours according to how you organize your music.  We will use this playlist as a variable in subsequent playlists to filter out non-music.
 &lt;br /&gt;&lt;br /&gt;
-Let's start aggregating some awesome music!  This playlist collects good tunes that haven't been listened to in the past week.  If you are attentive to rating your music, this playlist will serve you very well.
+Let&amp;#39;s start aggregating some awesome music!  This playlist collects good tunes that haven&amp;#39;t been listened to in the past week.  If you are attentive to rating your music, this playlist will serve you very well.
 &lt;br /&gt;&lt;br /&gt;
-It's easy to tailor this to the size of your music library by selecting months, year(s)..
+It&amp;#39;s easy to tailor this to the size of your music library by selecting months, year(s)..
 &lt;br /&gt;&lt;br /&gt;
 If you have been adding music to your library for years, this next playlist will organize your most listened-to tracks chronologically.
 &lt;br /&gt;&lt;br /&gt;
-This 'best of 2008' playlist has my most played party tunes and favorite sleeping tracks.  Along with those one hitters.  Just make sure to adjust the playcount variable according to your listening habits.
+This &amp;#39;best of 2008&amp;#39; playlist has my most played party tunes and favorite sleeping tracks.  Along with those one hitters.  Just make sure to adjust the playcount variable according to your listening habits.
 &lt;br /&gt;&lt;br /&gt;
-Have a lot of holiday music?  Here's a smart playlist for you.
+Have a lot of holiday music?  Here&amp;#39;s a smart playlist for you.
 &lt;br /&gt;&lt;br /&gt;
 By filtering this holiday playlist out of other playlists, you can keep Olde St. Nick out of your everyday servings.
 &lt;br /&gt;&lt;br /&gt;
 Next we have some really useful smart playlists for organizing your music library.  The first is for music you listen to a lot but have not had the chance to rate.
 &lt;br /&gt;&lt;br /&gt;
-Ratings are extremely handy for isolating tracks you don't like on albums and you can avoid these tracks in the future by setting a playlist's rating filter from 4 to 5 stars, like the second playlist above.
+Ratings are extremely handy for isolating tracks you don&amp;#39;t like on albums and you can avoid these tracks in the future by setting a playlist&amp;#39;s rating filter from 4 to 5 stars, like the second playlist above.
 &lt;br /&gt;&lt;br /&gt;
 The second organization playlist is for missing metadata, for example track and album names.  All those songs you imported without an internet connection without tags that are labeled track01, track02 etc..
 &lt;br /&gt;&lt;br /&gt;
 From this playlist you can easily locate and fix the metadata-less tracks.
 &lt;br /&gt;&lt;br /&gt;
-The following 'no skippies' playlist quickly removes tracks you usually do not want to hear.
-&lt;br /&gt;&lt;br /&gt;
+The following &amp;#39;no skippies&amp;#39; playlist quickly removes tracks you usually do not want to hear.
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-And lastly, listen to your music!  The following playlist grabs all of your neglected music.</content>
+&lt;p&gt;And lastly, listen to your music!  The following playlist grabs all of your neglected music.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -288,23 +606,24 @@ And lastly, listen to your music!  The following playlist grabs all of your negl
    <link href="fijimunkii.github.io/usability/2009/04/16/shopping-for-an-education/"/>
    <updated>2009-04-16T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/usability/2009/04/16/shopping-for-an-education</id>
-   <content type="html">In the past, students enrolled in courses by filling out a form.  I suppose the fax machine was the next step.  But now students are filling up an online shopping cart, on websites, of their classes for next semester.  Naturally, this is a highly stressful time, so the system should have a user centered design.
+   <content type="html">&lt;p&gt;In the past, students enrolled in courses by filling out a form.  I suppose the fax machine was the next step.  But now students are filling up an online shopping cart, on websites, of their classes for next semester.  Naturally, this is a highly stressful time, so the system should have a user centered design.
 &lt;br /&gt;&lt;br /&gt;
 I have experienced two of these registration systems.  I found the first system quite pleasant and intuitive; the second, not so much.  Babson College has a superior course catalog/registration system to SUNY Purchase.
 &lt;br /&gt;&lt;br /&gt;
-&lt;!--more--&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
 
-Accessing and navigating the course catalog is similar at both schools. Drop-down menus versus scrolling through a list is the only difference in how to refine the search. The drop down menus on Babson’s system were also present on the catalog pages themselves, not just the index. Having to go back to the index is an unnecessary step.
+&lt;p&gt;Accessing and navigating the course catalog is similar at both schools. Drop-down menus versus scrolling through a list is the only difference in how to refine the search. The drop down menus on Babson’s system were also present on the catalog pages themselves, not just the index. Having to go back to the index is an unnecessary step.
 &lt;br /&gt;&lt;br /&gt;
 The course catalog should be connected to the registration system, at least that is what I’m used to from Babson’s system. It makes sense. The methapors are all there as they have it set up as a shopping cart system. It is intuitive to ‘add courses to your cart’, ‘view your schedule’, and ‘check out’. With Purchase, on the other hand, writing down course numbers is necessary.
 &lt;br /&gt;&lt;br /&gt;
 At Purchase the students have to carry the course information from the catalog to the registration system, the systems are completely separate. This directly results in a giant drop of usability. Another thing the students should not have to do is get an AAC. This is the access code from a student’s advisor that is required for registration. Students should be able to log in and register as long as they do not have any flags blocking registration. The IAC program works, but AAC is flawed. Too many students retell horror stories of not having a code and watching their desired classes fill up while they are helpless to do anything but cry and wait for the advisor to return the hundred messages left that morning while freaking out.
 &lt;br /&gt;&lt;br /&gt;
-Babson did not have any advisory pre-registration requirement. It was highly recommended that students meet with their advisors to go over schedules and whatnot, but never forced. Now, I will mention one flaw with Babson's system that caught me off-guard.
+Babson did not have any advisory pre-registration requirement. It was highly recommended that students meet with their advisors to go over schedules and whatnot, but never forced. Now, I will mention one flaw with Babson&amp;#39;s system that caught me off-guard.
 &lt;br /&gt;&lt;br /&gt;
 The system couldn’t handle it! By it, I mean the stress of an entire class registering at 7am. The server buckled and the site slowed to a crawl. Funny as it may sound, it was nerve wracking. I avoided this issue in subsequent registrations by filling my shopping cart up before the event, and checking out as soon as the gates were opened.
 &lt;br /&gt;&lt;br /&gt;
-Have you survived these frightful mornings?  Let's hear some stories!</content>
+Have you survived these frightful mornings?  Let&amp;#39;s hear some stories!&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -312,30 +631,31 @@ Have you survived these frightful mornings?  Let's hear some stories!</content>
    <link href="fijimunkii.github.io/google/2009/04/14/seemingly-infinite-array-of-knowledge/"/>
    <updated>2009-04-14T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/google/2009/04/14/seemingly-infinite-array-of-knowledge</id>
-   <content type="html">Conversations on the Internet have a certain flavor to them that exceeds limitations of the normal world.  The participants do not have to be in the same room, let alone the same country.  It is because of this phenomenon that we have a fusing of cultures with the capability of pooling knowledge together.  This seemingly infinite array of knowledge is indexed and searchable.
+   <content type="html">&lt;p&gt;Conversations on the Internet have a certain flavor to them that exceeds limitations of the normal world.  The participants do not have to be in the same room, let alone the same country.  It is because of this phenomenon that we have a fusing of cultures with the capability of pooling knowledge together.  This seemingly infinite array of knowledge is indexed and searchable.
 &lt;br /&gt;&lt;br /&gt;
 These participants can keep track of one another through social networking enabled websites, which informs one another of interests, relationships, microblogs, and blogs.  Conversations here closely resemble informal social interactions, similar to a party atmosphere.  This is a pleasant contrast to the focused, educated, and moderated conversations that are ever so quickly building the infinite data pool.
 &lt;br /&gt;&lt;br /&gt;
-&lt;!--more--&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
 
-Education is free on the internet.  Anyone can use Google.  There is no limit to the amount of data that can be sent or stored.  The only limiting factor here is bandwidth.  Internet access is freely available at the worlds libraries and third world countries are beginning to integrate computers into the household.  Soon, wireless broadband will be available for free and every electronic device will be connected to it as well as a &lt;a href=&quot;http://blog.harrisonpowers.com/news/repowering-america/&quot;&gt;smart power&lt;/a&gt; supply with diagnostics like &lt;a href=&quot;http://www.google.org/powermeter/&quot; target=&quot;_blank&quot;&gt;Google PowerMeter&lt;/a&gt;.
+&lt;p&gt;Education is free on the internet.  Anyone can use Google.  There is no limit to the amount of data that can be sent or stored.  The only limiting factor here is bandwidth.  Internet access is freely available at the worlds libraries and third world countries are beginning to integrate computers into the household.  Soon, wireless broadband will be available for free and every electronic device will be connected to it as well as a &lt;a href=&quot;http://blog.harrisonpowers.com/news/repowering-america/&quot;&gt;smart power&lt;/a&gt; supply with diagnostics like &lt;a href=&quot;http://www.google.org/powermeter/&quot; target=&quot;_blank&quot;&gt;Google PowerMeter&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;
 Google has replicated and improved on three of the most important desktop applications, and offered these robust products for free, accessible with your preferences and stored files anywhere.  Gmail is the king of all email clients and Google Calendar is a robust calendar.  Google Docs is replacing Microsoft Office, and Google Reader takes the stand as the hands-down &lt;a href=&quot;http://blog.harrisonpowers.com/screencast/rss-and-google-reader/&quot; target=&quot;_blank&quot;&gt;best RSS feed aggregator, organizer, and viewer&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;
 Third-party hardware is embraced by Google as it is simply provides their clientele.  In an effort to maintain this connection with mobile computer users, Google provides a plethora of support for various clients.  The most popular, the iPhone, gets the best tools.  The &lt;a href=&quot;http://www.google.com/mobile/apple/app.html&quot; target=&quot;_blank&quot;&gt;Google Mobile app&lt;/a&gt; allows you to search with your voice, but only after you unlock this special feature in a &lt;a href=&quot;http://www.republicofinternets.com/?p=1469&quot; target=&quot;_blank&quot;&gt;secret menu&lt;/a&gt;.  The capabilities of this app are limited to search.  And rightly so, that is what Google specializes in.
 &lt;br /&gt;&lt;br /&gt;
-That's not all Google's done for the iPhone.  Gmail, Google Docs, Calendar and Reader are all optimized for the iPhone's browser.  They load when there is no internet because Google is taking advantage of a new technology in browser &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot; target=&quot;_blank&quot;&gt;caching&lt;/a&gt; available with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot; target=&quot;_blank&quot;&gt;HTML5&lt;/a&gt;.  They even released a Google Sync app to allow &lt;a href=&quot;http://blog.harrisonpowers.com/iphone/iphone-google-sync-is-official/&quot; target=&quot;_blank&quot;&gt;push synchronization of contacts and calendars&lt;/a&gt;.  This allows me to bypass mobileme, which I believe has failed.
+That&amp;#39;s not all Google&amp;#39;s done for the iPhone.  Gmail, Google Docs, Calendar and Reader are all optimized for the iPhone&amp;#39;s browser.  They load when there is no internet because Google is taking advantage of a new technology in browser &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot; target=&quot;_blank&quot;&gt;caching&lt;/a&gt; available with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot; target=&quot;_blank&quot;&gt;HTML5&lt;/a&gt;.  They even released a Google Sync app to allow &lt;a href=&quot;http://blog.harrisonpowers.com/iphone/iphone-google-sync-is-official/&quot; target=&quot;_blank&quot;&gt;push synchronization of contacts and calendars&lt;/a&gt;.  This allows me to bypass mobileme, which I believe has failed.
 &lt;br /&gt;&lt;br /&gt;
-Other mobile devices with ties to Google are the BlackBerry and, of course, G1 and Android OS phones.  Many seem these as competitors to the iPhone, but Google sees them as users.  The masses are all participants in Google's great information experiment.  How effectively can we index information and provide easy access based off of previous human interaction.  So effectively it is scary.
+Other mobile devices with ties to Google are the BlackBerry and, of course, G1 and Android OS phones.  Many seem these as competitors to the iPhone, but Google sees them as users.  The masses are all participants in Google&amp;#39;s great information experiment.  How effectively can we index information and provide easy access based off of previous human interaction.  So effectively it is scary.
 &lt;br /&gt;&lt;br /&gt;
-So scary that it almost seems like Artificial Intelligence, but don't worry, it definitely is not.  Google would not be anything if everyone in the world were not asking it questions all day.  That's the thing.  Google relies on its users.  Google is only the bread, the foundation.  The users are the butter, the deliciousness, Google is obsessed with them.  This infatuation leads to an incredible amount of usability on thick, interconnected system that Google is developing.
+So scary that it almost seems like Artificial Intelligence, but don&amp;#39;t worry, it definitely is not.  Google would not be anything if everyone in the world were not asking it questions all day.  That&amp;#39;s the thing.  Google relies on its users.  Google is only the bread, the foundation.  The users are the butter, the deliciousness, Google is obsessed with them.  This infatuation leads to an incredible amount of usability on thick, interconnected system that Google is developing.
 &lt;br /&gt;&lt;br /&gt;
-This usability and the freedom that Google offers is popular and catching on like a wildfire.  Google has become a catalyst for freedom of information.  They are collecting everything and providing easy access.  There is essentially no limit to how many emails you can keep in Gmail.  I can search all my documents and conversations I've emailed the past 5 years, that is 2398 MB (32%) of the current allotment of 7315 MB.  That's just a drop in the bucket.
+This usability and the freedom that Google offers is popular and catching on like a wildfire.  Google has become a catalyst for freedom of information.  They are collecting everything and providing easy access.  There is essentially no limit to how many emails you can keep in Gmail.  I can search all my documents and conversations I&amp;#39;ve emailed the past 5 years, that is 2398 MB (32%) of the current allotment of 7315 MB.  That&amp;#39;s just a drop in the bucket.
 &lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 &lt;/i&gt;-- For reference, I am up to 26.39 of 36GB (73%)...&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 With &lt;a href=&quot;http://google.com/history/&quot; target=&quot;_blank&quot;&gt;Google - Web History&lt;/a&gt; I can access all 9161 searches I made since I registered with Google.  That is, a complete histogram of all my hobbies, projects, interests, and research since May 2005.  A true blast from the past.  In addition, I can see trends on my Google searching.  Popular hours, days, months, terms, websites, clicks, you get the idea..
-&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-It is fascinating, in my opinion, but to others this mining of data is an invasion of privacy.  I'm not going to list their reasoning for this way of thinking, they are obvious.  I am going to simply say to these people that Google is a service, not a requirement.  If you don't like it, don't use it.  They might hit me back with the concept of Google taking over the internet, that being inevitably forced to use Google.  That idea could make a good plot for a studio film.</content>
+&lt;p&gt;It is fascinating, in my opinion, but to others this mining of data is an invasion of privacy.  I&amp;#39;m not going to list their reasoning for this way of thinking, they are obvious.  I am going to simply say to these people that Google is a service, not a requirement.  If you don&amp;#39;t like it, don&amp;#39;t use it.  They might hit me back with the concept of Google taking over the internet, that being inevitably forced to use Google.  That idea could make a good plot for a studio film.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -343,23 +663,24 @@ It is fascinating, in my opinion, but to others this mining of data is an invasi
    <link href="fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization/"/>
    <updated>2009-04-05T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/usability/2009/04/05/how-to-use-friend-lists-with-the-new-facebook-update-to-enhance-usability-and-organization</id>
-   <content type="html">Regarding the new the facebook layout, what do you not like about it?  Is it too cluttered?  How so?  Do you really need to see everyone's new facebook pic of the day?  I feel that facebook deserves this update.  Many complain about how disorganized the new layout is, that they can't find anything.. well what are you trying to find?  Is there a special group of friends that you want to track everything about?  What are you looking for that you can't find?  Let me explain how facebook has changed and how to use friend lists.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;Regarding the new the facebook layout, what do you not like about it?  Is it too cluttered?  How so?  Do you really need to see everyone&amp;#39;s new facebook pic of the day?  I feel that facebook deserves this update.  Many complain about how disorganized the new layout is, that they can&amp;#39;t find anything.. well what are you trying to find?  Is there a special group of friends that you want to track everything about?  What are you looking for that you can&amp;#39;t find?  Let me explain how facebook has changed and how to use friend lists.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-The new facebook layout does something bold.  It could not have pulled this off without the current size of circles of friends.  The creators are saying that there is enough information being posted to display everything in real time.  That's what the home page is now, a real time feed of everyone's updates.  It's like looking at your Google Reader's 'all items' category, it's just simply a plethora of incoming information.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;The new facebook layout does something bold.  It could not have pulled this off without the current size of circles of friends.  The creators are saying that there is enough information being posted to display everything in real time.  That&amp;#39;s what the home page is now, a real time feed of everyone&amp;#39;s updates.  It&amp;#39;s like looking at your Google Reader&amp;#39;s &amp;#39;all items&amp;#39; category, it&amp;#39;s just simply a plethora of incoming information.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-The right-hand side column attempts to display important information, and does a fairly good job.  It has everything I used to visit the home page for: birthdays, pokes, pictures, events, and notifications for my invites and messages (although this information is now available on every page through the bottom bar).  I have noticed that the right-hand side column appears to be favoring some friends over others, namely family members and people of recent contact, including new friends.
+&lt;p&gt;The right-hand side column attempts to display important information, and does a fairly good job.  It has everything I used to visit the home page for: birthdays, pokes, pictures, events, and notifications for my invites and messages (although this information is now available on every page through the bottom bar).  I have noticed that the right-hand side column appears to be favoring some friends over others, namely family members and people of recent contact, including new friends.
 &lt;br /&gt;&lt;br /&gt;
-I suppose the &lt;a href=&quot;http://en.wikipedia.org/wiki/Dunbar%27s_number&quot; target=&quot;_blank&quot;&gt;dunbar number&lt;/a&gt; applies to facebook; the most friends you should have for maximum usability is 150.  But I have way more than 150 'friends' on facebook, so I have to revert to grouping methods in order to maintain some structure.&lt;br /&gt;&lt;br /&gt;
+I suppose the &lt;a href=&quot;http://en.wikipedia.org/wiki/Dunbar%27s_number&quot; target=&quot;_blank&quot;&gt;dunbar number&lt;/a&gt; applies to facebook; the most friends you should have for maximum usability is 150.  But I have way more than 150 &amp;#39;friends&amp;#39; on facebook, so I have to revert to grouping methods in order to maintain some structure.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-To enhance the usability of facebook, you should be utilizing friend lists.  Friend lists are managed and toggled through their widget on the left-hand side of the home page.
+&lt;p&gt;To enhance the usability of facebook, you should be utilizing friend lists.  Friend lists are managed and toggled through their widget on the left-hand side of the home page.
 &lt;br /&gt;&lt;br /&gt;
-Simply click on the + sign on the bottom to create a new friend list.  Click on your friends and search, or use previously created friend lists to narrow your results.  Once created, a friend list can be renamed, edited, and managed by clicking the pencil icon to the right of its name.&lt;br /&gt;&lt;br /&gt;
+Simply click on the + sign on the bottom to create a new friend list.  Click on your friends and search, or use previously created friend lists to narrow your results.  Once created, a friend list can be renamed, edited, and managed by clicking the pencil icon to the right of its name.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Click on your new friend lists to show their updates.
+&lt;p&gt;Click on your new friend lists to show their updates.
 &lt;br /&gt;&lt;br /&gt;
-I have found my home page to be much more enjoyable with the application of these lists.  When I want to check out what my family is up to I just click their button.  Same with my friends (at home and away), and geographic networks.  Good luck getting organized!</content>
+I have found my home page to be much more enjoyable with the application of these lists.  When I want to check out what my family is up to I just click their button.  Same with my friends (at home and away), and geographic networks.  Good luck getting organized!&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -367,27 +688,28 @@ I have found my home page to be much more enjoyable with the application of thes
    <link href="fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read/"/>
    <updated>2009-04-04T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/usability/2009/04/04/bookmarklet-makes-internet-easier-to-read</id>
-   <content type="html">Most articles I come across are lost in a sea of advertisements and bad formatting.  While advertising surely has its place, I feel that it is unfair to distract the user when they have committed 5 minutes out of their day to read what you have to say.  Perhaps I am a glutton for simplicity, but I prefer being able to finish an article in one go, rather than having my eyes darting all over a page.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;Most articles I come across are lost in a sea of advertisements and bad formatting.  While advertising surely has its place, I feel that it is unfair to distract the user when they have committed 5 minutes out of their day to read what you have to say.  Perhaps I am a glutton for simplicity, but I prefer being able to finish an article in one go, rather than having my eyes darting all over a page.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Luckily for people easily distracted like myself, some javascript genius has figured out how to automatically pull the article content out of a page and display it in a customizable, easy to read overlay, toggled by a bookmarklet.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Luckily for people easily distracted like myself, some javascript genius has figured out how to automatically pull the article content out of a page and display it in a customizable, easy to read overlay, toggled by a bookmarklet.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-A bookmarklet is a bookmark that instead of loading a new page, runs a small application on the current page.  &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Readable&lt;/strong&gt;&lt;/a&gt;, the bookmarklet in the spotlight, is easy to install.  Either drag it to your bookmarks bar, or right-click and save as a bookmark.  The author's website &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;further explains&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;A bookmarklet is a bookmark that instead of loading a new page, runs a small application on the current page.  &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Readable&lt;/strong&gt;&lt;/a&gt;, the bookmarklet in the spotlight, is easy to install.  Either drag it to your bookmarks bar, or right-click and save as a bookmark.  The author&amp;#39;s website &lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;further explains&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-The way it transforms a page is entirely based on your preferences.
+&lt;p&gt;The way it transforms a page is entirely based on your preferences.
 &lt;br /&gt;&lt;br /&gt;
-I prefer reading light text on a dark background, so I chose the 'dark grey' color.  The layout size, or width, that I prefer is 50mm.  The rest I left the defaults.&lt;br /&gt;&lt;br /&gt;
+I prefer reading light text on a dark background, so I chose the &amp;#39;dark grey&amp;#39; color.  The layout size, or width, that I prefer is 50mm.  The rest I left the defaults.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Now when I'm reading any article, the first thing I'll do is hit my Readable bookmarklet.  What this accomplishes for me is increased readability, efficiency, and usability of the internet.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Now when I&amp;#39;m reading any article, the first thing I&amp;#39;ll do is hit my Readable bookmarklet.  What this accomplishes for me is increased readability, efficiency, and usability of the internet.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Further Reading:&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Further Reading:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;Readable&lt;/a&gt; - The Bookmarklet
+&lt;p&gt;&lt;a href=&quot;http://readable-app.appspot.com/&quot; target=&quot;_blank&quot;&gt;Readable&lt;/a&gt; - The Bookmarklet
 &lt;br /&gt;
 &lt;a href=&quot;http://en.wikipedia.org/wiki/Readability&quot; target=&quot;_blank&quot;&gt;Readability&lt;/a&gt; - Wikipedia
 &lt;br /&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Bookmarklet&quot; target=&quot;_blank&quot;&gt;Bookmarklet&lt;/a&gt; - Wikipedia</content>
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Bookmarklet&quot; target=&quot;_blank&quot;&gt;Bookmarklet&lt;/a&gt; - Wikipedia&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -395,19 +717,19 @@ Further Reading:&lt;br /&gt;&lt;br /&gt;
    <link href="fijimunkii.github.io/news/2009/03/23/repowering-america/"/>
    <updated>2009-03-23T00:00:00-04:00</updated>
    <id>fijimunkii.github.io/news/2009/03/23/repowering-america</id>
-   <content type="html">Currently, our power grid is operated by people.  Mechanical switches.  Telephones.  Blackouts are unknown until someone calls it in.  The sources of our power are centrally located, single locations providing power to vast territories.  Having such serious power centrally located is extremely dangerous.
+   <content type="html">&lt;p&gt;Currently, our power grid is operated by people.  Mechanical switches.  Telephones.  Blackouts are unknown until someone calls it in.  The sources of our power are centrally located, single locations providing power to vast territories.  Having such serious power centrally located is extremely dangerous.
 &lt;br /&gt;&lt;br /&gt;
 The recent major blackouts on the East Coast and Silicon Valley in the West Coast of the United States are examples of how this system is reaching its maximum capacity and is failing on us.
 &lt;br /&gt;&lt;br /&gt;
 President Obama has called for an overhaul of our grid and a transition to an automated, widely distributed energy delivery system.  In this system the electricity will flow &lt;strong&gt;both ways&lt;/strong&gt;.  Allow me to explain why this is important and how it works.
 &lt;br /&gt;&lt;br /&gt;
-&lt;!--more--&gt;Normally our power system operates fine, but there are days with peak demand.  Recall those sweltering summer days when everyone and their dog is cranking up the A/C.  The way electricity in our grid works is that it has to be spent after it is produced.  Stored energy does not work with our grid.  (this will not always be the case!)  On these days with peak demand, extra power plants have to be activated, workers paid overtime, and there is no reliable way to predict when these days will pop up.
+&amp;lt;!--more--&amp;gt;Normally our power system operates fine, but there are days with peak demand.  Recall those sweltering summer days when everyone and their dog is cranking up the A/C.  The way electricity in our grid works is that it has to be spent after it is produced.  Stored energy does not work with our grid.  (this will not always be the case!)  On these days with peak demand, extra power plants have to be activated, workers paid overtime, and there is no reliable way to predict when these days will pop up.
 &lt;br /&gt;&lt;br /&gt;
 Now imagine that your neighbor has solar panels on his roof and has a hydro-electric operation running off the river bordering your properties.  Surely he will be using at least all of the power from his solar panels, but what about the water based power plant?  Your neighbor is auctioning off the extra power that is generated to current buyers.  The people receiving this power do not need to be physically located close to the power source, the electricity can be great distances at minimal cost.
 &lt;br /&gt;&lt;br /&gt;
 On a larger level, there will likely be massive solar plants constructed as soon as the technology becomes sufficiently efficient.  These, along with wind, and hopefully nuclear plants will provide the foundation for our energy.  These will be supplemented by the independent operations on a local level.  If any source needs additional electricity it will be automatically routed.
 &lt;br /&gt;&lt;br /&gt;
-So everyone can get electricity from one another.  What's so great about this?  Well, these de-centralized power together make up a new power grid.  This new grid could provide the opportunity for nationwide use of plug-in vehicles by seamlessly integrating renewable energy resources.
+So everyone can get electricity from one another.  What&amp;#39;s so great about this?  Well, these de-centralized power together make up a new power grid.  This new grid could provide the opportunity for nationwide use of plug-in vehicles by seamlessly integrating renewable energy resources.
 &lt;br /&gt;&lt;br /&gt;
 With this smart-grid there will never be overloads or shortages, thanks to borrowed power.  This scalable system is incredibly efficient and will never fail to meet consumer demand.
 &lt;br /&gt;&lt;br /&gt;
@@ -419,7 +741,8 @@ Further Reading:
 &lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.oe.energy.gov/1165.htm&quot; target=&quot;_blank&quot;&gt;The Smart Grid: An Introduction - US Department of Energy&lt;/a&gt;
 &lt;br /&gt;
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Smart_grid&quot; target=&quot;_blank&quot;&gt;Smart grid - Wikipedia&lt;/a&gt;</content>
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Smart_grid&quot; target=&quot;_blank&quot;&gt;Smart grid - Wikipedia&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -427,11 +750,11 @@ Further Reading:
    <link href="fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog/"/>
    <updated>2009-03-03T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/syndication/2009/03/03/feed-facebook-your-blog</id>
-   <content type="html">Import your blog into facebook!  This can be a great marketing tool.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;Import your blog into facebook!  This can be a great marketing tool.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;!--more--&gt;There are two ways of importing into facebook.  To have facebook update your Mini-Feed with activity from other sites, such as last.fm, pandora, hulu, youtube, etc.. just visit your facebook profile page and click the &quot;import&quot; link at the top of the Mini-Feed section, select your service and enter the appropriate information.  Facebook will now automatically post your updates on these services to your Mini-Feed.
+&lt;p&gt;&amp;lt;!--more--&amp;gt;There are two ways of importing into facebook.  To have facebook update your Mini-Feed with activity from other sites, such as last.fm, pandora, hulu, youtube, etc.. just visit your facebook profile page and click the &amp;quot;import&amp;quot; link at the top of the Mini-Feed section, select your service and enter the appropriate information.  Facebook will now automatically post your updates on these services to your Mini-Feed.
 &lt;br /&gt;&lt;br /&gt;
-If you have a blog, the best way to announce your new posts are as notes.  Go into &lt;a href=&quot;http://www.facebook.com/notes.php&quot; target=&quot;_blank&quot;&gt;notes&lt;/a&gt; and you will see import settings in the middle of the right-hand side column.  Or click &lt;a href=&quot;http://www.facebook.com/editnotes.php?import&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.  What you need to enter here is your blog's rss feed.
+If you have a blog, the best way to announce your new posts are as notes.  Go into &lt;a href=&quot;http://www.facebook.com/notes.php&quot; target=&quot;_blank&quot;&gt;notes&lt;/a&gt; and you will see import settings in the middle of the right-hand side column.  Or click &lt;a href=&quot;http://www.facebook.com/editnotes.php?import&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.  What you need to enter here is your blog&amp;#39;s rss feed.
 &lt;br /&gt;&lt;br /&gt;
 What is an RSS feed?  It is what allows facebook access to your updates on all those other websites.  It is an xml file, automatically generated by your blog, that delivers updates to anyone that subscribes to it.
 &lt;br /&gt;&lt;br /&gt;
@@ -443,7 +766,8 @@ Further Reading/Viewing:
 &lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.tech-recipes.com/rx/2885/facebook_import_blogs_rss_feeds_without_third_party_applications/&quot; target=&quot;_blank&quot;&gt;Facebook Blog Import Screencast&lt;/a&gt;
 &lt;br /&gt;
-&lt;a href=&quot;http://blog.harrisonpowers.com/usability/blog-usability-rss-spyware-comments-and-spam/&quot;&gt;Blog Usability - RSS Comments and Spam&lt;/a&gt;</content>
+&lt;a href=&quot;http://blog.harrisonpowers.com/usability/blog-usability-rss-spyware-comments-and-spam/&quot;&gt;Blog Usability - RSS Comments and Spam&lt;/a&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -451,22 +775,23 @@ Further Reading/Viewing:
    <link href="fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress/"/>
    <updated>2009-02-27T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/wordpress/2009/02/27/moving-to-wordpress</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- I no longer have strong feelings for wordpress.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
-There are many benefits to having a blog on WordPress.  Most people enjoy the beautiful interface and plethora of plugins.  I like that the software is &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_source_software&quot; target=&quot;_blank&quot;&gt;open-source&lt;/a&gt; and &lt;a href=&quot;http://wordpress.org/&quot; target=&quot;_blank&quot;&gt;free to download&lt;/a&gt;.  This means that you can have a WordPress blog on your personal domain for free.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- I no longer have strong feelings for wordpress.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+There are many benefits to having a blog on WordPress.  Most people enjoy the beautiful interface and plethora of plugins.  I like that the software is &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_source_software&quot; target=&quot;_blank&quot;&gt;open-source&lt;/a&gt; and &lt;a href=&quot;http://wordpress.org/&quot; target=&quot;_blank&quot;&gt;free to download&lt;/a&gt;.  This means that you can have a WordPress blog on your personal domain for free.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Have a Blogger account but want the functionality of WordPress? It's easy to make the switch, let me show you.
+&lt;p&gt;Have a Blogger account but want the functionality of WordPress? It&amp;#39;s easy to make the switch, let me show you.
 &lt;br /&gt;&lt;br /&gt;
-&lt;!--more--&gt;
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
 
-First, you need to understand that there are two ways to use WordPress: .ORG and .COM  &lt;a href=&quot;http://wordpress.org/&quot;&gt;wordpress.ORG&lt;/a&gt; provides the free download of the WordPress software, while &lt;a href=&quot;http://wordpress.com&quot;&gt;wordpress.COM&lt;/a&gt; provides free hosting for your blog with a variety of paid upgrades.  If you have your own server, you'll want to download the software and &lt;a href=&quot;http://base.google.com/support/bin/answer.py?hl=en&amp;amp;answer=59462&quot; target=&quot;_blank&quot;&gt;ftp&lt;/a&gt; it.
+&lt;p&gt;First, you need to understand that there are two ways to use WordPress: .ORG and .COM  &lt;a href=&quot;http://wordpress.org/&quot;&gt;wordpress.ORG&lt;/a&gt; provides the free download of the WordPress software, while &lt;a href=&quot;http://wordpress.com&quot;&gt;wordpress.COM&lt;/a&gt; provides free hosting for your blog with a variety of paid upgrades.  If you have your own server, you&amp;#39;ll want to download the software and &lt;a href=&quot;http://base.google.com/support/bin/answer.py?hl=en&amp;amp;answer=59462&quot; target=&quot;_blank&quot;&gt;ftp&lt;/a&gt; it.
 &lt;br /&gt;&lt;br /&gt;
-If you just want a blog and don't know what I'm talking about then head on over to &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.COM&lt;/a&gt;!
+If you just want a blog and don&amp;#39;t know what I&amp;#39;m talking about then head on over to &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.COM&lt;/a&gt;!
 &lt;br /&gt;&lt;br /&gt;
-Click the big 'sign up now' button to get started.  Enter in all of your information and you'll be registered and delivered to your admin page.
+Click the big &amp;#39;sign up now&amp;#39; button to get started.  Enter in all of your information and you&amp;#39;ll be registered and delivered to your admin page.
 &lt;br /&gt;&lt;br /&gt;
 From here you can quickly import your information from Blogger.  Just click the Import under Tools on the left-hand side column.
 &lt;br /&gt;&lt;br /&gt;
-You'll see that WordPress can also import from &lt;a href=&quot;http://www.livejournal.com/&quot; target=&quot;_blank&quot;&gt;LiveJournal&lt;/a&gt;, &lt;a href=&quot;http://www.movabletype.org/&quot; target=&quot;_blank&quot;&gt;Movable Type&lt;/a&gt;, and &lt;a href=&quot;http://www.typepad.com/&quot; target=&quot;_blank&quot;&gt;Typepad&lt;/a&gt;.  Just click on the blog you want to import and follow the prompts to give it access to your information.  They make it really easy.</content>
+You&amp;#39;ll see that WordPress can also import from &lt;a href=&quot;http://www.livejournal.com/&quot; target=&quot;_blank&quot;&gt;LiveJournal&lt;/a&gt;, &lt;a href=&quot;http://www.movabletype.org/&quot; target=&quot;_blank&quot;&gt;Movable Type&lt;/a&gt;, and &lt;a href=&quot;http://www.typepad.com/&quot; target=&quot;_blank&quot;&gt;Typepad&lt;/a&gt;.  Just click on the blog you want to import and follow the prompts to give it access to your information.  They make it really easy.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -474,11 +799,11 @@ You'll see that WordPress can also import from &lt;a href=&quot;http://www.livej
    <link href="fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam/"/>
    <updated>2009-02-21T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/usability/wordpress/2009/02/21/blog-usability-rss-spyware-comments-and-spam</id>
-   <content type="html">According to a &lt;a href=&quot;http://www.catalystgroupdesign.com/cofactors/?p=111&quot; target=&quot;_blank&quot;&gt;study&lt;/a&gt; by Catalyst Group Design, &lt;strong&gt;mainstream consumers typically do not understand RSS, what it stands for or what it does&lt;/strong&gt;.  They recognize the brightly colored xml or rss buttons, while not knowing the intended use.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;According to a &lt;a href=&quot;http://www.catalystgroupdesign.com/cofactors/?p=111&quot; target=&quot;_blank&quot;&gt;study&lt;/a&gt; by Catalyst Group Design, &lt;strong&gt;mainstream consumers typically do not understand RSS, what it stands for or what it does&lt;/strong&gt;.  They recognize the brightly colored xml or rss buttons, while not knowing the intended use.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;!--more--&gt;In addition, when explained the concept users were fearful of having to installing anything, spyware, as well as being wary of having to pay for this service.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&amp;lt;!--more--&amp;gt;In addition, when explained the concept users were fearful of having to installing anything, spyware, as well as being wary of having to pay for this service.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-I found this observation interesting:
+&lt;p&gt;I found this observation interesting:
 &lt;blockquote&gt;The fear of spam and spyware cannot be underestimated, as it seems that mainstream experience with the web is teaching users to be extremely wary of persistent or automated functions that are not enabled through trusted sources.&lt;/blockquote&gt;
 Spyware used to be a major issue, but with modern browsers becoming extremely secure there is not as much to worry about.
 &lt;br /&gt;&lt;br /&gt;
@@ -494,17 +819,18 @@ It is important to take into account the &lt;strong&gt;design and moderation of 
 &lt;br /&gt;&lt;br /&gt;
 Usability can be interfered with by spam&lt;strong&gt;.&lt;/strong&gt; Spam mucks up a website and nobody wants to sift through it to get to content. Personally, if I recognize spam I will stop reading a website.  Unfortunately, spammers have been targeting blogs
 &lt;br /&gt;&lt;br /&gt;
-A way to avoid their wrath is to initialize a CAPTCHA, or disable comments from unregistered visitors. The latter would hurt usability on a mainstream blog, so let's take a look at the CAPTCHA.
+A way to avoid their wrath is to initialize a CAPTCHA, or disable comments from unregistered visitors. The latter would hurt usability on a mainstream blog, so let&amp;#39;s take a look at the CAPTCHA.
 &lt;br /&gt;&lt;br /&gt;
-What is a CAPTCHA?  Come on, you all know what it is.&lt;br /&gt;&lt;br /&gt;Of course you do. &lt;strong&gt;A CAPTCHA is a system for detecting if the user is human.&lt;/strong&gt; The acronym stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.  Computers can actually get past CAPTCHAs like the one pictured above, so that's why you see the crazy ones with lines and colors that are sometimes illegible.
+What is a CAPTCHA?  Come on, you all know what it is.&lt;br /&gt;&lt;br /&gt;Of course you do. &lt;strong&gt;A CAPTCHA is a system for detecting if the user is human.&lt;/strong&gt; The acronym stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.  Computers can actually get past CAPTCHAs like the one pictured above, so that&amp;#39;s why you see the crazy ones with lines and colors that are sometimes illegible.
 &lt;br /&gt;&lt;br /&gt;
 Sure, usability takes a small hit with these, but the user is only prompted with the CAPTCHA after their post is written.  If it was a good post you can be sure the user will try and submit it.  Keep in mind the obvious problem with handicap accessibility.  Here is a report on &lt;a href=&quot;http://cups.cs.cmu.edu/soups/2008/proceedings/p44Yan.pdf&quot; target=&quot;_blank&quot;&gt;usability issues in CAPTCHA design&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;
-Another type of CAPTCHA that I like, which is handcap accessible, is math related.  &lt;a href=&quot;http://sw-guide.de/wordpress/plugins/math-comment-spam-protection/&quot; target=&quot;_blank&quot;&gt;This wordpress plugin&lt;/a&gt; will generate an encrypted math problem that the user has to solve.&lt;br /&gt;&lt;br /&gt;
+Another type of CAPTCHA that I like, which is handcap accessible, is math related.  &lt;a href=&quot;http://sw-guide.de/wordpress/plugins/math-comment-spam-protection/&quot; target=&quot;_blank&quot;&gt;This wordpress plugin&lt;/a&gt; will generate an encrypted math problem that the user has to solve.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Free (popular) wordpress plugin &lt;a href=&quot;http://akismet.com/&quot; target=&quot;_blank&quot;&gt;Akismet&lt;/a&gt; checks comments and filters those that look like spam.  The plugin is easy to install through your wordpress dashboard, and to activate it you need an &lt;a href=&quot;http://faq.wordpress.com/2006/05/19/akismet-a-wordpresscom-blog-and-the-api-key/&quot; target=&quot;_blank&quot;&gt;API key&lt;/a&gt; that is given to you for signing up on &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.com&lt;/a&gt;.
+&lt;p&gt;Free (popular) wordpress plugin &lt;a href=&quot;http://akismet.com/&quot; target=&quot;_blank&quot;&gt;Akismet&lt;/a&gt; checks comments and filters those that look like spam.  The plugin is easy to install through your wordpress dashboard, and to activate it you need an &lt;a href=&quot;http://faq.wordpress.com/2006/05/19/akismet-a-wordpresscom-blog-and-the-api-key/&quot; target=&quot;_blank&quot;&gt;API key&lt;/a&gt; that is given to you for signing up on &lt;a href=&quot;http://wordpress.com&quot; target=&quot;_blank&quot;&gt;wordpress.com&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;
-Probably the most important comment related plugin you can install is &lt;a href=&quot;http://txfx.net/code/wordpress/subscribe-to-comments/&quot; target=&quot;_blank&quot;&gt;Subscribe to Comments&lt;/a&gt;.  This plugin provides the user with a checkbox by the comment field to subscribe to email notification of other comments to the post.</content>
+Probably the most important comment related plugin you can install is &lt;a href=&quot;http://txfx.net/code/wordpress/subscribe-to-comments/&quot; target=&quot;_blank&quot;&gt;Subscribe to Comments&lt;/a&gt;.  This plugin provides the user with a checkbox by the comment field to subscribe to email notification of other comments to the post.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -512,14 +838,14 @@ Probably the most important comment related plugin you can install is &lt;a href
    <link href="fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling/"/>
    <updated>2009-02-19T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/google/2009/02/19/mobile-gmail-offline-labeling</id>
-   <content type="html">A week or so back, Google announced offline support for Gmail.  With &lt;a href=&quot;http://gears.google.com/&quot;&gt;Google Gears&lt;/a&gt; installed and Offline turned on in your Gmail &lt;a href=&quot;https://mail.google.com/mail/#settings/labs&quot;&gt;labs&lt;/a&gt;, you can actively read and create emails while disconnected from the internet.  In addition, if you are connected to laggy internet, you will notice that your Gmail is fast as ever.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;A week or so back, Google announced offline support for Gmail.  With &lt;a href=&quot;http://gears.google.com/&quot;&gt;Google Gears&lt;/a&gt; installed and Offline turned on in your Gmail &lt;a href=&quot;https://mail.google.com/mail/#settings/labs&quot;&gt;labs&lt;/a&gt;, you can actively read and create emails while disconnected from the internet.  In addition, if you are connected to laggy internet, you will notice that your Gmail is fast as ever.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Now, still beaming about this 'milestone', Google shows off the new mobile interface for Gmail.  Get this, offline support!  And labels!  Using technology introduced with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot;&gt;HTTP5&lt;/a&gt;, the Safari browser is able to &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot;&gt;cache&lt;/a&gt; your Gmail.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Now, still beaming about this &amp;#39;milestone&amp;#39;, Google shows off the new mobile interface for Gmail.  Get this, offline support!  And labels!  Using technology introduced with &lt;a href=&quot;http://www.readwriteweb.com/archives/5_exciting_things_in_html_5.php&quot;&gt;HTTP5&lt;/a&gt;, the Safari browser is able to &lt;a href=&quot;http://dev.w3.org/html5/spec/Overview.html#structured-client-side-storage&quot;&gt;cache&lt;/a&gt; your Gmail.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Props to &lt;a href=&quot;http://androidcommunity.com/google-offline-gmail-webapp-video-demo-from-mwc09-20090218/&quot;&gt;AndroidCommunity.com&lt;/a&gt; for this sneak peek.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Props to &lt;a href=&quot;http://androidcommunity.com/google-offline-gmail-webapp-video-demo-from-mwc09-20090218/&quot;&gt;AndroidCommunity.com&lt;/a&gt; for this sneak peek.&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/VmjxmOtNZCk&amp;amp;hl=en&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/VmjxmOtNZCk&amp;amp;hl=en&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
 &lt;br /&gt;&lt;br /&gt;
-It's lookin' good people.  That is, google's support of the iPhone.  In a &lt;a href=&quot;http://blog.harrisonpowers.com/2009/02/09/iphone-google-is-official/&quot;&gt;previous post&lt;/a&gt; I mentioned that google added official support for push calendar and contact synchronization. What that means is that when you make a new date or edit a contact, the information is instantly synchronized to and from google's servers. So if you make a new contact using Google's &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;Contact Manager&lt;/a&gt;, it should show up in your phone instantly.  Same with your events on &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;Google Calendar&lt;/a&gt;.
+It&amp;#39;s lookin&amp;#39; good people.  That is, google&amp;#39;s support of the iPhone.  In a &lt;a href=&quot;http://blog.harrisonpowers.com/2009/02/09/iphone-google-is-official/&quot;&gt;previous post&lt;/a&gt; I mentioned that google added official support for push calendar and contact synchronization. What that means is that when you make a new date or edit a contact, the information is instantly synchronized to and from google&amp;#39;s servers. So if you make a new contact using Google&amp;#39;s &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;Contact Manager&lt;/a&gt;, it should show up in your phone instantly.  Same with your events on &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;Google Calendar&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -528,26 +854,26 @@ It's lookin' good people.  That is, google's support of the iPhone.  In a &lt;a 
    <link href="fijimunkii.github.io/links/2009/02/15/week-in-links-21509/"/>
    <updated>2009-02-15T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/links/2009/02/15/week-in-links-21509</id>
-   <content type="html">cancer.  damn cancer.  lucky for us there are scientists.  a routine &lt;a href=&quot;http://www.nature.com/news/2009/090211/full/news.2009.94.html&quot; target=&quot;_blank&quot;&gt;urine test&lt;/a&gt; for sarcosine can detect prostate cancer.  a '&lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7888042.stm&quot; target=&quot;_blank&quot;&gt;danger recepter&lt;/a&gt;' that may kick-start an immune reaction to cancer.  a &lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7861474.stm&quot; target=&quot;_blank&quot;&gt;missing link&lt;/a&gt; in the way cells protect themselves against cancer.  something tells me were going to end up on top of this one.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;cancer.  damn cancer.  lucky for us there are scientists.  a routine &lt;a href=&quot;http://www.nature.com/news/2009/090211/full/news.2009.94.html&quot; target=&quot;_blank&quot;&gt;urine test&lt;/a&gt; for sarcosine can detect prostate cancer.  a &amp;#39;&lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7888042.stm&quot; target=&quot;_blank&quot;&gt;danger recepter&lt;/a&gt;&amp;#39; that may kick-start an immune reaction to cancer.  a &lt;a href=&quot;http://news.bbc.co.uk/2/hi/health/7861474.stm&quot; target=&quot;_blank&quot;&gt;missing link&lt;/a&gt; in the way cells protect themselves against cancer.  something tells me were going to end up on top of this one.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-one man's dream to &lt;a href=&quot;http://www.nytimes.com/2009/02/13/us/13records.html&quot; target=&quot;_blank&quot;&gt;free the public access&lt;/a&gt; of the court electronic records.  tell governor paterson and the state legislature to &lt;a href=&quot;http://www.studentassembly.org/&quot; target=&quot;_blank&quot;&gt;stop stealing from SUNY students&lt;/a&gt;.  1970s &lt;a href=&quot;http://www.nas.nasa.gov/About/Education/SpaceSettlement/70sArt/art.html&quot; target=&quot;_blank&quot;&gt;space colony&lt;/a&gt; artwork.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;one man&amp;#39;s dream to &lt;a href=&quot;http://www.nytimes.com/2009/02/13/us/13records.html&quot; target=&quot;_blank&quot;&gt;free the public access&lt;/a&gt; of the court electronic records.  tell governor paterson and the state legislature to &lt;a href=&quot;http://www.studentassembly.org/&quot; target=&quot;_blank&quot;&gt;stop stealing from SUNY students&lt;/a&gt;.  1970s &lt;a href=&quot;http://www.nas.nasa.gov/About/Education/SpaceSettlement/70sArt/art.html&quot; target=&quot;_blank&quot;&gt;space colony&lt;/a&gt; artwork.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-if you're a fan of old-school video games like sonic, mario, metroid etc.. check out these &lt;a href=&quot;http://lifehacker.com/5152884/absolutely-amazing-video-game-remake-wallpapers&quot; target=&quot;_blank&quot;&gt;awesome renderings&lt;/a&gt; of what those originals could look like with today's hardware.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;if you&amp;#39;re a fan of old-school video games like sonic, mario, metroid etc.. check out these &lt;a href=&quot;http://lifehacker.com/5152884/absolutely-amazing-video-game-remake-wallpapers&quot; target=&quot;_blank&quot;&gt;awesome renderings&lt;/a&gt; of what those originals could look like with today&amp;#39;s hardware.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-mario batali and anthony bourdain talk about &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-bourdain-essential-ingredients.html&quot; target=&quot;_blank&quot;&gt;essential ingredients&lt;/a&gt;, &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-baby-food.html&quot; target=&quot;_blank&quot;&gt;baby food&lt;/a&gt;, and &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-sex.html&quot; target=&quot;_blank&quot;&gt;sex&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;mario batali and anthony bourdain talk about &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-bourdain-essential-ingredients.html&quot; target=&quot;_blank&quot;&gt;essential ingredients&lt;/a&gt;, &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-baby-food.html&quot; target=&quot;_blank&quot;&gt;baby food&lt;/a&gt;, and &lt;a href=&quot;http://www.seriouseats.com/2009/01/chewing-the-fat-batali-and-bourdain-on-sex.html&quot; target=&quot;_blank&quot;&gt;sex&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-edit &lt;a href=&quot;http://googlesystem.blogspot.com/2009/02/edit-google-spreadsheets-on-iphone.html&quot; target=&quot;_blank&quot;&gt;google spreadsheets&lt;/a&gt; on your iPhone and &lt;a href=&quot;http://www.textually.org/textually/archives/2009/02/022683.htm&quot; target=&quot;_blank&quot;&gt;remotely&lt;/a&gt; set off farts.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;edit &lt;a href=&quot;http://googlesystem.blogspot.com/2009/02/edit-google-spreadsheets-on-iphone.html&quot; target=&quot;_blank&quot;&gt;google spreadsheets&lt;/a&gt; on your iPhone and &lt;a href=&quot;http://www.textually.org/textually/archives/2009/02/022683.htm&quot; target=&quot;_blank&quot;&gt;remotely&lt;/a&gt; set off farts.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;a href=&quot;http://twitter.com/JohnCleese&quot; target=&quot;_blank&quot;&gt;john cleese&lt;/a&gt; is on twitter and making &lt;a href=&quot;http://www.johncleesepodcast.co.uk/cleeseblog/&quot; target=&quot;_blank&quot;&gt;new funnies&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://twitter.com/JohnCleese&quot; target=&quot;_blank&quot;&gt;john cleese&lt;/a&gt; is on twitter and making &lt;a href=&quot;http://www.johncleesepodcast.co.uk/cleeseblog/&quot; target=&quot;_blank&quot;&gt;new funnies&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-verizon says &lt;a href=&quot;http://www.dslreports.com/shownews/Verizon-100Gbps-Routes-in-2010-100796&quot; target=&quot;_blank&quot;&gt;100GBS by 2010&lt;/a&gt;.
+&lt;p&gt;verizon says &lt;a href=&quot;http://www.dslreports.com/shownews/Verizon-100Gbps-Routes-in-2010-100796&quot; target=&quot;_blank&quot;&gt;100GBS by 2010&lt;/a&gt;.
 &lt;br /&gt;&lt;br /&gt;
-google accused of &lt;a href=&quot;http://techdirt.com/articles/20090206/1237213675.shtml&quot; target=&quot;_blank&quot;&gt;invisibly&lt;/a&gt; &lt;a href=&quot;http://www.laweekly.com/2009-02-05/music/google-39-s-new-killer-app-why-are-music-bloggers-39-posts-disappearing-and-who-is-deleting-them/&quot; target=&quot;_blank&quot;&gt;deleting&lt;/a&gt; &lt;a href=&quot;http://tins.rklau.com/2009/02/blogger-and-dmca.html&quot; target=&quot;_blank&quot;&gt;music blog&lt;/a&gt; posts.  google &lt;a href=&quot;http://code.google.com/apis/ajax/&quot; target=&quot;_blank&quot;&gt;ajax APIs&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+google accused of &lt;a href=&quot;http://techdirt.com/articles/20090206/1237213675.shtml&quot; target=&quot;_blank&quot;&gt;invisibly&lt;/a&gt; &lt;a href=&quot;http://www.laweekly.com/2009-02-05/music/google-39-s-new-killer-app-why-are-music-bloggers-39-posts-disappearing-and-who-is-deleting-them/&quot; target=&quot;_blank&quot;&gt;deleting&lt;/a&gt; &lt;a href=&quot;http://tins.rklau.com/2009/02/blogger-and-dmca.html&quot; target=&quot;_blank&quot;&gt;music blog&lt;/a&gt; posts.  google &lt;a href=&quot;http://code.google.com/apis/ajax/&quot; target=&quot;_blank&quot;&gt;ajax APIs&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;a href=&quot;http://lifehacker.com/5148946/add%20art-replaces-advertisements-with-artwork&quot; target=&quot;_blank&quot;&gt;firefox extension&lt;/a&gt; add-art replaces advertisements with art.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://lifehacker.com/5148946/add%20art-replaces-advertisements-with-artwork&quot; target=&quot;_blank&quot;&gt;firefox extension&lt;/a&gt; add-art replaces advertisements with art.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-and here's a great iPhone screencast showing off &lt;a href=&quot;http://reddit.com&quot; target=&quot;_blank&quot;&gt;reddit&lt;/a&gt;'s &lt;a href=&quot;http://www.readwriteweb.com/archives/the_official_reddit_iphone_app.php&quot; target=&quot;_blank&quot;&gt;new app&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
+&lt;p&gt;and here&amp;#39;s a great iPhone screencast showing off &lt;a href=&quot;http://reddit.com&quot; target=&quot;_blank&quot;&gt;reddit&lt;/a&gt;&amp;#39;s &lt;a href=&quot;http://www.readwriteweb.com/archives/the_official_reddit_iphone_app.php&quot; target=&quot;_blank&quot;&gt;new app&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/jjxlEodOETU&amp;amp;color1=0xb1b1b1&amp;amp;color2=0xcfcfcf&amp;amp;hl=en&amp;amp;feature=player_embedded&amp;amp;fs=1&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -556,47 +882,48 @@ and here's a great iPhone screencast showing off &lt;a href=&quot;http://reddit.
    <link href="fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop/"/>
    <updated>2009-02-11T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/tools/2009/02/11/cream-of-the-twitter-tool-crop</id>
-   <content type="html">I'm going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael_Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/the_real_shaq&quot;&gt;@THE_REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;, etc.. build from there.
+   <content type="html">&lt;p&gt;I&amp;#39;m going to suggest you &lt;a href=&quot;http://twitter.com/signup&quot;&gt;sign up&lt;/a&gt; for twitter regardless of your understanding of it. &lt;a href=&quot;http://twitter.com/invitations?service=gmail&quot;&gt; Import&lt;/a&gt; your address book, search for your favorite celebs: &lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;@&lt;/a&gt;&lt;a href=&quot;http://twitter.com/elimanning&quot;&gt;elimanning&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/michael_phelps&quot;&gt;@Michael&lt;em&gt;Phelps&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lukewilson&quot;&gt;@LukeWilson&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/algore&quot;&gt;@algore&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/mchammer&quot;&gt;@MCHammer&lt;/a&gt;, &amp;lt;a href=&amp;quot;http://twitter.com/the&lt;/em&gt;real&lt;em&gt;shaq&amp;quot;&amp;gt;@THE&lt;/em&gt;REAL_SHAQ&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/lancearmstrong&quot;&gt;@lancearmstrong&lt;/a&gt;,  &lt;a href=&quot;http://twitter.com/snoopdogg&quot;&gt;@snoopdogg&lt;/a&gt;, etc.. build from there.&lt;/p&gt;
 
-If you don't know how to use twitter, &lt;a href=&quot;http://www.google.com/search?q=how+do+i+use+twitter&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;aq=t&amp;amp;rls=org.mozilla:en-US:official&amp;amp;client=firefox-a&quot;&gt;google&lt;/a&gt; 'how do i use twitter' to have your wildest dreams come alive.
+&lt;p&gt;If you don&amp;#39;t know how to use twitter, &lt;a href=&quot;http://www.google.com/search?q=how+do+i+use+twitter&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;aq=t&amp;amp;rls=org.mozilla:en-US:official&amp;amp;client=firefox-a&quot;&gt;google&lt;/a&gt; &amp;#39;how do i use twitter&amp;#39; to have your wildest dreams come alive.&lt;/p&gt;
 
-After a few weeks I had close to 200 followers, now at week 4 I have 800.  I'd like to say my following is growing exponentially, or at some growing rate, but we'll see in weeks.  I'm not going to keep count of who follows me and when, that's what &lt;a href=&quot;http://twittercounter.com/&quot;&gt;twittercounter&lt;/a&gt; is for.  twittercounter keeps track of your follow history and graphs them on a nice interactive chart.
+&lt;p&gt;After a few weeks I had close to 200 followers, now at week 4 I have 800.  I&amp;#39;d like to say my following is growing exponentially, or at some growing rate, but we&amp;#39;ll see in weeks.  I&amp;#39;m not going to keep count of who follows me and when, that&amp;#39;s what &lt;a href=&quot;http://twittercounter.com/&quot;&gt;twittercounter&lt;/a&gt; is for.  twittercounter keeps track of your follow history and graphs them on a nice interactive chart.&lt;/p&gt;
 
-&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739367719031538&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOP3XiY0vI/AAAAAAAABlQ/QybQhGmHtXI/s400/twittercounter01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301739367719031538&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOP3XiY0vI/AAAAAAAABlQ/QybQhGmHtXI/s400/twittercounter01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-They also provide statistics...&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;They also provide statistics...&lt;br /&gt;&lt;br /&gt;
 &lt;img id=&quot;BLOGGER_PHOTO_ID_5301739217478858306&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 191px; height: 293px;&quot; src=&quot;http://1.bp.blogspot.com/_Orh7du7LmiU/SZOPun2VtkI/AAAAAAAABlI/ZuyWNFmjVm0/s400/twittercounter02.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
 And a badge&lt;br /&gt;&lt;br /&gt;
 &lt;img id=&quot;BLOGGER_PHOTO_ID_5301761068828375554&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 88px; height: 26px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOjmieCugI/AAAAAAAABlo/joIzPj-SBpo/s400/twittercounter03.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;
-Next up is &lt;a href=&quot;http://mrtweet.net/&quot;&gt;Mr. Tweet&lt;/a&gt;.  All you need to do is follow &lt;a href=&quot;http://twitter.com/MrTweet&quot;&gt;@MrTweet&lt;/a&gt; and he will contact you once he's collected enough information about your extended network.  Mr. Tweet will serve you recommended people to follow, based on interests and popularity.  Mr. Tweet also keeps stats on you to show other people using the service.  Every other week I get this direct message:
+Next up is &lt;a href=&quot;http://mrtweet.net/&quot;&gt;Mr. Tweet&lt;/a&gt;.  All you need to do is follow &lt;a href=&quot;http://twitter.com/MrTweet&quot;&gt;@MrTweet&lt;/a&gt; and he will contact you once he&amp;#39;s collected enough information about your extended network.  Mr. Tweet will serve you recommended people to follow, based on interests and popularity.  Mr. Tweet also keeps stats on you to show other people using the service.  Every other week I get this direct message:
 &lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Hi! Your suggestions and profile stats were just refreshed (done biweekly) Have fun! http://mrtweet.net/home/harrisonpowers&lt;/blockquote&gt;
-To quickly check who you are following that isn't following you back, and vice versa, check out &lt;a href=&quot;http://friendorfollow.com/&quot;&gt;friendorfollow&lt;/a&gt;.  Just enter your twitter name and get a nice picture collage of everyone you're (dis)connected to.
-&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Services like friendorfollow have been banned by twitter. Homebrew methods are the best bet at the moment. Good luck.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+To quickly check who you are following that isn&amp;#39;t following you back, and vice versa, check out &lt;a href=&quot;http://friendorfollow.com/&quot;&gt;friendorfollow&lt;/a&gt;.  Just enter your twitter name and get a nice picture collage of everyone you&amp;#39;re (dis)connected to.
+&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Services like friendorfollow have been banned by twitter. Homebrew methods are the best bet at the moment. Good luck.&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-For statistics on your tweeting with regards to how influential you are, we pull out the &lt;a href=&quot;http://www.webanalyticsdemystified.com/twitter/index.asp?u=harrisonpowers#results&quot;&gt;&lt;Twitter Influence Calculator&lt;/span&gt;&lt;/a&gt;.  This service lets you know how often you are being referenced and retweeted, as well as indicating your signal-to-noise ratio.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;For statistics on your tweeting with regards to how influential you are, we pull out the &lt;a href=&quot;http://www.webanalyticsdemystified.com/twitter/index.asp?u=harrisonpowers#results&quot;&gt;&lt;Twitter Influence Calculator&lt;/span&gt;&lt;/a&gt;.  This service lets you know how often you are being referenced and retweeted, as well as indicating your signal-to-noise ratio.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Now for the last of the web apps, but probably the most important. &lt;a href=&quot;http://socialtoo.com/&quot;&gt;socialtoo&lt;/a&gt; is a great asset to your twitter account.  socialtoo sends you an email every morning with a list of everyone that followed you and everyone that stopped following you.  You can also set up socialtoo to automatically reciprocate follows, and it can send an automatic Direct Message to your new followers.  This feature I feel is annoying, and thankfully you can turn it off receiving them in your socialtoo settings.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Now for the last of the web apps, but probably the most important. &lt;a href=&quot;http://socialtoo.com/&quot;&gt;socialtoo&lt;/a&gt; is a great asset to your twitter account.  socialtoo sends you an email every morning with a list of everyone that followed you and everyone that stopped following you.  You can also set up socialtoo to automatically reciprocate follows, and it can send an automatic Direct Message to your new followers.  This feature I feel is annoying, and thankfully you can turn it off receiving them in your socialtoo settings.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Now I would like to move on to the desktop apps for twitter.  The first being the most popular and robust.  I would also like to point out that a major revision of it is being released tomorrow, &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/about_marshall.php&quot;&gt;Marshall Kirkpatrick&lt;/a&gt; from Read/WriteWeb lays out the &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/archives/new_tweetdeck_out_tomorrow.php&quot;&gt;new features&lt;/a&gt; of &lt;a href=&quot;http://www.tweetdeck.com/beta&quot;&gt;TweetDeck&lt;/a&gt;:
+&lt;p&gt;Now I would like to move on to the desktop apps for twitter.  The first being the most popular and robust.  I would also like to point out that a major revision of it is being released tomorrow, &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/about_marshall.php&quot;&gt;Marshall Kirkpatrick&lt;/a&gt; from Read/WriteWeb lays out the &lt;a style=&quot;font-family: trebuchet ms;&quot; href=&quot;http://www.readwriteweb.com/archives/new_tweetdeck_out_tomorrow.php&quot;&gt;new features&lt;/a&gt; of &lt;a href=&quot;http://www.tweetdeck.com/beta&quot;&gt;TweetDeck&lt;/a&gt;:
 &lt;blockquote style=&quot;font-family: trebuchet ms;&quot;&gt;Language translation, Stocktwits, Hashtag Support, User Search, One Column View [...] easier group management to email forwarding of tweets to some API access improvements.&lt;/blockquote&gt;
-The app is popular because of it's interface, which is split into customizable columns.
-&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301753676800741186&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 273px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOc4RBUT0I/AAAAAAAABlY/Hmm0cyn4Cog/s400/tweetdeck01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;I use (All Tweets)|(Replies)|(Group:Friends)|(Search: opensource)|etc.. you can tailor it to your needs.&lt;br /&gt;&lt;br /&gt;
+The app is popular because of it&amp;#39;s interface, which is split into customizable columns.
+&lt;br /&gt;&lt;br /&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301753676800741186&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 273px;&quot; src=&quot;http://3.bp.blogspot.com/_Orh7du7LmiU/SZOc4RBUT0I/AAAAAAAABlY/Hmm0cyn4Cog/s400/tweetdeck01.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;I use (All Tweets)|(Replies)|(Group:Friends)|(Search: opensource)|etc.. you can tailor it to your needs.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Another great twitter client is &lt;a style=&quot;font-weight: bold;&quot; href=&quot;http://destroytoday.com/?p=Project&amp;amp;id=DestroyTwitter&quot;&gt;DestroyTwitter&lt;/a&gt;, my current favorite, which has a tabbed interface.  And great colors.  It also rarely goes over my Twitter &lt;a href=&quot;http://tweetdeck.posterous.com/what-does-rate-limit-exceeded&quot;&gt;API limit&lt;/a&gt; unlike TweetDeck.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;Another great twitter client is &lt;a style=&quot;font-weight: bold;&quot; href=&quot;http://destroytoday.com/?p=Project&amp;amp;id=DestroyTwitter&quot;&gt;DestroyTwitter&lt;/a&gt;, my current favorite, which has a tabbed interface.  And great colors.  It also rarely goes over my Twitter &lt;a href=&quot;http://tweetdeck.posterous.com/what-does-rate-limit-exceeded&quot;&gt;API limit&lt;/a&gt; unlike TweetDeck.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;img id=&quot;BLOGGER_PHOTO_ID_5301757290791990482&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 265px; height: 152px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOgKoL-dNI/AAAAAAAABlg/c4zc_RRiaLI/s400/Picture+10.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;Both apps are built on the Adobe &lt;a href=&quot;http://www.adobe.com/products/air/&quot;&gt;AIR&lt;/a&gt; development platform.  The apps work very well, but they crash occasionally.  It's not a serious problem though, as all the information is stored remotely.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img id=&quot;BLOGGER_PHOTO_ID_5301757290791990482&quot; style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 265px; height: 152px;&quot; src=&quot;http://2.bp.blogspot.com/_Orh7du7LmiU/SZOgKoL-dNI/AAAAAAAABlg/c4zc_RRiaLI/s400/Picture+10.png&quot; border=&quot;0&quot; alt=&quot;&quot; /&gt;Both apps are built on the Adobe &lt;a href=&quot;http://www.adobe.com/products/air/&quot;&gt;AIR&lt;/a&gt; development platform.  The apps work very well, but they crash occasionally.  It&amp;#39;s not a serious problem though, as all the information is stored remotely.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-If you've made it this far, you're interested in twitter.  And you might have noticed a lack of screencast in this post, for which I apologize.  Please take these tips with you:
+&lt;p&gt;If you&amp;#39;ve made it this far, you&amp;#39;re interested in twitter.  And you might have noticed a lack of screencast in this post, for which I apologize.  Please take these tips with you:
 &lt;ul&gt;
-	&lt;li&gt;Follow people that get linked in your twitterstream.  This is the classic way of expanding your network.&lt;/li&gt;
-	&lt;li&gt;Link, link, link - Personal information is interesting at times, but unless wrapped in some well thought-out humor gets pretty dry.  Share links to things you find interesting, and make sure to shorten them with a service like &lt;a href=&quot;http://is.gd/&quot;&gt;is.gd&lt;/a&gt; (built into the twitter apps mentioned)&lt;/li&gt;
-	&lt;li&gt;Track those links - If you are curious how many people are clicking your links you can use a url-shortener with extended capabilities like &lt;a href=&quot;http://adjix.com/&quot;&gt;adjix&lt;/a&gt;.&lt;/li&gt;
-	&lt;li&gt;Retweet your &lt;a href=&quot;http://twitter.com/harrisonpowers/status/1190088307&quot;&gt;favorite tweets&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Follow people that get linked in your twitterstream.  This is the classic way of expanding your network.&lt;/li&gt;
+    &lt;li&gt;Link, link, link - Personal information is interesting at times, but unless wrapped in some well thought-out humor gets pretty dry.  Share links to things you find interesting, and make sure to shorten them with a service like &lt;a href=&quot;http://is.gd/&quot;&gt;is.gd&lt;/a&gt; (built into the twitter apps mentioned)&lt;/li&gt;
+    &lt;li&gt;Track those links - If you are curious how many people are clicking your links you can use a url-shortener with extended capabilities like &lt;a href=&quot;http://adjix.com/&quot;&gt;adjix&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;Retweet your &lt;a href=&quot;http://twitter.com/harrisonpowers/status/1190088307&quot;&gt;favorite tweets&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow me&lt;/a&gt;.  I'll be sure to follow you.
+Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow me&lt;/a&gt;.  I&amp;#39;ll be sure to follow you.&lt;/p&gt;
 
-&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 -- My twitter handle is now fijimunkii. Couldn't deal with all the following and followers nonsense. Keeping it simple these days..&lt;/i&gt;&lt;/strong&gt;</content>
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013 -- My twitter handle is now fijimunkii. Couldn&amp;#39;t deal with all the following and followers nonsense. Keeping it simple these days..&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -604,11 +931,11 @@ Oh yeah, and &lt;a href=&quot;http://twitter.com/harrisonpowers&quot;&gt;follow 
    <link href="fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official/"/>
    <updated>2009-02-09T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/google/iphone/2009/02/09/iphone-google-sync-is-official</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Google has recently disabled push support for gmail in the iOS mail.app&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
-Google made it official, push synchronization support for the iPhone.  You can now synchronize your &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;contacts&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;calendars&lt;/a&gt; between the iPhone and Google.  This was possible before using a &lt;a href=&quot;http://www.nuevasync.com/&quot;&gt;third-party&lt;/a&gt; microsoft exchange server, but now it's &lt;a href=&quot;http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html&quot;&gt;official&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- Google has recently disabled push support for gmail in the iOS mail.app&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+Google made it official, push synchronization support for the iPhone.  You can now synchronize your &lt;a href=&quot;http://mail.google.com/mail/contacts/ui/ContactManager&quot;&gt;contacts&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/calendar&quot;&gt;calendars&lt;/a&gt; between the iPhone and Google.  This was possible before using a &lt;a href=&quot;http://www.nuevasync.com/&quot;&gt;third-party&lt;/a&gt; microsoft exchange server, but now it&amp;#39;s &lt;a href=&quot;http://googleblog.blogspot.com/2009/02/calendar-and-contact-syncing-for-iphone.html&quot;&gt;official&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&gt;, Product Manager @ Google&lt;br /&gt;&lt;br /&gt;
-&lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;
+&lt;p&gt;Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&gt;, Product Manager @ Google&lt;br /&gt;&lt;br /&gt;
+&lt;object width=&quot;400&quot; height=&quot;246&quot; data=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;window&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/Kt_-qHczCMg&amp;amp;ap=%2526fmt%3D22&quot; /&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;/object&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -617,9 +944,9 @@ Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&
    <link href="fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader/"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/google/screencast/syndication/2009/02/08/rss-and-google-reader</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- A screencast I put together showing how to use the now retired Google Reader&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update 8-29-2013&lt;/i&gt; -- A screencast I put together showing how to use the now retired Google Reader&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;object width=&quot;400&quot; height=&quot;300&quot; data=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3124812&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=&amp;amp;fullscreen=1&quot; /&gt;&lt;/object&gt;&lt;br /&gt;
-&lt;a href=&quot;http://vimeo.com/3124812&quot;&gt;watch in HD&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/harrisonpowers&quot;&gt;harrisonpowers&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;vimeo&lt;/a&gt;.
+&lt;a href=&quot;http://vimeo.com/3124812&quot;&gt;watch in HD&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/harrisonpowers&quot;&gt;harrisonpowers&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;vimeo&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -628,18 +955,19 @@ Props to &lt;a href=&quot;http://marcusfoster.com/&quot;&gt;Marcus Foster&lt;/a&
    <link href="fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac/"/>
    <updated>2009-02-08T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/osx/2009/02/08/going-full-screen-on-a-mac</id>
-   <content type="html">&lt;strong&gt;&lt;i&gt;Update: 8-29-2013&lt;/i&gt; -- This post is ancient and no longer relevant. Full screen app capability has been integrated in OSX&lt;/strong&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;&lt;i&gt;Update: 8-29-2013&lt;/i&gt; -- This post is ancient and no longer relevant. Full screen app capability has been integrated in OSX&lt;/strong&gt;
 &lt;br /&gt;&lt;br /&gt;
-Most popular web browsers for macs cannot go full-screen.  This is a feature I used regularly before my recent switch to mac (which, by the way, has been fantastic!)
+Most popular web browsers for macs cannot go full-screen.  This is a feature I used regularly before my recent switch to mac (which, by the way, has been fantastic!)&lt;/p&gt;
 
-Now I am happy to say that once again Google Reader is full-screened and I am loving life :]
+&lt;p&gt;Now I am happy to say that once again Google Reader is full-screened and I am loving life :]&lt;/p&gt;
 
-All thanks to &lt;a href=&quot;http://www.barbariangroup.com/software/plainview_app_1_0&quot;&gt;Plainview&lt;/a&gt;.  The menubar autohides and the app supports shortcuts that feel intuitive to me: &lt;em&gt;command+L&lt;/em&gt; brings up the location bar, &lt;em&gt;command+T&lt;/em&gt; toggles your full-screened windows.&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;All thanks to &lt;a href=&quot;http://www.barbariangroup.com/software/plainview_app_1_0&quot;&gt;Plainview&lt;/a&gt;.  The menubar autohides and the app supports shortcuts that feel intuitive to me: &lt;em&gt;command+L&lt;/em&gt; brings up the location bar, &lt;em&gt;command+T&lt;/em&gt; toggles your full-screened windows.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-Props to &lt;a href=&quot;http://www.creativeapplications.net/2009/02/08/plainview-mac/&quot;&gt;Creative Applications&lt;/a&gt; for this screencast.
+&lt;p&gt;Props to &lt;a href=&quot;http://www.creativeapplications.net/2009/02/08/plainview-mac/&quot;&gt;Creative Applications&lt;/a&gt; for this screencast.
 &lt;br /&gt;&lt;br /&gt;
 &lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; width=&quot;400&quot; height=&quot;225&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; width=&quot;400&quot; height=&quot;225&quot; src=&quot;http://vimeo.com/moogaloop.swf?clip_id=3132493&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=0&amp;amp;show_portrait=0&amp;amp;color=ffffff&amp;amp;fullscreen=1&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;br /&gt;
-&lt;a href=&quot;http://vimeo.com/3132493&quot;&gt;Plainview [Mac]&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/creativeapps&quot;&gt;CreativeApplications.Net&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.</content>
+&lt;a href=&quot;http://vimeo.com/3132493&quot;&gt;Plainview [Mac]&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com/creativeapps&quot;&gt;CreativeApplications.Net&lt;/a&gt; // &lt;a href=&quot;http://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
@@ -647,7 +975,7 @@ Props to &lt;a href=&quot;http://www.creativeapplications.net/2009/02/08/plainvi
    <link href="fijimunkii.github.io/about/2009/02/04/introduction/"/>
    <updated>2009-02-04T00:00:00-05:00</updated>
    <id>fijimunkii.github.io/about/2009/02/04/introduction</id>
-   <content type="html">Ahoy there!  The internet is a vast sea of treachery and deceit, but with the correct guidance one can find bountiful treasures.  I have sailed to the far corners of the dark web and have survived to tell some tales.  Add me to your feed reader and I shall reward you with jewels of knowledge.  What's that?  You don't know what a feed reader is?  Well onto our first lesson then..
+   <content type="html">&lt;p&gt;Ahoy there!  The internet is a vast sea of treachery and deceit, but with the correct guidance one can find bountiful treasures.  I have sailed to the far corners of the dark web and have survived to tell some tales.  Add me to your feed reader and I shall reward you with jewels of knowledge.  What&amp;#39;s that?  You don&amp;#39;t know what a feed reader is?  Well onto our first lesson then..&lt;/p&gt;
 </content>
  </entry>
  
