@@ -312,3 +312,12 @@ ignores = (
   }
 );
 ```
+
+#### How to Navigate
+
+* ```/s server.address``` to connect to a server
+* ```/j #channel``` to join a channel
+* ```/msg nick``` to send a private message
+* ```escape [channel number]``` to switch channels
+* in the status window ```ctrl x``` changes the server you are interacting with
+* ```/quit``` exits irssi

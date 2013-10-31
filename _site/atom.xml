@@ -4,7 +4,7 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-31T17:13:03-04:00</updated>
+ <updated>2013-10-31T18:02:28-04:00</updated>
 
  
  <entry>
@@ -326,7 +326,18 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
     &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;toc_6&quot;&gt;How to Navigate&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/s server.address&lt;/code&gt; to connect to a server&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/j #channel&lt;/code&gt; to join a channel&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/msg nick&lt;/code&gt; to send a private message&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;escape [channel number]&lt;/code&gt; to switch channels&lt;/li&gt;
+&lt;li&gt;in the status window &lt;code&gt;ctrl x&lt;/code&gt; changes the server you are interacting with&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/quit&lt;/code&gt; exits irssi&lt;/li&gt;
+&lt;/ul&gt;
+</content>
  </entry>
  
  <entry>
