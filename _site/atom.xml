@@ -4,7 +4,7 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-30T20:02:53-04:00</updated>
+ <updated>2013-10-30T20:05:03-04:00</updated>
 
  
  <entry>
@@ -27,6 +27,7 @@ ls -l long listing (file attributes)
 ls -l | sort -k 3 pipes the listing through sort (by column 3 - owner name)
 ls -l | sort -k 3, 3 -k 9 sort by owner and filename
 ls -lisa | awk '{print $5, $7, $11}' | sort pipes the detailed listing through awk, which prunes the output, and then piped through sort
+```
 </content>
  </entry>
  
