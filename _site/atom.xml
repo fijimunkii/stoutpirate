@@ -4,7 +4,7 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-31T16:57:10-04:00</updated>
+ <updated>2013-10-31T17:09:30-04:00</updated>
 
  
  <entry>
@@ -327,6 +327,41 @@ Congratulations! You now have the best irc client!!&lt;/p&gt;
   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>double-u double-u double-u</title>
+   <link href="fijimunkii.github.io/www"/>
+   <updated>2013-10-30T00:00:00-04:00</updated>
+   <id>fijimunkii.github.io/www</id>
+   <content type="html">&lt;h1 id=&quot;toc_0&quot;&gt;To WWW or not to WWW?&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;That is the question.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a question that will inevitably come up at some point in a web developer&amp;#39;s life. If you&amp;#39;re reding this blog, you surely have noticed that sometimes a website fails to include a www-prefix. Is this a problem? The experts on the subject say no.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.codinghorror.com/blog/2008/04/the-great-dub-dub-dub-debate.html&quot;&gt;http://www.codinghorror.com/blog/2008/04/the-great-dub-dub-dub-debate.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2008/06/dropping-the-www-prefix/&quot;&gt;http://blog.stackoverflow.com/2008/06/dropping-the-www-prefix/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/www-or-no-www/&quot;&gt;http://www.sitepoint.com/www-or-no-www/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wordpress.org/support/topic/difference-between-www-and-without-www&quot;&gt;http://wordpress.org/support/topic/difference-between-www-and-without-www&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.mattcutts.com/blog/bacon-polenta/&quot;&gt;http://www.mattcutts.com/blog/bacon-polenta/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As a reader named Neil aptly put it: &lt;em&gt;How many acronyms are three times longer than what they stand for?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;toc_1&quot;&gt;Users of the internet&lt;/h4&gt;
+
+&lt;p&gt;WWW has been depreciated. The www-prefix changes nothing of their experience, except perhaps a cleaner looking address bar.&lt;/p&gt;
+
+&lt;h4 id=&quot;toc_2&quot;&gt;Web Developers&lt;/h4&gt;
+
+&lt;p&gt;Have to make the decision whether or not to use the prefix. This is key. If there is any incosistency, links may break and search engine rankings will suffer.&lt;/p&gt;
+
+&lt;p&gt;That is all. End of discussion. It is your decision as a web developer whether or not you want the www.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
