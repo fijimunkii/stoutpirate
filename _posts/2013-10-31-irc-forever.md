@@ -19,11 +19,13 @@ published: true
 + is super efficient
 + many networks, public and private
 
-It is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The *official* ruby language IRC channel exists on irc.freenode.net
+IRC is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The *official* ruby language IRC channel exists on irc.freenode.net
 
 I've spent years fiddling around with IRC, have settled on a wonderful commandline client, and am happy to share my configuration with the world.
 
 **On a mac with homebrew installed, this guide should be easy to follow.** If you're using linux, the instructions should make sense and you can still use my config.
+
+**If this command-line stuff feels scary..  I feel bad for you, son.** I got 99 problems, but IRC aint one. You might want to take a look at [Colloquy](http://colloquy.info/), it's self explanatory.
 
 
 #Let's get started

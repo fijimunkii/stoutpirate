@@ -4,7 +4,7 @@
  <title> | sail the dark nets.. bring home the goods</title>
  <link href="fijimunkii.github.io/atom.xml" rel="self"/>
  <link href="fijimunkii.github.io"/>
- <updated>2013-10-31T18:04:46-04:00</updated>
+ <updated>2013-11-03T10:37:14-05:00</updated>
 
  
  <entry>
@@ -24,11 +24,13 @@
 &lt;li&gt;many networks, public and private&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The &lt;em&gt;official&lt;/em&gt; ruby language IRC channel exists on irc.freenode.net&lt;/p&gt;
+&lt;p&gt;IRC is amazing for learning and asking questions. Say, for instance, you are learning the Ruby programming language. The &lt;em&gt;official&lt;/em&gt; ruby language IRC channel exists on irc.freenode.net&lt;/p&gt;
 
 &lt;p&gt;I&amp;#39;ve spent years fiddling around with IRC, have settled on a wonderful commandline client, and am happy to share my configuration with the world.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;On a mac with homebrew installed, this guide should be easy to follow.&lt;/strong&gt; If you&amp;#39;re using linux, the instructions should make sense and you can still use my config.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If this command-line stuff feels scary..  I feel bad for you, son.&lt;/strong&gt; I got 99 problems, but IRC aint one. You might want to take a look at &lt;a href=&quot;http://colloquy.info/&quot;&gt;Colloquy&lt;/a&gt;, it&amp;#39;s self explanatory.&lt;/p&gt;
 
 &lt;h1 id=&quot;toc_2&quot;&gt;Let&amp;#39;s get started&lt;/h1&gt;
 
