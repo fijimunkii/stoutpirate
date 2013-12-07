@@ -42,7 +42,7 @@ Load irssi for the first time by typing in ```irssi```. This will create the def
 
 1. [find a theme you like](http://irssi.org/themes)
 2. copy the .theme link
-3. in terminal run ```wget -P ~/.irssi copied_link``` to install theme
+3. in terminal run ```wget -P ~/.irssi copied_link``` to install theme (if wget doesn't work, simply run ```brew install wget```)
 4. load up irssi and run ```/set theme theme_name```
 5. ```/save```
 
