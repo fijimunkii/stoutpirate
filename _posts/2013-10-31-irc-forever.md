@@ -310,6 +310,7 @@ ignores = (
   }
 );
 ```
+
 1. find YOURNAME and replace with your own nickname
 2. find THEMENAME and replace with your installed theme
 
