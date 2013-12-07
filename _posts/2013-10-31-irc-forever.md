@@ -78,6 +78,7 @@ Exit out of irssi by typing it ```/quit```
 Lets open the config file ```open ~/.irssi/config```
 
 Copy what you like.
+
 ```bash
 servers = (
   {
