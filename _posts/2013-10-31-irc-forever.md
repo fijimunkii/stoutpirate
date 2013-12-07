@@ -77,11 +77,7 @@ Exit out of irssi by typing it ```/quit```
 
 Lets open the config file ```open ~/.irssi/config```
 
-Copy what you like. Be careful with formatting...
-
-1. find YOURNAME and replace with your own nickname
-2. find THEMENAME and replace with your installed theme
-
+Copy what you like.
 ```bash
 servers = (
   {
@@ -314,6 +310,9 @@ ignores = (
   }
 );
 ```
+1. find YOURNAME and replace with your own nickname
+2. find THEMENAME and replace with your installed theme
+
 
 #### How to Navigate
 
